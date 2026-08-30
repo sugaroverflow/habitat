@@ -1,0 +1,43 @@
+{
+  "name": "habitat-clover-29",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "privacy:check": "node scripts/privacy-check.mjs"
+  },
+  "dependencies": {
+    "@openai/agents": "0.17.0",
+    "@openai/chatkit-react": "1.6.1",
+    "@phosphor-icons/react": "2.1.10",
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-dropdown-menu": "latest",
+    "@radix-ui/react-scroll-area": "latest",
+    "@radix-ui/react-slot": "latest",
+    "@radix-ui/react-tabs": "latest",
+    "@radix-ui/react-tooltip": "latest",
+    "@supabase/supabase-js": "2.112.4",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "next": "16.3.3",
+    "openai": "7.8.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "16.3.3",
+    "tailwindcss": "4.3.3",
+    "typescript": "latest"
+  }
+}

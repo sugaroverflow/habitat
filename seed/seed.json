@@ -1,0 +1,1320 @@
+{
+  "schema_version": "0.1.0",
+  "project": {
+    "product_name": "Habitat",
+    "home_nickname": "Clover 29",
+    "slug": "clover-29",
+    "privacy_mode": "strict",
+    "address_fields_allowed": false,
+    "notes": "Public-demo seed. No street address, postcode, precise coordinates, delivery address, or identifying property filenames."
+  },
+  "design_profile": {
+    "name": "Clover 29 Design Brief",
+    "keywords": [
+      "warm",
+      "cozy",
+      "playful soft-maximalism",
+      "muted saturated color",
+      "Indo-Persian romanticism",
+      "layered display",
+      "botanical motifs",
+      "Persian-style rugs",
+      "plants",
+      "books",
+      "art",
+      "personal objects"
+    ],
+    "palette": [
+      "dusty sage",
+      "jade",
+      "teal",
+      "faded blush",
+      "dusty rose",
+      "warm cream",
+      "butter",
+      "marigold",
+      "muted terracotta",
+      "muted coral",
+      "soft blue",
+      "lavender"
+    ],
+    "avoid": [
+      "generic beige minimalism",
+      "candy-bright pastel interiors",
+      "sterile styling",
+      "overly polished styling",
+      "recreating the previous home room-for-room"
+    ],
+    "room_specific": {
+      "office_bedroom": [
+        "vaporwave pink/cyan ambient lighting",
+        "graphic art",
+        "gaming/tech elements"
+      ]
+    }
+  },
+  "rooms": [
+    {
+      "id": "living_room",
+      "name": "Living Room",
+      "type": "living"
+    },
+    {
+      "id": "dining_area",
+      "name": "Dining Area",
+      "type": "dining"
+    },
+    {
+      "id": "bedroom",
+      "name": "Bedroom",
+      "type": "bedroom"
+    },
+    {
+      "id": "office",
+      "name": "Office",
+      "type": "office",
+      "notes": "Office functions within/alongside bedroom planning."
+    },
+    {
+      "id": "hallway",
+      "name": "Hallway",
+      "type": "hallway"
+    },
+    {
+      "id": "bathroom",
+      "name": "Bathroom",
+      "type": "bathroom"
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "type": "kitchen"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "m_hallway_width",
+      "room_id": "hallway",
+      "type": "room",
+      "label": "Hallway width",
+      "original": "4'10\"",
+      "value_cm": 147.3,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_hallway_length",
+      "room_id": "hallway",
+      "type": "room",
+      "label": "Hallway length",
+      "original": "14'9\"",
+      "value_cm": 449.6,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_hallway_console_depth",
+      "room_id": "hallway",
+      "type": "clearance",
+      "label": "Maximum useful console depth",
+      "original": "35 cm",
+      "value_cm": 35,
+      "confidence": "measured",
+      "notes": "Working limit for the hallway console location."
+    },
+    {
+      "id": "m_hallway_end_width",
+      "room_id": "hallway",
+      "type": "room",
+      "label": "Hallway width at kitchen opening end",
+      "original": "4'7\"",
+      "value_cm": 139.7,
+      "confidence": "approximate",
+      "notes": "User noted this may be a poorer measurement."
+    },
+    {
+      "id": "m_bedroom_window_span",
+      "room_id": "bedroom",
+      "type": "window",
+      "label": "Width between bedroom windows",
+      "original": "11'7\"",
+      "value_cm": 353.1,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_living_window_width",
+      "room_id": "living_room",
+      "type": "window",
+      "label": "Living room windows width",
+      "original": "9'2\"",
+      "value_cm": 279.4,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_tvwall_window_to_heater",
+      "room_id": "living_room",
+      "type": "wall_clearance",
+      "label": "Window to heater on TV wall",
+      "original": "6'3\"",
+      "value_cm": 190.5,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_heater_height",
+      "room_id": "living_room",
+      "type": "radiator",
+      "label": "Heater height off floor",
+      "original": "26\"",
+      "value_cm": 66.0,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_kitchen_island_width",
+      "room_id": "kitchen",
+      "type": "furniture",
+      "label": "Kitchen island width",
+      "original": "6'4\"",
+      "value_cm": 193.0,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_kitchen_island_height",
+      "room_id": "kitchen",
+      "type": "furniture",
+      "label": "Kitchen island height",
+      "original": "3'0\"",
+      "value_cm": 91.4,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_bedroom_sliding_door_wall_length",
+      "room_id": "bedroom",
+      "type": "wall",
+      "label": "Wall where bedroom door slides open — length",
+      "original": "6'9\"",
+      "value_cm": 205.7,
+      "confidence": "measured",
+      "notes": null
+    },
+    {
+      "id": "m_bedroom_sliding_door_wall_height",
+      "room_id": "bedroom",
+      "type": "wall",
+      "label": "Wall where bedroom door slides open — height",
+      "original": "7'10\"",
+      "value_cm": 238.8,
+      "confidence": "measured",
+      "notes": null
+    }
+  ],
+  "items": [
+    {
+      "id": "owned_sweek_sleeper",
+      "name": "Sweeek 2-Seater Scandinavian Convertible Sofa — Cream Bouclé",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "owned",
+      "purchase_status": "arrived",
+      "status": "already_owned",
+      "url": "https://www.ufurnish.com/en-gb/p/a/16097608/sweeek-2-seater-scandinavian-convertible-sofa-with-boucle-fabric-in-cream",
+      "image": "/media/products/product-001.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Already owned; additional seating/sleeper.",
+      "assistant_assessment": "Useful supporting seating; main sofa can prioritize comfort/movie-pit layout."
+    },
+    {
+      "id": "owned_country_garden_rug",
+      "name": "Country Garden Floral Wool Rug",
+      "category": "rug",
+      "room_id": "living_room",
+      "ownership_status": "owned",
+      "purchase_status": "arrived",
+      "status": "already_owned",
+      "url": "https://www.dunelm.com/product/country-garden-floral-wool-rug-1000264088?defaultSkuId=30975287",
+      "image": "/media/products/product-002.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Owned floral wool rug.",
+      "assistant_assessment": "Important palette/pattern anchor for living-room decisions."
+    },
+    {
+      "id": "owned_magpus_desk",
+      "name": "Magpus Pro desk — white steel",
+      "category": "desk",
+      "room_id": "office",
+      "ownership_status": "owned",
+      "purchase_status": "arrived",
+      "status": "already_owned",
+      "url": null,
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Already owned.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "owned_secretlab_chair",
+      "name": "Secretlab Monster Hunter chair",
+      "category": "office_chair",
+      "room_id": "office",
+      "ownership_status": "owned",
+      "purchase_status": "arrived",
+      "status": "already_owned",
+      "url": null,
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Already owned.",
+      "assistant_assessment": "Works with the gaming/tech side of the office brief."
+    },
+    {
+      "id": "owned_shark_fan",
+      "name": "Shark tower fan",
+      "category": "appliance",
+      "room_id": null,
+      "ownership_status": "owned",
+      "purchase_status": "arrived",
+      "status": "already_owned",
+      "url": null,
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Already owned.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "owned_air_purifier",
+      "name": "Conway air purifier",
+      "category": "appliance",
+      "room_id": null,
+      "ownership_status": "owned",
+      "purchase_status": "arrived",
+      "status": "already_owned",
+      "url": null,
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Already owned; name preserved from project notes.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "bed_egerie",
+      "name": "Egerie Curved Headboard Beige Bouclé Ottoman Storage Bed",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.daals.co.uk/products/egerie-curved-headboard-beige-boucle-ottoman-storage-bed",
+      "image": "/media/products/product-003.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Pretty sold on the Egerie.",
+      "assistant_assessment": "Current bedroom bed favourite."
+    },
+    {
+      "id": "bedside_maude",
+      "name": "Maude 1 Drawer Bedside Table — muted pistachio ash with raffia",
+      "category": "bedside_table",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.daals.co.uk/products/maude-1-drawer-bedside-table-muted-pistachio-ash-with-raffia",
+      "image": "/media/products/product-004.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Likes the soft curved front edges and muted colour; dislikes the raffia and does not want this exact table.",
+      "assistant_assessment": "Keep as shape/reference inspiration, not a purchase candidate."
+    },
+    {
+      "id": "bed_loaf_tight_space",
+      "name": "Loaf Tight Space Storage Bed — Monroe headboard",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://loaf.com/products/tight-space-storage-bed?size=king&colour-global=tidepool-teal&material-global=clv-cotton&headboard=monroe-headboard",
+      "image": "/media/products/product-005.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Cute; liked enough to order swatches, but too expensive.",
+      "assistant_assessment": "Aesthetic reference rather than current buy."
+    },
+    {
+      "id": "bed_happybeds_evelyn",
+      "name": "Evelyn Pink Fabric and Wooden Bed Frame — King",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.happybeds.co.uk/evelyn-pink-fabric-and-wooden-bed-frame-5ft-king-size",
+      "image": "/media/products/product-006.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Cute, but no built-in storage.",
+      "assistant_assessment": "Only compelling if paired with a separate under-bed storage solution."
+    },
+    {
+      "id": "storage_dunelm_ditsy",
+      "name": "Vintage Ditsy Underbed Storage Bag",
+      "category": "underbed_storage",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.dunelm.com/product/vintage-ditsy-underbed-storage-bag-1000288168?defaultSkuId=31033606",
+      "image": "/media/products/product-007.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Potential workaround if choosing a bed without storage.",
+      "assistant_assessment": "Useful low-cost workaround; wheeled drawers are another option."
+    },
+    {
+      "id": "sofa_auburn",
+      "name": "Auburn Performance Fabric Chaise Sofa with Footstool",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.castlery.com/uk/products/auburn-performance-fabric-chaise-sofa-with-footstool",
+      "image": "/media/products/product-008.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Still preferred after comparing multiple alternatives.",
+      "assistant_assessment": "Benchmark candidate; compare all new sofas against Auburn."
+    },
+    {
+      "id": "sofa_nala",
+      "name": "Sofa Club Nala Chenille Boucle XL Right Chaise Corner Sofa — Champagne Haze",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://sofaclub.co.uk/products/nala-chenille-boucle-xl-right-chaise-corner-sofa-champagne-haze",
+      "image": "/media/products/product-009.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Loves the look; worried the back is not supportive/comfy because it is not fluffable.",
+      "assistant_assessment": "Strong aesthetic candidate but comfort/support is the main risk."
+    },
+    {
+      "id": "sofa_keira",
+      "name": "Sofa Club Keira Textured Chenille Corner Sofa + Footstool — Sand Whisper",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://sofaclub.co.uk/products/keira-textured-chenille-left-right-corner-sofa-footstool-end-sand-whisper",
+      "image": "/media/products/product-010.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Loves soft lines and chunkiness; dislikes that it lacks the two-layered construction.",
+      "assistant_assessment": "Comfort-forward shape; less visually special than the preferred layered look."
+    },
+    {
+      "id": "sofa_lisbon",
+      "name": "Sofa Club Lisbon Textured Chenille XL U-Shape Footstool-End Sofa — Hushed Linen",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://sofaclub.co.uk/products/lisbon-textured-chenille-xl-u-shape-footstool-end-sofa-hushed-linen",
+      "image": "/media/products/product-011.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Cooler neutral fabric direction preferred over natural linen colours.",
+      "assistant_assessment": "Relevant fabric reference; room plan currently favors 3-seater + chaise/footstool over a larger four-seater."
+    },
+    {
+      "id": "sofa_wolke",
+      "name": "Westwing Wolke Corner Sofa — Green",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected_due_to_lead_time",
+      "url": "https://www.westwing.co.uk/fsc-wolke-corner-sofa-corner-left-middle-rounded-corner-corner-right-symphony-mills-yukon-501-green-en-25wes78386.html?simple=DEQ25WES78386-673326",
+      "image": "/media/products/product-012.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Loved the Wolke aesthetic but could not deal with an 11-week lead time.",
+      "assistant_assessment": "Primary aesthetic reference for finding alternatives."
+    },
+    {
+      "id": "sofa_miyo",
+      "name": "AIF London Miyo Corner Sofa — Extra Large Chaise",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.aif.london/miyo-corner-sofa-extra-large-chaise.html",
+      "image": "/media/products/product-013.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Cute; interested in swatches and possibly a footstool.",
+      "assistant_assessment": "Useful Wolke-esque direction."
+    },
+    {
+      "id": "sofa_maison",
+      "name": "AIF London Maison Collection",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.aif.london/sofas/maison-collection.html",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Maybe; low back but angled.",
+      "assistant_assessment": "Secondary option; low-back concern remains."
+    },
+    {
+      "id": "sofa_malmo",
+      "name": "Cult Furniture Malmo Left-Hand 4-Seater Chaise Sofa — Olive Green",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.cultfurniture.com/products/malmo-left-hand-4-seater-chaise-sofa-olive-green-velvet-chenille",
+      "image": "/media/products/product-014.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Cute sofa; disliked available colourways.",
+      "assistant_assessment": "Shape reference only."
+    },
+    {
+      "id": "shelving_laredoute_reference",
+      "name": "La Redoute shelving reference",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.laredoute.co.uk/ppdp/prod-351222333.aspx",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Reference for the living-room storage and display decision.",
+      "assistant_assessment": "Useful reference while defining the long closed-and-open shelving composition."
+    },
+    {
+      "id": "mirror_yearn",
+      "name": "Yearn Solid Oak Oval Full Length Wall Mirror",
+      "category": "mirror",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.dunelm.com/product/yearn-solid-oak-oval-full-length-wall-mirror-1000289831?defaultSkuId=31054014",
+      "image": "/media/products/product-015.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Cute; loves the rounded corners.",
+      "assistant_assessment": "Strong fit for the soft-curve hallway direction."
+    },
+    {
+      "id": "mirror_arden",
+      "name": "William Wood Arden Light Wood Full Length Arched Wooden Mirror — 160 × 60cm",
+      "category": "mirror",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.williamwoodmirrors.co.uk/products/arden-light-wood-full-length-arched-wooden-mirror-160cm-x-60cm",
+      "image": "/media/products/product-016.jpeg",
+      "price": null,
+      "dimensions": {
+        "width_cm": 60,
+        "height_cm": 160
+      },
+      "user_notes": "Hallway mirror option.",
+      "assistant_assessment": "Good alternative if an arch feels better than the oval/rounded-corner direction."
+    },
+    {
+      "id": "hallway_tylko_console",
+      "name": "Tylko custom hallway console",
+      "category": "storage_console",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://tylko.com/",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Potential long console/storage solution.",
+      "assistant_assessment": "Functional/customizable reference; exact configuration TBD."
+    },
+    {
+      "id": "rug_ranier",
+      "name": "Ruggable Ranier Copper Sage Outdoor Rug",
+      "category": "runner_rug",
+      "room_id": "bathroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://ruggable.com/products/ranier-copper-sage-outdoor-rug?size=2.5x7&system=rug-sys",
+      "image": "/media/products/product-017.jpeg",
+      "price": null,
+      "dimensions": {
+        "size_label": "2.5 × 7 ft"
+      },
+      "user_notes": "Bathroom runner option.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "rug_allura",
+      "name": "Ruggable Allura Copper Sage Outdoor Rug",
+      "category": "runner_rug",
+      "room_id": "bathroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://ruggable.com/products/allura-copper-sage-outdoor-rug?size=2.5x7&system=rug-sys",
+      "image": "/media/products/product-018.jpeg",
+      "price": null,
+      "dimensions": {
+        "size_label": "2.5 × 7 ft"
+      },
+      "user_notes": "Bathroom runner option.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "rug_della_blue",
+      "name": "Ruggable Della Soft Blue Coral Outdoor Rug",
+      "category": "runner_rug",
+      "room_id": "bathroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://ruggable.com/products/della-soft-blue-coral-outdoor-rug?size=2.5x7&system=rug-sys",
+      "image": "/media/products/product-019.jpeg",
+      "price": null,
+      "dimensions": {
+        "size_label": "2.5 × 7 ft"
+      },
+      "user_notes": "Preferred with Mineral Green; works with existing blue towels.",
+      "assistant_assessment": "Current bathroom runner favourite."
+    },
+    {
+      "id": "bathroom_wallpaper",
+      "name": "Wallism wallpaper option",
+      "category": "wallpaper",
+      "room_id": "bathroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://wallism.com/gb/product/8MJ3VRyy8RD0",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Discussed with the Della rugs; exact product name not captured in project summary.",
+      "assistant_assessment": "Keep linked until exact wallpaper decision is reconfirmed."
+    },
+    {
+      "id": "bathroom_squeegee",
+      "name": "be_myshelf_squeegee — pure",
+      "category": "bathroom_accessory",
+      "room_id": "bathroom",
+      "ownership_status": "purchased",
+      "purchase_status": "ordered",
+      "status": "purchased",
+      "url": null,
+      "price": {
+        "amount": 29,
+        "currency": "EUR"
+      },
+      "dimensions": null,
+      "user_notes": "Ordered.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "bathroom_hook",
+      "name": "be_myhook 1 double-sided hook — pure",
+      "category": "bathroom_accessory",
+      "room_id": "bathroom",
+      "ownership_status": "purchased",
+      "purchase_status": "backordered",
+      "status": "purchased",
+      "url": null,
+      "price": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "dimensions": null,
+      "user_notes": "Ordered; back-ordered at purchase time.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "bathroom_shelf_slim",
+      "name": "be_myshelf_500 slim — pure",
+      "category": "bathroom_shelf",
+      "room_id": "bathroom",
+      "ownership_status": "purchased",
+      "purchase_status": "ordered",
+      "status": "purchased",
+      "url": "https://haptic.store/product/be_myshelf_500-slim/",
+      "price": {
+        "amount": 199,
+        "currency": "EUR"
+      },
+      "dimensions": null,
+      "user_notes": "Ordered.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "bathroom_shelf_500",
+      "name": "be_myshelf_500 — pure",
+      "category": "bathroom_shelf",
+      "room_id": "bathroom",
+      "ownership_status": "purchased",
+      "purchase_status": "backordered",
+      "status": "purchased",
+      "url": "https://haptic.store/product/be_myshelf_500/",
+      "price": {
+        "amount": 199,
+        "currency": "EUR"
+      },
+      "dimensions": null,
+      "user_notes": "Ordered; back-ordered at purchase time.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "dining_flower_pendant",
+      "name": "Large Paper Flower Pendant Light",
+      "category": "pendant_light",
+      "room_id": "dining_area",
+      "ownership_status": "not_owned",
+      "purchase_status": "pending",
+      "status": "favourite",
+      "url": "https://www.etsy.com/uk/listing/4368759714/large-paper-flower-pendant-light?ref=shop_home_feat_1&sr_prefetch=1&pf_from=shop_home&pro=1&logging_key=3926ff40fcdc0724c95f07816feec028b2d0ab01%3A4368759714",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Obsessed; considering light pink. Purchase pending. Need to confirm hanging/ceiling installation approach.",
+      "assistant_assessment": "Excellent statement piece for dining corner; playful without making the whole flat overly saturated."
+    },
+    {
+      "id": "dining_dazuma_pendant",
+      "name": "Dazuma floral pendant reference",
+      "category": "pendant_light",
+      "room_id": "dining_area",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://dazuma.us/products/lighting-ceiling-lights-pendant-lighting_4ikj9?variant=39990489809078",
+      "image": "/media/products/product-023.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Initially cute; shifted toward something more paper-like/floral.",
+      "assistant_assessment": "Superseded by the paper flower pendant direction."
+    },
+    {
+      "id": "ikea_vidga",
+      "name": "IKEA VIDGA Two-track Wall Set — white",
+      "category": "curtain_track",
+      "room_id": null,
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.ikea.com/gb/en/p/vidga-two-track-wall-set-white-s29428266/",
+      "image": "/media/products/product-024.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Considering for all windows; bedroom may use connected track with two curtain sets.",
+      "assistant_assessment": "Strong standardized window-treatment system for the flat."
+    },
+    {
+      "id": "peking_runner",
+      "name": "Chinese Art Deco Peking Rug Runner — wool",
+      "category": "runner_rug",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.etsy.com/uk/listing/4516068442/chinese-art-deco-peking-rug-runner-wool?sr_prefetch=1&pf_from=shop_home&ref=shop_home_active_8&pro=1&logging_key=ffe038737aec232afd8b2e99c265fd95bfe8bf19%3A4516068442",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Could do a Peking runner; overall preference is still more Persian botanical/ornate than Aubusson.",
+      "assistant_assessment": "Interesting hallway direction, but Keshan/Persian botanical remains the stronger overall rug preference."
+    },
+    {
+      "id": "peking_rug",
+      "name": "Chinese Art Deco Peking Rug — 90 Line Wool",
+      "category": "rug",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.etsy.com/uk/listing/4422860200/chinese-art-deco-peking-rug-90-line-wool?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=aubusson+chinese+rug+green&ref=sr_gallery-1-10&sr_prefetch=1&pf_from=search&pro=1&content_source=0cdc4828-d1ec-4365-822c-84ad2fe685a",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Art Deco Peking rug reference in a green palette.",
+      "assistant_assessment": "A patterned green reference to compare with the owned floral rug."
+    },
+    {
+      "id": "emma_original_mattress",
+      "name": "Emma Original Mattress",
+      "category": "mattress",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.emma-sleep.co.uk/mattresses/emma-original-mattress/?selection=EMAOH150200AAE:1",
+      "image": "/media/products/product-025.jpeg",
+      "price": null,
+      "dimensions": {
+        "size": "King"
+      },
+      "user_notes": "Compared while choosing a UK mattress.",
+      "assistant_assessment": "Reference option from the mattress comparison; OTTY was chosen instead."
+    },
+    {
+      "id": "otty_mattress",
+      "name": "OTTY Hybrid Mattress",
+      "category": "mattress",
+      "room_id": "bedroom",
+      "ownership_status": "purchased",
+      "purchase_status": "ordered_or_confirmed",
+      "status": "purchased",
+      "url": "https://otty.com/products/the-otty-hybrid-mattress?variant=7683067674675",
+      "image": "/media/products/product-026.jpeg",
+      "price": null,
+      "dimensions": {
+        "size": "King"
+      },
+      "user_notes": "Chosen after comparing Casper-like UK options; desired pressure relief without excessive softness.",
+      "assistant_assessment": "Final mattress direction."
+    },
+    {
+      "id": "otty_topper",
+      "name": "OTTY Bamboo Charcoal Mattress Topper",
+      "category": "mattress_topper",
+      "room_id": "bedroom",
+      "ownership_status": "purchased",
+      "purchase_status": "ordered_or_confirmed",
+      "status": "purchased",
+      "url": "https://otty.com/products/otty-bamboo-charcoal-mattress-topper",
+      "image": "/media/products/product-027.jpeg",
+      "price": null,
+      "dimensions": {
+        "size": "King"
+      },
+      "user_notes": "Chosen with OTTY mattress.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "panda_memory_foam_pillow",
+      "name": "Panda Bamboo Memory Foam Pillow",
+      "category": "pillow",
+      "room_id": "bedroom",
+      "ownership_status": "purchased",
+      "purchase_status": "ordered_or_confirmed",
+      "status": "purchased",
+      "url": "https://pandalondon.com/products/bamboo-memory-foam-pillow",
+      "image": "/media/products/product-028.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Chosen.",
+      "assistant_assessment": null
+    },
+    {
+      "id": "bedfolk_hybrid_pillow",
+      "name": "Bedfolk Down Alternative Pillow",
+      "category": "pillow",
+      "room_id": "bedroom",
+      "ownership_status": "purchased",
+      "purchase_status": "ordered_or_confirmed",
+      "status": "purchased",
+      "url": "https://bedfolk.com/products/the-down-alternative-pillow?variant=39469923663915&clickedProduct=40737845379115&utm_source=chatgpt.com",
+      "image": "/media/products/product-029.jpeg",
+      "price": null,
+      "dimensions": null,
+      "user_notes": "Chosen.",
+      "assistant_assessment": null
+    }
+  ],
+  "needs": [
+    {
+      "id": "need_main_sofa",
+      "room_id": "living_room",
+      "name": "Main sofa",
+      "status": "decision_in_progress",
+      "priority": "high",
+      "requirements": [
+        "3-seater scale preferred over 4-seater",
+        "chaise + footstool/movie-pit setup",
+        "supportive/comfy back",
+        "cooler neutral or muted color",
+        "performance-friendly fabric preferred"
+      ],
+      "candidate_item_ids": [
+        "sofa_auburn",
+        "sofa_nala",
+        "sofa_keira",
+        "sofa_lisbon",
+        "sofa_miyo",
+        "sofa_maison"
+      ]
+    },
+    {
+      "id": "need_bed",
+      "room_id": "bedroom",
+      "name": "Bed frame",
+      "status": "decision_in_progress",
+      "priority": "high",
+      "requirements": [
+        "King",
+        "soft/curved aesthetic",
+        "storage strongly preferred or separate under-bed storage"
+      ],
+      "candidate_item_ids": [
+        "bed_egerie",
+        "bed_happybeds_evelyn"
+      ]
+    },
+    {
+      "id": "need_bedside_tables",
+      "room_id": "bedroom",
+      "name": "Bedside tables",
+      "status": "open",
+      "priority": "medium",
+      "requirements": [
+        "soft curved front edges",
+        "muted color",
+        "no raffia"
+      ],
+      "candidate_item_ids": []
+    },
+    {
+      "id": "need_hallway_storage",
+      "room_id": "hallway",
+      "name": "Hallway storage",
+      "status": "open",
+      "priority": "high",
+      "requirements": [
+        "shoe storage",
+        "bags/backpacks/hats organization",
+        "room for flowers/trinkets/art/photos on console surface",
+        "respect narrow hallway clearance"
+      ],
+      "candidate_item_ids": [
+        "hallway_tylko_console"
+      ]
+    },
+    {
+      "id": "need_hallway_mirror",
+      "room_id": "hallway",
+      "name": "Full-length hallway mirror",
+      "status": "decision_in_progress",
+      "priority": "medium",
+      "requirements": [
+        "soft curves",
+        "light/warm wood works well"
+      ],
+      "candidate_item_ids": [
+        "mirror_yearn",
+        "mirror_arden"
+      ]
+    },
+    {
+      "id": "need_tv_storage",
+      "room_id": "living_room",
+      "name": "TV + display storage",
+      "status": "open",
+      "priority": "medium",
+      "requirements": [
+        "design around Frame-style TV as art rather than a dominant TV unit",
+        "long closed + open two-story shelf concept",
+        "texture such as ribbing",
+        "possible tall/wide bookcase on right",
+        "gallery wall integration"
+      ],
+      "candidate_item_ids": [
+        "shelving_laredoute_reference"
+      ]
+    },
+    {
+      "id": "need_dining_pendant",
+      "room_id": "dining_area",
+      "name": "Dining corner pendant",
+      "status": "near_decision",
+      "priority": "medium",
+      "requirements": [
+        "paper-like",
+        "floral",
+        "plug-in/hook-compatible if possible",
+        "light pink considered"
+      ],
+      "candidate_item_ids": [
+        "dining_flower_pendant"
+      ]
+    },
+    {
+      "id": "need_bathroom_runner",
+      "room_id": "bathroom",
+      "name": "Bathroom runner",
+      "status": "near_decision",
+      "priority": "medium",
+      "requirements": [
+        "works with Mineral Green and blue towels",
+        "bathroom-suitable"
+      ],
+      "candidate_item_ids": [
+        "rug_della_blue",
+        "rug_ranier",
+        "rug_allura"
+      ]
+    },
+    {
+      "id": "need_window_treatments",
+      "room_id": null,
+      "name": "Window curtain tracks",
+      "status": "open",
+      "priority": "medium",
+      "requirements": [
+        "consistent system across windows",
+        "possible two-track/two-curtain setup in bedroom"
+      ],
+      "candidate_item_ids": [
+        "ikea_vidga"
+      ]
+    },
+    {
+      "id": "need_office_backdrop_storage",
+      "room_id": "office",
+      "name": "Office backdrop + divider shelving",
+      "status": "open",
+      "priority": "medium",
+      "requirements": [
+        "visual backdrop on bottom and side walls",
+        "shelf/divider between back of desk and bed",
+        "Kallax or more interesting asymmetric/custom shelving possible"
+      ],
+      "candidate_item_ids": []
+    }
+  ],
+  "decisions": [
+    {
+      "id": "d_sofa_layout",
+      "room_id": "living_room",
+      "topic": "sofa_layout",
+      "status": "decided",
+      "decision": "Prefer 3-seater with chaise + footstool/movie-pit setup over a 4-seater.",
+      "reasoning": "Existing sleeper sofa, floor cushions and dining seating provide enough additional seating."
+    },
+    {
+      "id": "d_sofa_benchmark",
+      "room_id": "living_room",
+      "topic": "main_sofa",
+      "status": "leaning",
+      "decision": "Auburn remains the benchmark/favourite despite several new candidates.",
+      "reasoning": "User repeatedly returns to Auburn after comparing aesthetics and fabric/comfort trade-offs."
+    },
+    {
+      "id": "d_bathroom_color",
+      "room_id": "bathroom",
+      "topic": "wall_color",
+      "status": "decided",
+      "decision": "Mineral Green preferred over Tuscan Sky.",
+      "reasoning": "Works better with Della Soft Blue runner and existing blue towels."
+    },
+    {
+      "id": "d_bathroom_ceiling",
+      "room_id": "bathroom",
+      "topic": "ceiling",
+      "status": "decided",
+      "decision": "Do not keep the red ceiling.",
+      "reasoning": null
+    },
+    {
+      "id": "d_rug_style",
+      "room_id": null,
+      "topic": "rug_style",
+      "status": "decided_direction",
+      "decision": "Prefer Persian botanical/ornate/Keshan-style rugs over Aubusson; Peking can work selectively.",
+      "reasoning": "Wants a different direction from the previous home while retaining ornate botanical character."
+    },
+    {
+      "id": "d_dining_light",
+      "room_id": "dining_area",
+      "topic": "lighting_style",
+      "status": "leaning",
+      "decision": "Prefer a paper-like floral pendant; large paper flower pendant is current favourite.",
+      "reasoning": "More characterful and aligned than the earlier Dazuma direction."
+    },
+    {
+      "id": "d_office_prayer_nook",
+      "room_id": "office",
+      "topic": "layout",
+      "status": "decided",
+      "decision": "Drop the prayer nook concept in favor of prioritizing office layout/backdrop.",
+      "reasoning": "Two-wall visual office setup and divider shelving are higher priority."
+    }
+  ],
+  "conversation_sources": [
+    {
+      "id": "conv_bed_options",
+      "title": "Bed Options",
+      "date": "2026-08-29",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_sofa",
+      "title": "Sofa",
+      "date": "2026-08-22",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_modular_sofa",
+      "title": "Modular Sofa Ideas",
+      "date": "2026-07-05",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_hallway",
+      "title": "Hallway Storage Design",
+      "date": "2026-08-23",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_tv",
+      "title": "TV Unit Layout Advice",
+      "date": "2026-08-23",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_rugs",
+      "title": "Rugs",
+      "date": "2026-08-15",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_bathroom",
+      "title": "Bathroom Decor",
+      "date": "2026-08-17",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_bath_accessories",
+      "title": "Bathroom accessories",
+      "date": "2026-08-29",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_dining_light",
+      "title": "Add Plug In Pendant Light",
+      "date": "2026-08-29",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_office",
+      "title": "Bedroom Office Layout Ideas",
+      "date": "2026-08-15",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_measurements",
+      "title": "Floor plan with dimensions",
+      "date": "2026-08-17",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_mattress",
+      "title": "Choose A UK Mattress",
+      "date": "2026-08-29",
+      "import_status": "summary_seed_only"
+    },
+    {
+      "id": "conv_vidga",
+      "title": "VIDGA System for Windows",
+      "date": "2026-08-15",
+      "import_status": "summary_seed_only"
+    }
+  ],
+  "assets": {
+    "photos": [
+      {
+        "id": "asset_unit_photo_001",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-001.jpeg",
+        "room_id": "living_room",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_002",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-002.jpeg",
+        "room_id": "living_room",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_003",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-003.jpeg",
+        "room_id": "kitchen",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_004",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-004.jpeg",
+        "room_id": "living_room",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_005",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-005.jpeg",
+        "room_id": "hallway",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_006",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-006.jpeg",
+        "room_id": "bathroom",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_007",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-007.jpeg",
+        "room_id": "bedroom",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_008",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-008.jpeg",
+        "room_id": "bedroom",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_009",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-009.jpeg",
+        "room_id": "bedroom",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_010",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-010.jpeg",
+        "room_id": "bedroom",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_011",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-011.jpeg",
+        "room_id": "dining_area",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_012",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-012.jpeg",
+        "room_id": "kitchen",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      },
+      {
+        "id": "asset_unit_photo_013",
+        "kind": "room_photo",
+        "path": "/media/rooms/room-photo-013.jpeg",
+        "room_id": "kitchen",
+        "status": "reviewed",
+        "privacy": {
+          "safe_filename": true,
+          "metadata_stripped": true,
+          "visual_reviewed": true
+        }
+      }
+    ],
+    "floorplan": {
+      "id": "asset_floorplan",
+      "kind": "floorplan",
+      "path": "/media/floor-plan.png",
+      "annotated_path": "/media/floor-plan-measured.png",
+      "status": "sanitized",
+      "notes": "Canonical floor plan. Identifying labels and image metadata removed."
+    }
+  },
+  "privacy_checks": {
+    "contains_home_address": false,
+    "contains_postcode": false,
+    "contains_precise_coordinates": false,
+    "contains_delivery_address": false,
+    "contains_order_numbers": false,
+    "contains_original_property_photo_filenames": false,
+    "floorplan_included": true
+  }
+}

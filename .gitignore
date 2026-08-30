@@ -1,0 +1,21 @@
+node_modules/
+.next/
+out/
+.env
+.env.*
+!.env.example
+*.log
+*.tsbuildinfo
+.DS_Store
+coverage/
+playwright-report/
+test-results/
+.playwright-cli/
+output/playwright/
+
+# Never commit raw imports or unreviewed uploads.
+private/
+imports/
+uploads/raw/
+**/*chatgpt-export*
+**/*unredacted*

@@ -1,0 +1,187 @@
+"use client";
+
+import {
+  ArrowUp,
+  HouseLine,
+  Sparkle,
+} from "@phosphor-icons/react";
+import { FormEvent, useState } from "react";
+
+import { ChatKitPanel } from "@/components/features/chatkit-panel";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Textarea } from "@/components/ui/textarea";
+
+interface Message {
+  id: number;
+  role: "assistant" | "user";
+  text: string;
+}
+
+const starterPrompts = [
+  "What can I order now?",
+  "What still needs measuring?",
+  "Compare the living room sofas",
+];
+
+export function AskHome() {
+  const chatKitEnabled = process.env.NEXT_PUBLIC_CHATKIT_ENABLED === "true";
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      id: 1,
+      role: "assistant",
+      text: "I can check Clover 29's rooms, measurements, items, and decisions. What do you need?",
+    },
+  ]);
+  const [value, setValue] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function submitMessage(message: string) {
+    const trimmed = message.trim();
+    if (!trimmed || loading) return;
+    setError(null);
+    setValue("");
+    setMessages((current) => [
+      ...current,
+      { id: Date.now(), role: "user", text: trimmed },
+    ]);
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/assistant", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: trimmed }),
+      });
+      if (!response.ok) throw new Error("Assistant request failed");
+      const payload = (await response.json()) as { reply: string };
+      setMessages((current) => [
+        ...current,
+        { id: Date.now() + 1, role: "assistant", text: payload.reply },
+      ]);
+    } catch {
+      setError("Ask Home could not respond. Your message was not saved.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    void submitMessage(value);
+  }
+
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button
+          size="lg"
+          className="fixed bottom-[calc(5.7rem+env(safe-area-inset-bottom))] right-4 z-30 h-12 rounded-full px-4 shadow-[0_16px_30px_-16px_oklch(0.31_0.08_176/0.72)] md:bottom-6 md:right-6"
+        >
+          <Sparkle aria-hidden="true" size={18} weight="fill" />
+          Ask Home
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="flex h-[82dvh] flex-col overflow-hidden p-0 md:h-[680px]">
+        {chatKitEnabled ? (
+          <>
+            <DialogHeader className="border-b border-border/70">
+              <div className="flex items-center gap-2 text-primary">
+                <HouseLine aria-hidden="true" size={18} weight="fill" />
+                <DialogTitle>Ask Home</DialogTitle>
+              </div>
+              <DialogDescription>Ask about a room, item, measurement, or decision.</DialogDescription>
+            </DialogHeader>
+            <div className="min-h-0 flex-1">
+              <ChatKitPanel />
+            </div>
+          </>
+        ) : (
+          <>
+        <DialogHeader className="border-b border-border/70">
+          <div className="flex items-center gap-2 text-primary">
+            <HouseLine aria-hidden="true" size={18} weight="fill" />
+            <DialogTitle>Ask Home</DialogTitle>
+          </div>
+          <DialogDescription>Ask about a room, item, measurement, or decision.</DialogDescription>
+        </DialogHeader>
+
+        <div className="min-h-0 flex-1 space-y-3 overflow-y-auto px-4 py-5 sm:px-5">
+          {messages.map((message) => (
+            <div
+              key={message.id}
+              className={
+                message.role === "user"
+                  ? "ml-10 rounded-2xl rounded-br-md bg-primary px-4 py-3 text-sm leading-relaxed text-primary-foreground"
+                  : "mr-5 rounded-2xl rounded-bl-md bg-muted px-4 py-3 text-sm leading-relaxed text-foreground"
+              }
+            >
+              {message.text}
+            </div>
+          ))}
+          {messages.length === 1 ? (
+            <div className="flex flex-wrap gap-2 pt-1">
+              {starterPrompts.map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => void submitMessage(prompt)}
+                  className="min-h-10 rounded-full border border-border bg-background px-3 text-left text-xs font-medium transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98]"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          ) : null}
+          {loading ? (
+            <div className="mr-16 space-y-2 rounded-2xl rounded-bl-md bg-muted p-4" aria-label="Ask Home is thinking">
+              <div className="h-2.5 w-4/5 animate-pulse rounded-full bg-border" />
+              <div className="h-2.5 w-2/3 animate-pulse rounded-full bg-border" />
+            </div>
+          ) : null}
+          {error ? <p className="text-sm text-destructive">{error}</p> : null}
+        </div>
+
+        <form onSubmit={onSubmit} className="border-t border-border/70 bg-background p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:p-4">
+          <div className="relative">
+            <label htmlFor="ask-home-message" className="sr-only">
+              Message Ask Home
+            </label>
+            <Textarea
+              id="ask-home-message"
+              value={value}
+              onChange={(event) => setValue(event.target.value)}
+              placeholder="Ask about a room, item, fit, or decision"
+              className="min-h-[76px] pr-14"
+              onKeyDown={(event) => {
+                if (event.key === "Enter" && !event.shiftKey) {
+                  event.preventDefault();
+                  event.currentTarget.form?.requestSubmit();
+                }
+              }}
+            />
+            <Button
+              type="submit"
+              size="icon"
+              disabled={!value.trim() || loading}
+              aria-label="Send message"
+              className="absolute bottom-2 right-2 size-10 min-h-10 rounded-lg"
+            >
+              <ArrowUp aria-hidden="true" size={18} weight="bold" />
+            </Button>
+          </div>
+        </form>
+          </>
+        )}
+      </DialogContent>
+    </Dialog>
+  );
+}
