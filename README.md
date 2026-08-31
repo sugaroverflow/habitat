@@ -2,6 +2,8 @@
 
 A mobile-first, chat-led home planning prototype. It turns room context, measurements, products, inspiration, and decisions into one workspace.
 
+Live: [habitat-amber.vercel.app](https://habitat-amber.vercel.app)
+
 ## Run locally
 
 ```bash

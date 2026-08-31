@@ -19,3 +19,4 @@ imports/
 uploads/raw/
 **/*chatgpt-export*
 **/*unredacted*
+.vercel
