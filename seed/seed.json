@@ -216,7 +216,7 @@
   "items": [
     {
       "id": "owned_sweek_sleeper",
-      "name": "Sweeek 2-Seater Scandinavian Convertible Sofa — Cream Bouclé",
+      "name": "Sweeek white bouclé 2-seater sleeper",
       "category": "sofa",
       "room_id": "living_room",
       "ownership_status": "owned",
@@ -226,12 +226,12 @@
       "image": "/media/products/product-001.jpeg",
       "price": null,
       "dimensions": null,
-      "user_notes": "Already owned; additional seating/sleeper.",
-      "assistant_assessment": "Useful supporting seating; main sofa can prioritize comfort/movie-pit layout."
+      "user_notes": "Existing secondary seating and guest bed.",
+      "assistant_assessment": "Useful when deciding whether the main sofa needs sleeper functionality; it means the main sofa can prioritise comfort and the movie-pit layout."
     },
     {
       "id": "owned_country_garden_rug",
-      "name": "Country Garden Floral Wool Rug",
+      "name": "Dunelm Country Garden Floral Wool Rug",
       "category": "rug",
       "room_id": "living_room",
       "ownership_status": "owned",
@@ -241,12 +241,12 @@
       "image": "/media/products/product-002.jpeg",
       "price": null,
       "dimensions": null,
-      "user_notes": "Owned floral wool rug.",
-      "assistant_assessment": "Important palette/pattern anchor for living-room decisions."
+      "user_notes": "Owned wool floral rug; keep it in view alongside any additional rug purchases.",
+      "assistant_assessment": "The main palette and pattern anchor for living-room decisions."
     },
     {
       "id": "owned_magpus_desk",
-      "name": "Magpus Pro desk — white steel",
+      "name": "Secretlab MAGNUS Pro desk — white steel",
       "category": "desk",
       "room_id": "office",
       "ownership_status": "owned",
@@ -255,8 +255,8 @@
       "url": null,
       "price": null,
       "dimensions": null,
-      "user_notes": "Already owned.",
-      "assistant_assessment": null
+      "user_notes": "Major fixed-size item in the bedroom office layout.",
+      "assistant_assessment": "Keep the white steel desk as the fixed anchor; new office storage should improve the backdrop around it."
     },
     {
       "id": "owned_secretlab_chair",
@@ -269,8 +269,8 @@
       "url": null,
       "price": null,
       "dimensions": null,
-      "user_notes": "Already owned.",
-      "assistant_assessment": "Works with the gaming/tech side of the office brief."
+      "user_notes": "Desk chair with a graphic gaming look.",
+      "assistant_assessment": "Fits the office's more playful vaporwave layer."
     },
     {
       "id": "owned_shark_fan",
@@ -283,8 +283,8 @@
       "url": null,
       "price": null,
       "dimensions": null,
-      "user_notes": "Already owned.",
-      "assistant_assessment": null
+      "user_notes": "Needs a sensible floor position and socket without cluttering the layout.",
+      "assistant_assessment": "Keep enough clear floor space around it to move air effectively."
     },
     {
       "id": "owned_air_purifier",
@@ -297,8 +297,8 @@
       "url": null,
       "price": null,
       "dimensions": null,
-      "user_notes": "Already owned; name preserved from project notes.",
-      "assistant_assessment": null
+      "user_notes": "Needs permanent-ish floor space and airflow clearance.",
+      "assistant_assessment": "Place it where the intake and outlet are not blocked by furniture."
     },
     {
       "id": "bed_egerie",
@@ -308,12 +308,31 @@
       "ownership_status": "not_owned",
       "purchase_status": "not_ordered",
       "status": "favourite",
-      "url": "https://www.daals.co.uk/products/egerie-curved-headboard-beige-boucle-ottoman-storage-bed",
+      "url": "https://www.daals.co.uk/collections/beds/products/egerie-curved-headboard-beige-boucle-ottoman-storage-bed",
       "image": "/media/products/product-003.jpeg",
-      "price": null,
-      "dimensions": null,
-      "user_notes": "Pretty sold on the Egerie.",
-      "assistant_assessment": "Current bedroom bed favourite."
+      "active_comparison": true,
+      "preference_rating": 5,
+      "price": {
+        "amount": 440,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 169,
+        "length_cm": 223,
+        "height_cm": 102
+      },
+      "comparison": {
+        "king_price": "About £440; verify the king basket price before ordering",
+        "overall_dimensions": "169 W × 223 D × 102 H cm",
+        "window_fit": "184 cm spare across the measured 353 cm zone",
+        "construction_fabric": "Hardwood + metal internal frame · sprung solid-wood slats · foam · polyester/acrylic bouclé · solid-wood round feet",
+        "storage": "End-lift gas ottoman",
+        "aesthetic_rug": "Excellent. The soft ivory/white look and curved scalloped headboard let the floral rug lead and leave room for colourful bedside tables and bedding.",
+        "reviews": "Not enough reliable product-review volume for a consensus. Customer photos make the fabric read much whiter than the ‘beige’ name suggests.",
+        "status_note": "1st · favourite / likely buy"
+      },
+      "user_notes": "Best overall decision and current favourite. Do not order until Evelyn's under-bed drawer option has been checked.",
+      "assistant_assessment": "The strongest all-round choice: easy ottoman storage, distinctive shape, reassuring construction, and the most palette freedom."
     },
     {
       "id": "bedside_maude",
@@ -325,8 +344,15 @@
       "status": "rejected",
       "url": "https://www.daals.co.uk/products/maude-1-drawer-bedside-table-muted-pistachio-ash-with-raffia",
       "image": "/media/products/product-004.jpeg",
-      "price": null,
-      "dimensions": null,
+      "price": {
+        "amount": 125.99,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 52,
+        "depth_cm": 36,
+        "height_cm": 60
+      },
       "user_notes": "Likes the soft curved front edges and muted colour; dislikes the raffia and does not want this exact table.",
       "assistant_assessment": "Keep as shape/reference inspiration, not a purchase candidate."
     },
@@ -340,10 +366,25 @@
       "status": "rejected",
       "url": "https://loaf.com/products/tight-space-storage-bed?size=king&colour-global=tidepool-teal&material-global=clv-cotton&headboard=monroe-headboard",
       "image": "/media/products/product-005.jpeg",
-      "price": null,
+      "active_comparison": true,
+      "preference_rating": 1,
+      "price": {
+        "amount": 1400,
+        "currency": "GBP"
+      },
       "dimensions": null,
-      "user_notes": "Cute; liked enough to order swatches, but too expensive.",
-      "assistant_assessment": "Aesthetic reference rather than current buy."
+      "comparison": {
+        "king_price": "About £1,400+",
+        "overall_dimensions": "Not recorded",
+        "window_fit": "Likely fits, but moot at this price",
+        "construction_fabric": "Higher-end upholstered construction with a large fabric and colour choice",
+        "storage": "Built-in storage",
+        "aesthetic_rug": "The Monroe shape and teal were compelling; it established the preference for soft, pinched, sculptural headboards.",
+        "reviews": "Premium construction and customisation are appealing, but no longer justify the price for this decision.",
+        "status_note": "Rejected · price"
+      },
+      "user_notes": "Very cute Monroe shape, but the price is not justified here.",
+      "assistant_assessment": "Keep as a shape reference, not a purchase candidate."
     },
     {
       "id": "bed_happybeds_evelyn",
@@ -352,13 +393,276 @@
       "room_id": "bedroom",
       "ownership_status": "not_owned",
       "purchase_status": "not_ordered",
-      "status": "considering",
+      "status": "shortlisted",
       "url": "https://www.happybeds.co.uk/evelyn-pink-fabric-and-wooden-bed-frame-5ft-king-size",
       "image": "/media/products/product-006.jpeg",
+      "active_comparison": true,
+      "preference_rating": 4,
+      "price": {
+        "amount": 419,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 162.8,
+        "length_cm": 213,
+        "height_cm": 110.5
+      },
+      "comparison": {
+        "king_price": "£419 at the latest king listing",
+        "overall_dimensions": "162.8 W × 213 D × 110.5 H cm",
+        "window_fit": "About 190 cm spare across the measured 353 cm zone",
+        "construction_fabric": "Pine frame · oak-effect finish · solid slats · soft-pink scalloped upholstered headboard · curved wooden legs",
+        "storage": "No built-in storage · 30.5 cm slat-to-floor clearance may allow low drawers or bags",
+        "aesthetic_rug": "Possibly the strongest pure aesthetic: romantic, slightly heirloom-like dusty pink and pale wood work beautifully with the floral rug.",
+        "reviews": "5/5 from one review, which is not a meaningful consensus. Five-year manufacturer guarantee.",
+        "status_note": "2nd · serious contender"
+      },
+      "user_notes": "The heart choice. Investigate attractive low wheeled drawers that definitely clear the side rail before deciding.",
+      "assistant_assessment": "More compact than Egerie and arguably prettier; the only major compromise is taking on a separate under-bed storage system."
+    },
+    {
+      "id": "bed_urban_textures_mira",
+      "name": "Urban Textures Mira Ottoman Bed — Ivory",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlisted",
+      "url": "https://urbantextures.co.uk/products/mira-ottoman-bed-plain-rounded-corners",
+      "image": "/media/products/product-051.jpeg",
+      "active_comparison": true,
+      "preference_rating": 3,
+      "price": {
+        "amount": 325,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 153,
+        "length_cm": 198,
+        "height_cm": 130
+      },
+      "comparison": {
+        "king_price": "About £325 when last checked",
+        "overall_dimensions": "About 153 W × 198 D × 130 H cm; maker allows 2–5 cm variation",
+        "window_fit": "About 200 cm spare across the measured 353 cm zone",
+        "construction_fabric": "Upholstered ottoman/divan · velvet or teddy bouclé · custom upholstery · floor-standing headboard",
+        "storage": "End-lift ottoman",
+        "aesthetic_rug": "The Ivory swatch is the safest known rug match, but the rounded rectangle feels less special than Egerie or Evelyn.",
+        "reviews": "Not enough reliable product-specific review evidence for a consensus; customisation is the main advantage.",
+        "status_note": "Shortlist, slipping"
+      },
+      "user_notes": "Practical and customisable, but Egerie now does the concept better.",
+      "assistant_assessment": "Keep on the lower shortlist as a practical ivory ottoman fallback."
+    },
+    {
+      "id": "bed_habitat_onda_green",
+      "name": "Habitat Onda End-Lift Kingsize Ottoman Bed — Green",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.habitat.co.uk/product/8595579",
+      "image": "/media/products/product-052.jpeg",
+      "active_comparison": true,
+      "preference_rating": 3,
+      "price": {
+        "amount": 420,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 166,
+        "length_cm": 218,
+        "height_cm": 101
+      },
+      "comparison": {
+        "king_price": "£420",
+        "overall_dimensions": "166 W × 218 D × 101 H cm",
+        "window_fit": "187 cm spare across the measured 353 cm zone",
+        "construction_fabric": "Muted deep-olive velvet-look upholstery · softly waved headboard · sprung wood slats · ball feet",
+        "storage": "End-lift ottoman · 690 L · fabric dust-sheet base",
+        "aesthetic_rug": "The little wave matches the emerging shape language and the green connects to the rug foliage, but it makes the bed a major colour statement.",
+        "reviews": "No meaningful review sample yet. Official listing confirms the king size, storage volume and dimensions.",
+        "status_note": "Considering · colourful alternative"
+      },
+      "user_notes": "Very cute, but more palette-defining than the neutral finalists.",
+      "assistant_assessment": "A viable, storage-friendly green alternative; it fits comfortably but does not displace Egerie or Evelyn."
+    },
+    {
+      "id": "bed_habitat_chadwell_sage",
+      "name": "Habitat Chadwell Kingsize End-Lift Ottoman Bed — Sage",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.habitat.co.uk/product/7314421",
+      "image": "/media/products/product-053.jpeg",
+      "active_comparison": true,
+      "preference_rating": 2,
+      "price": {
+        "amount": 170,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 164.5,
+        "length_cm": 213.5,
+        "height_cm": 106
+      },
+      "comparison": {
+        "king_price": "£170 sale price shown",
+        "overall_dimensions": "164.5 W × 213.5 D × 106 H cm",
+        "window_fit": "About 188.5 cm spare across the measured 353 cm zone",
+        "construction_fabric": "Sage linen-look polyester upholstery · padded headboard · sprung wooden slats",
+        "storage": "End-lift gas ottoman · 720 L",
+        "aesthetic_rug": "Lovely muted colour, but the silhouette is much more generic than Egerie, Evelyn or Onda.",
+        "reviews": "About 4.5/5 from 60 reviews on the current listing; strong value evidence, but the design remains the compromise.",
+        "status_note": "Value option · not the aesthetic pick"
+      },
+      "user_notes": "Ridiculous value, but not the bed I would choose aesthetically.",
+      "assistant_assessment": "The price and storage are excellent; keep only as the value fallback."
+    },
+    {
+      "id": "bed_concept_onda_headboard",
+      "name": "Simple MADE base + Habitat Onda linen headboard",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "saved",
+      "url": "https://www.habitat.co.uk/product/3206739",
+      "image": "/media/products/product-054.jpeg",
+      "active_comparison": true,
+      "preference_rating": 2,
+      "price": {
+        "amount": 140,
+        "currency": "GBP"
+      },
+      "dimensions": null,
+      "comparison": {
+        "king_price": "Base + about £140 for the headboard in the saved comparison",
+        "overall_dimensions": "Depends on the chosen base",
+        "window_fit": "Depends on the chosen base",
+        "construction_fabric": "Neutral base + natural linen, softly waved headboard",
+        "storage": "Depends on the chosen base",
+        "aesthetic_rug": "Quiet and pretty; the wave adds softness without coloured upholstery, but it is less lush and tactile than Egerie.",
+        "reviews": "Base and headboard would need to be evaluated separately.",
+        "status_note": "Concept option"
+      },
+      "user_notes": "Not currently beating Egerie.",
+      "assistant_assessment": "A useful quiet route if a separate ottoman base solves storage elegantly."
+    },
+    {
+      "id": "bed_concept_daphne_headboard",
+      "name": "Simple MADE base + Habitat Daphne blue velvet headboard",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "saved",
+      "url": "https://www.habitat.co.uk/product/8254755",
+      "image": "/media/products/product-055.jpeg",
+      "active_comparison": true,
+      "preference_rating": 3,
+      "price": {
+        "amount": 150,
+        "currency": "GBP"
+      },
+      "dimensions": null,
+      "comparison": {
+        "king_price": "Base + about £150 for the headboard in the saved comparison",
+        "overall_dimensions": "Depends on the chosen base",
+        "window_fit": "Depends on the chosen base",
+        "construction_fabric": "Base + blue velvet ornamental arched headboard",
+        "storage": "Depends on the chosen base",
+        "aesthetic_rug": "A really strong romantic, decorative shape that suits the ornamental direction; the blue makes the bed area more palette-defining.",
+        "reviews": "Base and headboard would need to be evaluated separately.",
+        "status_note": "Interesting design route"
+      },
+      "user_notes": "Strong shape, but not the current favourite.",
+      "assistant_assessment": "Keep as a palette-defining concept rather than a leading purchase route."
+    },
+    {
+      "id": "bed_made_white_boucle",
+      "name": "MADE white bouclé bed",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": null,
+      "active_comparison": true,
+      "preference_rating": 2,
       "price": null,
       "dimensions": null,
-      "user_notes": "Cute, but no built-in storage.",
-      "assistant_assessment": "Only compelling if paired with a separate under-bed storage solution."
+      "comparison": {
+        "king_price": "To confirm",
+        "overall_dimensions": "To confirm",
+        "window_fit": "To confirm",
+        "construction_fabric": "White bouclé upholstered bed",
+        "storage": "To confirm",
+        "aesthetic_rug": "Correct colour and material family, but Egerie has the more distinctive silhouette.",
+        "reviews": "Exact product page and trustworthy specs still need confirming.",
+        "status_note": "Considering · below Egerie"
+      },
+      "user_notes": "Do not attach a specific MADE listing until the exact saved product is confirmed.",
+      "assistant_assessment": "Retained without an image or link so it cannot be mistaken for a different white bouclé bed."
+    },
+    {
+      "id": "bed_made_wave",
+      "name": "MADE wave bed",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": null,
+      "active_comparison": true,
+      "preference_rating": 1,
+      "price": null,
+      "dimensions": null,
+      "comparison": {
+        "king_price": "To confirm",
+        "overall_dimensions": "To confirm",
+        "window_fit": "To confirm",
+        "construction_fabric": "Upholstered wave / curved design",
+        "storage": "To confirm",
+        "aesthetic_rug": "The shape works; the fabric does not. More useful as inspiration than as a purchase candidate.",
+        "reviews": "Exact product page and trustworthy specs still need confirming.",
+        "status_note": "Effectively rejected"
+      },
+      "user_notes": "Like the shape, dislike the fabric.",
+      "assistant_assessment": "Retain as shape language only."
+    },
+    {
+      "id": "bed_get_laid_space_saver",
+      "name": "Get Laid Beds Wooden Ottoman Space Saver",
+      "category": "bed",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.getlaidbeds.co.uk/wooden-beds/ottoman-storage-beds/wooden-ottoman-storage-bed-space-saver/natural-beds",
+      "image": "/media/products/product-056.jpeg",
+      "active_comparison": true,
+      "preference_rating": 2,
+      "price": {
+        "amount": 931,
+        "currency": "GBP"
+      },
+      "dimensions": null,
+      "comparison": {
+        "king_price": "About £931",
+        "overall_dimensions": "5 ft × 6 ft 6 in mattress footprint; external size depends on configuration",
+        "window_fit": "Width should fit comfortably",
+        "construction_fabric": "Solid wood with multiple finishes",
+        "storage": "Ottoman",
+        "aesthetic_rug": "The most furniture-like pale-wood heirloom direction, but it loses the soft upholstered-bed effect.",
+        "reviews": "Handmade solid-wood construction is the value case; near £1,000, it needs to win on longevity.",
+        "status_note": "Lower shortlist · too expensive for the brief"
+      },
+      "user_notes": "Beautiful pale-wood direction, but too expensive for what is needed.",
+      "assistant_assessment": "A longevity-led alternative, not a current finalist."
     },
     {
       "id": "storage_dunelm_ditsy",
@@ -385,10 +689,27 @@
       "status": "favourite",
       "url": "https://www.castlery.com/uk/products/auburn-performance-fabric-chaise-sofa-with-footstool",
       "image": "/media/products/product-008.jpeg",
-      "price": null,
-      "dimensions": null,
-      "user_notes": "Still preferred after comparing multiple alternatives.",
-      "assistant_assessment": "Benchmark candidate; compare all new sofas against Auburn."
+      "active_comparison": true,
+      "price": {
+        "amount": 2749,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 309.5,
+        "depth_cm": 166,
+        "height_cm": 76.5
+      },
+      "comparison": {
+        "approx_setup_price": "£2,749 chaise + stool",
+        "size_depth": "309.5 × 166 cm",
+        "fabric_direction": "Chalk performance bouclé; still my favourite look",
+        "delivery_stock": "Chaise bundle around November; some individual modules and stool dispatch in 3 working days",
+        "movie_pit": "5 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "#1 — investigate custom in-stock build"
+      },
+      "user_notes": "Still the favourite look. Investigate whether in-stock individual modules can create the useful setup sooner.",
+      "assistant_assessment": "Number one. Perfect movie-pit and facing-halves scores; the immediate task is an in-stock module build rather than abandoning Auburn."
     },
     {
       "id": "sofa_nala",
@@ -400,10 +721,27 @@
       "status": "shortlist",
       "url": "https://sofaclub.co.uk/products/nala-chenille-boucle-xl-right-chaise-corner-sofa-champagne-haze",
       "image": "/media/products/product-009.jpeg",
-      "price": null,
-      "dimensions": null,
-      "user_notes": "Loves the look; worried the back is not supportive/comfy because it is not fluffable.",
-      "assistant_assessment": "Strong aesthetic candidate but comfort/support is the main risk."
+      "active_comparison": true,
+      "price": {
+        "amount": 2649,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 311,
+        "depth_cm": 204,
+        "height_cm": 89
+      },
+      "comparison": {
+        "approx_setup_price": "£2,199 + £450 stool",
+        "size_depth": "Large chaise around 311 × 204 cm",
+        "fabric_direction": "Champagne Haze chenille-bouclé; nicest Sofa Club fabric and look",
+        "delivery_stock": "Around 2–3 weeks depending on modules",
+        "movie_pit": "5 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Best Sofa Club aesthetically"
+      },
+      "user_notes": "The strongest Sofa Club option aesthetically, especially in Champagne Haze.",
+      "assistant_assessment": "A full-score functional alternative to Auburn with the best Sofa Club fabric direction."
     },
     {
       "id": "sofa_keira",
@@ -415,10 +753,317 @@
       "status": "shortlist",
       "url": "https://sofaclub.co.uk/products/keira-textured-chenille-left-right-corner-sofa-footstool-end-sand-whisper",
       "image": "/media/products/product-010.jpeg",
+      "active_comparison": true,
       "price": null,
       "dimensions": null,
-      "user_notes": "Loves soft lines and chunkiness; dislikes that it lacks the two-layered construction.",
-      "assistant_assessment": "Comfort-forward shape; less visually special than the preferred layered look."
+      "comparison": {
+        "approx_setup_price": "Modules £450–£550; stool £350",
+        "size_depth": "Configurable",
+        "fabric_direction": "Sand Whisper; cooler, smoother chenille",
+        "delivery_stock": "Around 3 weeks; low stock",
+        "movie_pit": "4.5 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Great shape; concern is a firmer, less layered feel"
+      },
+      "user_notes": "Great shape and cooler fabric, but the sit may feel firmer and less layered.",
+      "assistant_assessment": "Excellent modularity for facing halves; slightly weaker movie-pit score and layered comfort than the leaders."
+    },
+    {
+      "id": "sofa_carlyle",
+      "name": "Carlyle Modular Sofa — 3-Piece Chaise",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.daals.co.uk/products/carlyle-beige-cotton-blend-modular-sofa-3-piece-chaise",
+      "image": "/media/products/product-032.jpeg",
+      "active_comparison": true,
+      "price": {
+        "amount": 1679.96,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 317,
+        "depth_cm": 202,
+        "seat_depth_cm": 67
+      },
+      "comparison": {
+        "approx_setup_price": "£1,679.96 for 3-piece + chaise stool",
+        "size_depth": "317 × 202 cm with movable stool; normal seat depth 67 cm",
+        "fabric_direction": "Beige cotton / polyester blend; unfortunately warm",
+        "delivery_stock": "Core modules available quickly; 5-day express or 10-day standard",
+        "movie_pit": "5 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Functional sleeper hit"
+      },
+      "user_notes": "Excellent sleeper-style function and flexibility, but the beige fabric reads warmer than preferred.",
+      "assistant_assessment": "The strongest value-and-function challenger: full scores for both layouts at roughly £1,070 less than Auburn."
+    },
+    {
+      "id": "sofa_kate",
+      "name": "Sofa Club Kate Medium Corner + Footstool End — Neutral Linen",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://sofaclub.co.uk/products/kate-luxe-chenille-medium-left-right-corner-footstool-end-neutral-linen",
+      "image": "/media/products/product-033.jpeg",
+      "active_comparison": true,
+      "price": {
+        "amount": 1749,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 254,
+        "depth_cm": 232
+      },
+      "comparison": {
+        "approx_setup_price": "Around £1,749 medium corner + stool-end",
+        "size_depth": "Around 254 × 232 cm in this configuration",
+        "fabric_direction": "Neutral Linen chenille",
+        "delivery_stock": "Fast / in stock",
+        "movie_pit": "5 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Excellent architecture; fabric is too warm"
+      },
+      "user_notes": "Excellent architecture and full functional scores, but Neutral Linen is too warm.",
+      "assistant_assessment": "A strong in-stock layout reference whose only meaningful weakness is the warm fabric direction."
+    },
+    {
+      "id": "sofa_sky",
+      "name": "OPA Living Sky Modular 3-Seat Chaise",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.opaliving.co.uk/products/sky-modular-3-seater-chaise-end",
+      "image": "/media/products/product-034.jpeg",
+      "active_comparison": true,
+      "price": {
+        "amount": 1999.99,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 245,
+        "depth_cm": 170
+      },
+      "comparison": {
+        "approx_setup_price": "£1,999.99 chaise + optional stool",
+        "size_depth": "245 × 170 cm chaise",
+        "fabric_direction": "100+ fabric choices",
+        "delivery_stock": "Standard 4–6 weeks; express can be much faster",
+        "movie_pit": "4 / 5",
+        "facing_halves": "4.5 / 5",
+        "status_note": "Need swatches + exact module breakdown"
+      },
+      "user_notes": "Promising compact footprint and fabric choice; needs swatches and a confirmed module breakdown.",
+      "assistant_assessment": "Worth investigating, but the layout scores trail the full-score modular options."
+    },
+    {
+      "id": "sofa_romy",
+      "name": "Dunelm Romy Modular Sofa",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.dunelm.com/product/romy-modular-corner-single-sofa-piece-1000266487",
+      "image": "/media/products/product-035.jpeg",
+      "active_comparison": true,
+      "price": {
+        "amount": 663,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 256,
+        "depth_cm": 91
+      },
+      "comparison": {
+        "approx_setup_price": "Around £663 for the complete chaise set when available",
+        "size_depth": "256 × 91 cm base",
+        "fabric_direction": "Tonal bouclé",
+        "delivery_stock": "Currently unavailable",
+        "movie_pit": "5 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Architecture is basically perfect; watchlist"
+      },
+      "user_notes": "The architecture is almost perfect and the value is exceptional, but it is unavailable.",
+      "assistant_assessment": "Keep on the watchlist: it combines the strongest functional layout with the lowest setup price."
+    },
+    {
+      "id": "sofa_king_aura",
+      "name": "King Living Aura Modular Sofa",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.kingliving.co.uk/shop/living/sofas/aura-modular-sofa",
+      "image": "/media/products/product-036.jpeg",
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "comparison": {
+        "approx_setup_price": "Around £2,700–£3,500 depending on build",
+        "size_depth": "Highly configurable",
+        "fabric_direction": "Large King fabric library; removable covers",
+        "delivery_stock": "Some configurations in stock",
+        "movie_pit": "5 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Worth revisiting because I actually liked the sit"
+      },
+      "user_notes": "Worth revisiting because the showroom sit was genuinely good.",
+      "assistant_assessment": "A premium full-score option with proven comfort; compare an exact in-stock build against Auburn before ruling it out."
+    },
+    {
+      "id": "sofa_john_lewis_flow",
+      "name": "John Lewis Flow RHF Chaise End Sofa",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.johnlewis.com/john-lewis-flow-rhf-chaise-end-sofa/p112049071?fabricSku=115735718",
+      "image": "/media/products/product-037.jpeg",
+      "active_comparison": true,
+      "price": {
+        "amount": 3248,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 272,
+        "depth_cm": 182,
+        "stool_size": "72 × 88 cm"
+      },
+      "comparison": {
+        "approx_setup_price": "£2,799 + £449 stool",
+        "size_depth": "272 × 182 cm; stool 72 × 88 cm",
+        "fabric_direction": "113+ fabrics including easy-clean chenilles",
+        "delivery_stock": "Usually 9 weeks; a few fabrics available within 7 days",
+        "movie_pit": "4 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Very interesting functionally; delivery and fabric dependent"
+      },
+      "user_notes": "Excellent facing-halves function and extensive fabric choice; delivery depends heavily on the fabric.",
+      "assistant_assessment": "Functionally strong but expensive with the stool; only compelling in a suitable quick-delivery fabric."
+    },
+    {
+      "id": "sofa_zaya",
+      "name": "Sofa Club Zaya Corner + Footstool End — Stone Whisper",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://sofaclub.co.uk/products/zaya-textured-boucle-left-right-corner-sofa-footstool-end-stone-whisper",
+      "image": "/media/products/product-038.jpeg",
+      "active_comparison": true,
+      "price": {
+        "amount": 2949,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 276,
+        "depth_cm": 162,
+        "ottoman_size": "99 × 63 cm"
+      },
+      "comparison": {
+        "approx_setup_price": "Around £2,949 corner / stool-end",
+        "size_depth": "Around 276 × 162 cm; ottoman 99 × 63 cm",
+        "fabric_direction": "Stone Whisper; cool neutral",
+        "delivery_stock": "Low stock / potentially fast",
+        "movie_pit": "4 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "New one worth looking at; ottoman is only around 99 × 63 cm"
+      },
+      "user_notes": "A cool neutral and useful architecture, but the matching ottoman may be too small for the ideal pit.",
+      "assistant_assessment": "Strong facing-halves candidate; the smaller ottoman keeps its movie-pit score below the leaders."
+    },
+    {
+      "id": "sofa_flom",
+      "name": "noo.ma Flom Modular Sofa",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://noo.ma/collections/furniture/products/flom-sofa-2-seater-fog-grey",
+      "image": "/media/products/product-039.jpeg",
+      "active_comparison": true,
+      "price": null,
+      "dimensions": {
+        "width_cm": 262,
+        "depth_cm": 96.5
+      },
+      "comparison": {
+        "approx_setup_price": "Around £1,600–£1,900",
+        "size_depth": "Around 262 × 96.5 cm",
+        "fabric_direction": "Fog Grey, cool neutrals and bouclé options",
+        "delivery_stock": "Late September / October depending on colour",
+        "movie_pit": "2 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Great social sofa, weak pit sofa; no proper matching big ottoman"
+      },
+      "user_notes": "Excellent as a social sofa, but it lacks a proper large matching ottoman for the movie pit.",
+      "assistant_assessment": "The facing-halves layout works, but the core movie-pit requirement makes it a weak overall fit."
+    },
+    {
+      "id": "sofa_king_1977",
+      "name": "King Living 1977 Modular Sofa",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.kingliving.co.uk/shop/living/sofas/1977",
+      "image": "/media/products/product-040.jpeg",
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "comparison": {
+        "approx_setup_price": "Around £1,600–£3,000 depending on in-stock build",
+        "size_depth": "Modular",
+        "fabric_direction": "Replaceable, machine-washable covers",
+        "delivery_stock": "Plenty of stock options",
+        "movie_pit": "4 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Rejected after sitting: insufficient seat depth"
+      },
+      "user_notes": "Rejected after sitting because the seat is not deep enough.",
+      "assistant_assessment": "Excellent modularity cannot compensate for a sit that already failed the comfort test."
+    },
+    {
+      "id": "sofa_squishblocks",
+      "name": "Loaf Squishblocks Modular Sofa",
+      "category": "sofa",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://loaf.com/products/squishblocks-modular-sofa?material=house-fab&source=plp",
+      "image": "/media/products/product-041.jpeg",
+      "active_comparison": true,
+      "price": {
+        "amount": 4500,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "chaise_depth_cm": 166
+      },
+      "comparison": {
+        "approx_setup_price": "Around £4,500+",
+        "size_depth": "Very deep; chaise 166 cm",
+        "fabric_direction": "Great Loaf fabric choice",
+        "delivery_stock": "Around 7–9 weeks",
+        "movie_pit": "5 / 5",
+        "facing_halves": "4 / 5",
+        "status_note": "Rejected after sitting: value + oversized chaise proportions"
+      },
+      "user_notes": "Rejected after sitting because the value and oversized chaise proportions do not work.",
+      "assistant_assessment": "An excellent pit sofa in isolation, but too expensive and too oversized for this room."
     },
     {
       "id": "sofa_lisbon",
@@ -428,10 +1073,18 @@
       "ownership_status": "not_owned",
       "purchase_status": "not_ordered",
       "status": "considering",
+      "active_comparison": false,
       "url": "https://sofaclub.co.uk/products/lisbon-textured-chenille-xl-u-shape-footstool-end-sofa-hushed-linen",
       "image": "/media/products/product-011.jpeg",
-      "price": null,
-      "dimensions": null,
+      "price": {
+        "amount": 1599,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 384,
+        "depth_cm": 204,
+        "height_cm": 84
+      },
       "user_notes": "Cooler neutral fabric direction preferred over natural linen colours.",
       "assistant_assessment": "Relevant fabric reference; room plan currently favors 3-seater + chaise/footstool over a larger four-seater."
     },
@@ -445,10 +1098,26 @@
       "status": "rejected_due_to_lead_time",
       "url": "https://www.westwing.co.uk/fsc-wolke-corner-sofa-corner-left-middle-rounded-corner-corner-right-symphony-mills-yukon-501-green-en-25wes78386.html?simple=DEQ25WES78386-673326",
       "image": "/media/products/product-012.jpeg",
-      "price": null,
-      "dimensions": null,
-      "user_notes": "Loved the Wolke aesthetic but could not deal with an 11-week lead time.",
-      "assistant_assessment": "Primary aesthetic reference for finding alternatives."
+      "active_comparison": true,
+      "price": {
+        "amount": 2549,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 282,
+        "depth_cm": 118
+      },
+      "comparison": {
+        "approx_setup_price": "£2,549+",
+        "size_depth": "282 × 118 cm chaise",
+        "fabric_direction": "Sage / white textured bouclé",
+        "delivery_stock": "10–11 weeks",
+        "movie_pit": "4.5 / 5",
+        "facing_halves": "5 / 5",
+        "status_note": "Rejected: delivery"
+      },
+      "user_notes": "Loved the sage-and-white bouclé, but rejected it because of the delivery time.",
+      "assistant_assessment": "A strong visual and modular reference, but the 10–11 week lead time is disqualifying."
     },
     {
       "id": "sofa_miyo",
@@ -458,10 +1127,18 @@
       "ownership_status": "not_owned",
       "purchase_status": "not_ordered",
       "status": "considering",
+      "active_comparison": false,
       "url": "https://www.aif.london/miyo-corner-sofa-extra-large-chaise.html",
       "image": "/media/products/product-013.jpeg",
-      "price": null,
-      "dimensions": null,
+      "price": {
+        "amount": 3525,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 292,
+        "depth_cm": 158,
+        "height_cm": 73
+      },
       "user_notes": "Cute; interested in swatches and possibly a footstool.",
       "assistant_assessment": "Useful Wolke-esque direction."
     },
@@ -473,6 +1150,7 @@
       "ownership_status": "not_owned",
       "purchase_status": "not_ordered",
       "status": "considering",
+      "active_comparison": false,
       "url": "https://www.aif.london/sofas/maison-collection.html",
       "price": null,
       "dimensions": null,
@@ -489,10 +1167,23 @@
       "status": "rejected",
       "url": "https://www.cultfurniture.com/products/malmo-left-hand-4-seater-chaise-sofa-olive-green-velvet-chenille",
       "image": "/media/products/product-014.jpeg",
-      "price": null,
+      "active_comparison": true,
+      "price": {
+        "amount": 1700,
+        "currency": "GBP"
+      },
       "dimensions": null,
-      "user_notes": "Cute sofa; disliked available colourways.",
-      "assistant_assessment": "Shape reference only."
+      "comparison": {
+        "approx_setup_price": "Around £1,700 chaise",
+        "size_depth": "Not confirmed",
+        "fabric_direction": "Oatmeal bouclé or olive chenille",
+        "delivery_stock": "Pre-order",
+        "movie_pit": "3 / 5",
+        "facing_halves": "2 / 5",
+        "status_note": "Cute, but the modularity is not useful enough for the brief"
+      },
+      "user_notes": "Looks cute, but the modularity does not support the movie-pit and facing-halves brief well enough.",
+      "assistant_assessment": "A weaker functional match than the shortlist, despite the appealing shape and colour options."
     },
     {
       "id": "shelving_laredoute_reference",
@@ -518,8 +1209,15 @@
       "status": "shortlist",
       "url": "https://www.dunelm.com/product/yearn-solid-oak-oval-full-length-wall-mirror-1000289831?defaultSkuId=31054014",
       "image": "/media/products/product-015.jpeg",
-      "price": null,
-      "dimensions": null,
+      "price": {
+        "amount": 209,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 60,
+        "depth_cm": 3,
+        "height_cm": 150
+      },
       "user_notes": "Cute; loves the rounded corners.",
       "assistant_assessment": "Strong fit for the soft-curve hallway direction."
     },
@@ -533,7 +1231,10 @@
       "status": "considering",
       "url": "https://www.williamwoodmirrors.co.uk/products/arden-light-wood-full-length-arched-wooden-mirror-160cm-x-60cm",
       "image": "/media/products/product-016.jpeg",
-      "price": null,
+      "price": {
+        "amount": 149.25,
+        "currency": "GBP"
+      },
       "dimensions": {
         "width_cm": 60,
         "height_cm": 160
@@ -570,7 +1271,7 @@
         "size_label": "2.5 × 7 ft"
       },
       "user_notes": "Bathroom runner option.",
-      "assistant_assessment": null
+      "assistant_assessment": "The copper and sage palette fits the wall colour, but it is quieter than the blue-and-coral favourite."
     },
     {
       "id": "rug_allura",
@@ -587,7 +1288,7 @@
         "size_label": "2.5 × 7 ft"
       },
       "user_notes": "Bathroom runner option.",
-      "assistant_assessment": null
+      "assistant_assessment": "A warmer alternative to Della; compare whether the copper feels too earthy beside Mineral Green."
     },
     {
       "id": "rug_della_blue",
@@ -635,7 +1336,7 @@
       },
       "dimensions": null,
       "user_notes": "Ordered.",
-      "assistant_assessment": null
+      "assistant_assessment": "Purchased as part of the minimal pure-finish bathroom hardware set."
     },
     {
       "id": "bathroom_hook",
@@ -652,7 +1353,7 @@
       },
       "dimensions": null,
       "user_notes": "Ordered; back-ordered at purchase time.",
-      "assistant_assessment": null
+      "assistant_assessment": "Purchased to keep the shower hardware visually consistent; delivery timing was the only open issue."
     },
     {
       "id": "bathroom_shelf_slim",
@@ -669,7 +1370,7 @@
       },
       "dimensions": null,
       "user_notes": "Ordered.",
-      "assistant_assessment": null
+      "assistant_assessment": "The slimmer shelf keeps the shower storage useful without adding much visual weight."
     },
     {
       "id": "bathroom_shelf_500",
@@ -686,7 +1387,7 @@
       },
       "dimensions": null,
       "user_notes": "Ordered; back-ordered at purchase time.",
-      "assistant_assessment": null
+      "assistant_assessment": "The larger shelf adds capacity in the same minimal system; already chosen despite the back order."
     },
     {
       "id": "dining_flower_pendant",
@@ -727,7 +1428,10 @@
       "status": "considering",
       "url": "https://www.ikea.com/gb/en/p/vidga-two-track-wall-set-white-s29428266/",
       "image": "/media/products/product-024.jpeg",
-      "price": null,
+      "price": {
+        "amount": 35,
+        "currency": "GBP"
+      },
       "dimensions": null,
       "user_notes": "Considering for all windows; bedroom may use connected track with two curtain sets.",
       "assistant_assessment": "Strong standardized window-treatment system for the flat."
@@ -762,7 +1466,7 @@
     },
     {
       "id": "emma_original_mattress",
-      "name": "Emma Original Mattress",
+      "name": "Emma Original 2026",
       "category": "mattress",
       "room_id": "bedroom",
       "ownership_status": "not_owned",
@@ -774,12 +1478,79 @@
       "dimensions": {
         "size": "King"
       },
-      "user_notes": "Compared while choosing a UK mattress.",
-      "assistant_assessment": "Reference option from the mattress comparison; OTTY was chosen instead."
+      "preference_rating": 2,
+      "comparison": {
+        "claimed_feel": "Medium-firm",
+        "pressure_relief": "Excellent",
+        "sink_hug": "Most",
+        "underlying_support": "Medium",
+        "casper_similarity": "4.5 / 5",
+        "firmer_than_casper": "2 / 5",
+        "too_soft_risk": "Highest",
+        "rank": "4th"
+      },
+      "user_notes": "Strongest pressure relief, but the most sink and the highest too-soft risk.",
+      "assistant_assessment": "Fourth choice. Best pressure relief in the comparison, but least suited to the preference for a firmer Casper-like feel."
+    },
+    {
+      "id": "simba_hybrid_mattress",
+      "name": "Simba Hybrid",
+      "category": "mattress",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://simbasleep.com/products/mattress",
+      "image": "/media/products/product-031.jpeg",
+      "price": null,
+      "dimensions": {
+        "size": "King"
+      },
+      "preference_rating": 4,
+      "comparison": {
+        "claimed_feel": "Medium-firm",
+        "pressure_relief": "Very good",
+        "sink_hug": "Moderate, cradled",
+        "underlying_support": "Strong, 9 zones",
+        "casper_similarity": "5 / 5",
+        "firmer_than_casper": "4 / 5",
+        "too_soft_risk": "Low–medium",
+        "rank": "2nd"
+      },
+      "user_notes": "The most Casper-like option, with a cradled feel and strong nine-zone support.",
+      "assistant_assessment": "Second choice. Closest Casper match, but OTTY won for its firmer feel and lower softness risk."
+    },
+    {
+      "id": "eve_original_hybrid_mattress",
+      "name": "Eve Original Hybrid",
+      "category": "mattress",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.evesleep.co.uk/products/the-original-hybrid-mattress",
+      "image": "/media/products/product-030.jpeg",
+      "price": null,
+      "dimensions": {
+        "size": "King"
+      },
+      "preference_rating": 3,
+      "comparison": {
+        "claimed_feel": "Medium-firm",
+        "pressure_relief": "Very good",
+        "sink_hug": "Moderate / cushiony",
+        "underlying_support": "Medium-strong",
+        "casper_similarity": "4 / 5",
+        "firmer_than_casper": "3.5 / 5",
+        "too_soft_risk": "Medium",
+        "rank": "3rd"
+      },
+      "user_notes": "Cushionier than OTTY, with medium-strong underlying support.",
+      "assistant_assessment": "Third choice. A balanced hybrid, but not as firmly supportive as the OTTY direction."
     },
     {
       "id": "otty_mattress",
-      "name": "OTTY Hybrid Mattress",
+      "name": "OTTY Original Hybrid",
       "category": "mattress",
       "room_id": "bedroom",
       "ownership_status": "purchased",
@@ -791,8 +1562,19 @@
       "dimensions": {
         "size": "King"
       },
-      "user_notes": "Chosen after comparing Casper-like UK options; desired pressure relief without excessive softness.",
-      "assistant_assessment": "Final mattress direction."
+      "preference_rating": 5,
+      "comparison": {
+        "claimed_feel": "7 / 10 medium-firm",
+        "pressure_relief": "Very good",
+        "sink_hug": "Moderate",
+        "underlying_support": "Strong",
+        "casper_similarity": "4.5 / 5",
+        "firmer_than_casper": "5 / 5",
+        "too_soft_risk": "Low",
+        "rank": "1st · ordered"
+      },
+      "user_notes": "Ordered. Chosen for pressure relief, strong support, and the lowest risk of feeling too soft.",
+      "assistant_assessment": "First choice and ordered. The best match for a firmer Casper-like feel without giving up pressure relief."
     },
     {
       "id": "otty_topper",
@@ -808,8 +1590,9 @@
       "dimensions": {
         "size": "King"
       },
-      "user_notes": "Chosen with OTTY mattress.",
-      "assistant_assessment": null
+      "preference_rating": 5,
+      "user_notes": "Ordered with the OTTY Original Hybrid.",
+      "assistant_assessment": "Ordered with the mattress to add pressure relief without switching to a softer mattress construction."
     },
     {
       "id": "panda_memory_foam_pillow",
@@ -821,10 +1604,17 @@
       "status": "purchased",
       "url": "https://pandalondon.com/products/bamboo-memory-foam-pillow",
       "image": "/media/products/product-028.jpeg",
-      "price": null,
-      "dimensions": null,
+      "price": {
+        "amount": 40.46,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "width_cm": 60,
+        "depth_cm": 40,
+        "height_cm": 12
+      },
       "user_notes": "Chosen.",
-      "assistant_assessment": null
+      "assistant_assessment": "The supportive memory-foam option chosen from the pillow comparison."
     },
     {
       "id": "bedfolk_hybrid_pillow",
@@ -839,7 +1629,293 @@
       "price": null,
       "dimensions": null,
       "user_notes": "Chosen.",
-      "assistant_assessment": null
+      "assistant_assessment": "The softer down-alternative counterpoint to the more structured Panda pillow."
+    },
+    {
+      "id": "tv_tcl_a400_pro_55",
+      "name": "TCL A400 Pro NXTVISION — 55 inch",
+      "category": "television",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.tcl.com/uk/en/tvs/55a400-pro",
+      "image": "/media/products/product-042.jpeg",
+      "active_comparison": true,
+      "preference_rating": 5,
+      "price": {
+        "amount": 899,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "screen_inches": 55
+      },
+      "comparison": {
+        "uk_sizes": "43 · 55 · 65 · 75 inch",
+        "panel_gaming": "QD-MiniLED · native 144 Hz · VRR / ALLM · Dolby Vision",
+        "frame": "Light-walnut frame built in",
+        "reviews_catches": "Independent review: 7.1 overall · 8.4 console gaming · 8.9 PC. Excellent contrast and input lag; catches are VA smearing, narrow viewing angles and two full HDMI 2.1 ports.",
+        "order_check": "Confirm this retailer batch includes the ultra-slim wall mount before ordering.",
+        "status_note": "1st · favourite"
+      },
+      "user_notes": "Gaming and art-TV aesthetics are weighted heavily. The light-walnut frame fits the pale-wood gallery-wall direction.",
+      "assistant_assessment": "Best balance of art-TV design, MiniLED picture quality, gaming performance and price. Independent testing materially increased confidence."
+    },
+    {
+      "id": "tv_samsung_frame_2026_55",
+      "name": "Samsung The Frame 2026 — 55 inch",
+      "category": "television",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlisted",
+      "url": "https://www.samsung.com/uk/search/?searchvalue=QE55LS03HAUXXU",
+      "image": "/media/products/product-043.jpeg",
+      "active_comparison": true,
+      "preference_rating": 4,
+      "price": {
+        "amount": 1299,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "screen_inches": 55
+      },
+      "comparison": {
+        "uk_sizes": "43 · 55 · 65 inch",
+        "panel_gaming": "QLED · 100 Hz native · up to 144 Hz VRR",
+        "frame": "Black frame; decorative white, teak and other bezels cost extra",
+        "reviews_catches": "The polished known quantity with the strongest Art Mode ecosystem. Low lag, VRR, ALLM and 144 Hz are gaming strengths; it costs more without the TCL's MiniLED picture.",
+        "order_check": "Price the preferred decorative bezel with the TV, not as an afterthought.",
+        "status_note": "2nd · safest / polished"
+      },
+      "user_notes": "The most established art-TV route, but about £400 more than the TCL in the saved comparison.",
+      "assistant_assessment": "Safest ecosystem choice; TCL is the better value and picture-performance fit."
+    },
+    {
+      "id": "tv_hisense_canvas_s7s_55",
+      "name": "Hisense Canvas S7S 2026 — 55 inch",
+      "category": "television",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlisted",
+      "url": "https://www.currys.co.uk/products/hisense-canvas-s7s-55-qled-4k-smart-tv-with-freely-and-art-mode-55s7stuk-10301066.html",
+      "image": "/media/products/product-044.jpeg",
+      "active_comparison": true,
+      "preference_rating": 3,
+      "price": {
+        "amount": 1099,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "screen_inches": 55
+      },
+      "comparison": {
+        "uk_sizes": "55 · 65 inch",
+        "panel_gaming": "QLED · 144 Hz · VRR · FreeSync Premium · Dolby Vision Gaming",
+        "frame": "Teak-effect frame + ultra-slim wall mount",
+        "reviews_catches": "Very gaming-friendly on paper: four HDMI 2.1 ports and no more than 7 ms at 4K120. It is not MiniLED, and the £1,099 price is hard to justify beside the £899 TCL.",
+        "order_check": "Only reconsider if it is substantially discounted below the saved price.",
+        "status_note": "3rd · good, but TCL wins at current prices"
+      },
+      "user_notes": "Strong specifications and an included teak frame, but currently squeezed by the TCL.",
+      "assistant_assessment": "A credible fallback only with a meaningful discount."
+    },
+    {
+      "id": "tv_lg_gallery_lx7_55",
+      "name": "LG Gallery LX7 2026 — 55 inch",
+      "category": "television",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.lg.com/uk/tvs-soundbars/gallery-tv-with-fram/55lx7b6la/",
+      "image": "/media/products/product-045.jpeg",
+      "active_comparison": true,
+      "preference_rating": 1,
+      "price": {
+        "amount": 999,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "screen_inches": 55
+      },
+      "comparison": {
+        "uk_sizes": "55 · 65 inch",
+        "panel_gaming": "MiniLED QNED · 60 Hz native",
+        "frame": "Snow White frame included; warm walnut optional",
+        "reviews_catches": "Possibly the prettiest white option, but the 60 Hz native panel conflicts with the gaming priority.",
+        "order_check": "None; gaming refresh rate rules it out.",
+        "status_note": "Rejected · gaming"
+      },
+      "user_notes": "Lovely design, but 60 Hz is an immediate rejection for this brief.",
+      "assistant_assessment": "Do not choose over the higher-refresh art-TV options."
+    },
+    {
+      "id": "tv_samsung_frame_pro_2026_55",
+      "name": "Samsung The Frame Pro 2026 — 55 inch",
+      "category": "television",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.samsung.com/uk/search/?searchvalue=QE55LS03HWUXXU",
+      "image": "/media/products/product-046.jpeg",
+      "active_comparison": true,
+      "preference_rating": 2,
+      "price": {
+        "amount": 1399,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "screen_inches": 55
+      },
+      "comparison": {
+        "uk_sizes": "55 · 65 · 75 · 85 inch",
+        "panel_gaming": "Neo QLED MiniLED · 144 Hz VRR",
+        "frame": "Decorative bezel extra · Wireless One Connect",
+        "reviews_catches": "Better picture than the regular Frame, but previous independent testing found the Wireless One Connect could add gaming latency and blur motion.",
+        "order_check": "Wait for a trustworthy 2026 latency test before paying the premium.",
+        "status_note": "Interesting · not the current pick"
+      },
+      "user_notes": "Do not pay extra until the 2026 wireless gaming latency is independently tested.",
+      "assistant_assessment": "Technically interesting, but too uncertain for the gaming-led shortlist."
+    },
+    {
+      "id": "audio_samsung_s701d",
+      "name": "Samsung HW-S701D Ultra Slim Soundbar — White",
+      "category": "soundbar",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.samsung.com/uk/audio-devices/soundbar/s701d-ultra-slim-lifestyle-soundbar-white-hw-s701d-xu/",
+      "image": "/media/products/product-047.jpeg",
+      "active_comparison": true,
+      "preference_rating": 5,
+      "price": {
+        "amount": 349,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "depth_cm": 3.99
+      },
+      "comparison": {
+        "audio_path": "Wall-mounted soundbar",
+        "white_finish": "Yes",
+        "audio_depth": "39.9 mm",
+        "wiring": "Easy · power + HDMI eARC",
+        "gaming_audio": "Excellent and simple",
+        "dialogue": "Dedicated centre channel",
+        "music": "Good",
+        "expansion": "Samsung ecosystem",
+        "wall_fit": "Cleanest option for this wall; wireless sub and wall bracket included",
+        "status_note": "1st audio route"
+      },
+      "user_notes": "The most art-TV-like soundbar and the cleanest overall wall treatment.",
+      "assistant_assessment": "Current audio favourite: unusually shallow, white, 3.1 with Atmos and eARC, and complete enough to avoid an amplifier decision."
+    },
+    {
+      "id": "audio_sonos_beam_gen2",
+      "name": "Sonos Beam Gen 2 — White",
+      "category": "soundbar",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.sonos.com/en-gb/shop/beam-white",
+      "image": "/media/products/product-048.jpeg",
+      "active_comparison": true,
+      "preference_rating": 3,
+      "price": {
+        "amount": 429,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "depth_cm": 10
+      },
+      "comparison": {
+        "audio_path": "Wall-mounted soundbar",
+        "white_finish": "Yes",
+        "audio_depth": "100 mm",
+        "wiring": "Easy · power + HDMI eARC",
+        "gaming_audio": "Excellent and simple",
+        "dialogue": "Strong soundbar dialogue processing",
+        "music": "Better ecosystem and polished music experience",
+        "expansion": "Excellent Sonos ecosystem",
+        "wall_fit": "Visually much chunkier; wall mount costs extra",
+        "status_note": "Soundbar alternative"
+      },
+      "user_notes": "Polished and ecosystem-friendly, but too deep beside the Samsung S701D.",
+      "assistant_assessment": "Choose only if the Sonos ecosystem matters more than the art-wall silhouette."
+    },
+    {
+      "id": "audio_polk_owm3_pair",
+      "name": "Polk OWM3 Wall Speakers — White pair",
+      "category": "speaker",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlisted",
+      "url": "https://www.polkaudio.com/en/product/built-in-speakers/on-wall/owm-3/112561.html",
+      "image": "/media/products/product-049.jpeg",
+      "active_comparison": true,
+      "preference_rating": 3,
+      "price": {
+        "amount": 173,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "depth_cm": 10.4
+      },
+      "comparison": {
+        "audio_path": "Two side speakers",
+        "white_finish": "Yes",
+        "audio_depth": "About 104 mm",
+        "wiring": "Speaker wire from each side + a hidden amplifier",
+        "gaming_audio": "Best stereo positioning",
+        "dialogue": "Phantom centre between left and right",
+        "music": "Usually better than a soundbar",
+        "expansion": "Easy component upgrades",
+        "wall_fit": "Best affordable wall-speaker option found",
+        "status_note": "Practical stereo option"
+      },
+      "user_notes": "Affordable wall-speaker route, but visually less delicate than the Cambridge option.",
+      "assistant_assessment": "The value-led side-speaker choice; still requires an amplifier and cable-hiding plan."
+    },
+    {
+      "id": "audio_cambridge_minx_22_pair",
+      "name": "Cambridge Audio Minx Min 22 — White pair",
+      "category": "speaker",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlisted",
+      "url": "https://www.cambridgeaudio.com/gbr/en/products/speakers/minx/min-22",
+      "image": "/media/products/product-050.jpeg",
+      "active_comparison": true,
+      "preference_rating": 4,
+      "price": {
+        "amount": 178,
+        "currency": "GBP"
+      },
+      "dimensions": {
+        "depth_cm": 8.5
+      },
+      "comparison": {
+        "audio_path": "Two side speakers",
+        "white_finish": "Yes",
+        "audio_depth": "85 mm",
+        "wiring": "Speaker wire from each side + a hidden amplifier",
+        "gaming_audio": "Best stereo positioning",
+        "dialogue": "Phantom centre between left and right",
+        "music": "Usually better than a soundbar",
+        "expansion": "Easy component upgrades; designed to work best with a sub",
+        "wall_fit": "Tiny, prettier and supplied with a flush bracket",
+        "status_note": "2nd configuration · needs HDMI amp"
+      },
+      "user_notes": "The more intentional hi-fi/gallery-wall look, but it creates an amplifier and cable-hiding task.",
+      "assistant_assessment": "Aesthetically the strongest stereo route; do not choose it until a small HDMI amp and hiding place are identified."
     }
   ],
   "needs": [
@@ -850,19 +1926,28 @@
       "status": "decision_in_progress",
       "priority": "high",
       "requirements": [
-        "3-seater scale preferred over 4-seater",
-        "chaise + footstool/movie-pit setup",
-        "supportive/comfy back",
-        "cooler neutral or muted color",
-        "performance-friendly fabric preferred"
+        "excellent movie-pit setup",
+        "modules can split into two facing halves",
+        "supportive, comfortable sit",
+        "cool neutral or muted colour",
+        "available soon enough to be useful"
       ],
       "candidate_item_ids": [
         "sofa_auburn",
+        "sofa_carlyle",
         "sofa_nala",
         "sofa_keira",
-        "sofa_lisbon",
-        "sofa_miyo",
-        "sofa_maison"
+        "sofa_kate",
+        "sofa_sky",
+        "sofa_romy",
+        "sofa_king_aura",
+        "sofa_john_lewis_flow",
+        "sofa_zaya",
+        "sofa_flom",
+        "sofa_malmo",
+        "sofa_wolke",
+        "sofa_king_1977",
+        "sofa_squishblocks"
       ]
     },
     {
@@ -874,11 +1959,21 @@
       "requirements": [
         "King",
         "soft/curved aesthetic",
-        "storage strongly preferred or separate under-bed storage"
+        "storage strongly preferred or separate under-bed storage",
+        "fits within the measured 353 cm zone between the bedroom windows"
       ],
       "candidate_item_ids": [
         "bed_egerie",
-        "bed_happybeds_evelyn"
+        "bed_happybeds_evelyn",
+        "bed_urban_textures_mira",
+        "bed_habitat_onda_green",
+        "bed_habitat_chadwell_sage",
+        "bed_concept_onda_headboard",
+        "bed_concept_daphne_headboard",
+        "bed_made_white_boucle",
+        "bed_made_wave",
+        "bed_get_laid_space_saver",
+        "bed_loaf_tight_space"
       ]
     },
     {
@@ -940,6 +2035,45 @@
       ],
       "candidate_item_ids": [
         "shelving_laredoute_reference"
+      ]
+    },
+    {
+      "id": "need_living_tv",
+      "room_id": "living_room",
+      "name": "Art TV",
+      "status": "decision_in_progress",
+      "priority": "high",
+      "requirements": [
+        "55-inch art-led display",
+        "strong console and PC gaming performance",
+        "works with the pale-wood gallery-wall direction",
+        "confirm the exact wall-mount contents before ordering"
+      ],
+      "candidate_item_ids": [
+        "tv_tcl_a400_pro_55",
+        "tv_samsung_frame_2026_55",
+        "tv_hisense_canvas_s7s_55",
+        "tv_lg_gallery_lx7_55",
+        "tv_samsung_frame_pro_2026_55"
+      ]
+    },
+    {
+      "id": "need_living_audio",
+      "room_id": "living_room",
+      "name": "TV audio",
+      "status": "decision_in_progress",
+      "priority": "medium",
+      "requirements": [
+        "clean fit with the art-TV wall",
+        "good gaming and dialogue performance",
+        "white finish preferred",
+        "keep wiring and amplification realistic"
+      ],
+      "candidate_item_ids": [
+        "audio_samsung_s701d",
+        "audio_sonos_beam_gen2",
+        "audio_polk_owm3_pair",
+        "audio_cambridge_minx_22_pair"
       ]
     },
     {
@@ -1016,8 +2150,32 @@
       "room_id": "living_room",
       "topic": "main_sofa",
       "status": "leaning",
-      "decision": "Auburn remains the benchmark/favourite despite several new candidates.",
-      "reasoning": "User repeatedly returns to Auburn after comparing aesthetics and fabric/comfort trade-offs."
+      "decision": "Auburn remains #1; investigate a custom build from in-stock modules and stool.",
+      "reasoning": "It remains the favourite look and scores 5/5 for both the movie pit and facing-halves layouts. Carlyle is the strongest functional/value fallback."
+    },
+    {
+      "id": "d_tv_shortlist",
+      "room_id": "living_room",
+      "topic": "art_tv",
+      "status": "leaning",
+      "decision": "TCL A400 Pro 55 is the current favourite; confirm that the retailer's batch includes the ultra-slim wall mount before ordering.",
+      "reasoning": "It gives the strongest balance of art-TV styling, MiniLED picture quality, 144 Hz gaming and price. Samsung The Frame remains the safer, more polished fallback."
+    },
+    {
+      "id": "d_tv_audio",
+      "room_id": "living_room",
+      "topic": "tv_audio",
+      "status": "leaning",
+      "decision": "Samsung S701D is the cleanest audio route; Cambridge Minx 22 side speakers are the prettier stereo alternative if a small HDMI amplifier can be hidden.",
+      "reasoning": "The soundbar is easier to wire and visually slim. Separate speakers improve stereo placement and music but add amplifier and cable-planning work."
+    },
+    {
+      "id": "d_bed_shortlist",
+      "room_id": "bedroom",
+      "topic": "bed_frame",
+      "status": "leaning",
+      "decision": "The real finalists are Egerie and Evelyn; check whether attractive low wheeled drawers make Evelyn's lack of ottoman storage acceptable.",
+      "reasoning": "Egerie is the best overall decision for storage and flexibility. Evelyn is the stronger heart choice and is more compact, but needs a convincing storage plan."
     },
     {
       "id": "d_bathroom_color",
@@ -1058,6 +2216,14 @@
       "status": "decided",
       "decision": "Drop the prayer nook concept in favor of prioritizing office layout/backdrop.",
       "reasoning": "Two-wall visual office setup and divider shelving are higher priority."
+    },
+    {
+      "id": "d_mattress_choice",
+      "room_id": "bedroom",
+      "topic": "mattress",
+      "status": "decided",
+      "decision": "OTTY Original Hybrid and OTTY Bamboo Charcoal Mattress Topper ordered.",
+      "reasoning": "OTTY ranked first for strong underlying support, very good pressure relief, a firmer Casper-like feel, and low too-soft risk."
     }
   ],
   "conversation_sources": [

@@ -10,7 +10,7 @@ export default function RoomsPage() {
       <PageHeader
         eyebrow={`${seedData.rooms.length} rooms`}
         title="Rooms"
-        description="Open a room to see its photos, palette, pins, items, and decisions."
+        description="Each room keeps its photos, palette, inspiration, decisions, and item comparisons together."
       />
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[1.15fr_0.85fr]">
         {seedData.rooms.map((room, index) => (
@@ -19,7 +19,6 @@ export default function RoomsPage() {
             room={room}
             itemCount={seedData.items.filter((item) => item.room_id === room.id).length}
             needCount={seedData.needs.filter((need) => need.room_id === room.id).length}
-            measurementCount={seedData.measurements.filter((measurement) => measurement.room_id === room.id).length}
             priority={index === 0}
           />
         ))}

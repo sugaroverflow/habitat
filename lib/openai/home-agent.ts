@@ -7,11 +7,12 @@ import { removeSensitiveFields, sanitizeText } from "@/lib/privacy/sanitize";
 
 const roomTool = tool({
   name: "get_room",
-  description: "Get a room and the needs and decisions currently attached to it.",
+  description: "Get a room and the items, needs, and decisions currently attached to it.",
   parameters: z.object({ room_id: z.string() }),
   execute: ({ room_id }) =>
     removeSensitiveFields({
       room: seedData.rooms.find((room) => room.id === room_id) ?? null,
+      items: seedData.items.filter((item) => item.room_id === room_id),
       needs: seedData.needs.filter((need) => need.room_id === room_id),
       decisions: seedData.decisions.filter((decision) => decision.room_id === room_id),
     }),
@@ -96,9 +97,12 @@ action for any proposed mutation.`,
   tools: [roomTool, measurementTool, itemSearchTool, needTool, fitTool],
 });
 
-export async function runHomeAgent(input: string) {
+export async function runHomeAgent(input: string, roomId?: string | null) {
   const sanitized = sanitizeText(input);
-  const result = await run(homeAgent, sanitized.text, { maxTurns: 6 });
+  const currentRoom = roomId && seedData.rooms.some((room) => room.id === roomId)
+    ? `Current room: ${roomId}. Use this as the default room unless the user names another one.\n\n`
+    : "";
+  const result = await run(homeAgent, `${currentRoom}${sanitized.text}`, { maxTurns: 6 });
   const output = typeof result.finalOutput === "string" ? result.finalOutput : JSON.stringify(result.finalOutput);
   return sanitizeText(output).text;
 }

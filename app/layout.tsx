@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "Clover 29",
     template: "%s | Clover 29",
   },
-  description: "Room planning, items, measurements, and decisions.",
+  description: "Room planning, item comparisons, inspiration, and decisions.",
   robots: { index: false, follow: false },
 };
 

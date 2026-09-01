@@ -41,6 +41,9 @@ const itemSchema = z
     dimensions: z.record(z.string(), z.union([z.string(), z.number()])).nullable(),
     url: nullableString,
     image: z.string().optional(),
+    active_comparison: z.boolean().optional(),
+    preference_rating: z.number().min(1).max(5).optional(),
+    comparison: z.record(z.string(), z.string()).optional(),
     user_notes: z.string(),
     assistant_assessment: nullableString,
   })

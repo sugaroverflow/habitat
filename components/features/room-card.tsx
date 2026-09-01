@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle, Ruler } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, CheckCircle } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,13 +10,11 @@ export function RoomCard({
   room,
   itemCount,
   needCount,
-  measurementCount,
   priority = false,
 }: {
   room: SeedData["rooms"][number];
   itemCount: number;
   needCount: number;
-  measurementCount: number;
   priority?: boolean;
 }) {
   const roomId = room.id as RoomId;
@@ -56,10 +54,7 @@ export function RoomCard({
         ) : null}
         <div className="mt-auto flex flex-wrap gap-x-3 gap-y-1 pt-4 text-[11px] font-medium text-muted-foreground">
           <span className="flex items-center gap-1">
-            <CheckCircle aria-hidden="true" size={13} /> {needCount} decisions
-          </span>
-          <span className="flex items-center gap-1">
-            <Ruler aria-hidden="true" size={13} /> {measurementCount}
+            <CheckCircle aria-hidden="true" size={13} /> {needCount} {needCount === 1 ? "decision" : "decisions"}
           </span>
           <span>{itemCount} items</span>
         </div>

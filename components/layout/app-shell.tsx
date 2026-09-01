@@ -1,11 +1,9 @@
 "use client";
 
 import {
+  Armchair,
   ChatCircleText,
-  CirclesThreePlus,
   House,
-  Images,
-  ShoppingBagOpen,
   SquaresFour,
 } from "@phosphor-icons/react";
 import Link from "next/link";
@@ -19,28 +17,20 @@ import { cn } from "@/lib/utils";
 const desktopNavigation = [
   { label: "Home", href: "/", icon: House },
   { label: "Rooms", href: "/rooms", icon: SquaresFour },
-  { label: "Pins", href: "/inspiration", icon: Images },
-  { label: "All items", href: "/shopping", icon: ShoppingBagOpen },
-  { label: "Conversations", href: "/conversations", icon: ChatCircleText },
+  { label: "Furniture", href: "/furniture", icon: Armchair },
+  { label: "History", href: "/conversations", icon: ChatCircleText },
 ] as const;
 
 const mobileNavigation = [
   { label: "Home", href: "/", icon: House },
   { label: "Rooms", href: "/rooms", icon: SquaresFour },
-  { label: "Pins", href: "/inspiration", icon: Images },
-  { label: "More", href: "/more", icon: CirclesThreePlus },
+  { label: "Furniture", href: "/furniture", icon: Armchair },
+  { label: "History", href: "/conversations", icon: ChatCircleText },
 ] as const;
 
 function isActive(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(`${href}/`);
-}
-
-function isMobileActive(pathname: string, href: string) {
-  if (href !== "/more") return isActive(pathname, href);
-  return ["/more", "/shopping", "/owned", "/needs", "/measurements", "/conversations"].some(
-    (route) => pathname === route || pathname.startsWith(`${route}/`),
-  );
 }
 
 export function AppShell({ children }: { children: ReactNode }) {
@@ -84,7 +74,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         {children}
       </main>
 
-      <AskHome />
+      <AskHome pathname={pathname} />
 
       <nav
         className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-background/96 pb-[env(safe-area-inset-bottom)] backdrop-blur-md lg:hidden"
@@ -93,7 +83,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         <div className="mx-auto grid h-[68px] max-w-lg grid-cols-4 px-1">
           {mobileNavigation.map((item) => {
             const Icon = item.icon;
-            const active = isMobileActive(pathname, item.href);
+            const active = isActive(pathname, item.href);
             return (
               <Link
                 key={item.href}

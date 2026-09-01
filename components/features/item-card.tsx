@@ -15,11 +15,11 @@ import type { SeedItem } from "@/lib/seed-data";
 
 const itemStatuses = Object.entries(ITEM_STATUS_LABELS) as Array<[ItemStatus, string]>;
 
-function priceLabel(amount: number | null) {
+function priceLabel(amount: number | null, currency = "GBP") {
   if (amount === null) return "Price not added";
   return new Intl.NumberFormat("en-GB", {
     style: "currency",
-    currency: "GBP",
+    currency,
     maximumFractionDigits: 0,
   }).format(amount);
 }
@@ -46,22 +46,22 @@ export function ItemCard({ item, compact = false }: { item: SeedItem; compact?: 
   }
 
   const numericPrice = price.trim() === "" ? null : Number(price);
+  const imageContent = item.image ? (
+    <Image src={item.image} alt={name} fill sizes="104px" className="object-contain p-1.5" />
+  ) : (
+    <>
+      <ImageSquare aria-hidden="true" size={24} />
+      <span className="absolute inset-x-2 bottom-2 text-center text-[9px] font-bold uppercase tracking-[0.1em] text-muted-foreground">
+        Photo not added
+      </span>
+    </>
+  );
+  const imageClassName = "dot-field relative grid min-h-32 place-items-center overflow-hidden border-r border-border/70 text-primary";
 
   return (
     <>
       <article className="ruled-surface grid min-w-0 grid-cols-[88px_1fr] overflow-hidden rounded-2xl border bg-card sm:grid-cols-[104px_1fr]">
-        <div className="dot-field relative grid min-h-32 place-items-center overflow-hidden border-r border-border/70 text-primary">
-          {item.image ? (
-            <Image src={item.image} alt={name} fill sizes="104px" className="object-contain p-1.5" />
-          ) : (
-            <>
-              <ImageSquare aria-hidden="true" size={24} />
-              <span className="absolute inset-x-2 bottom-2 text-center text-[9px] font-bold uppercase tracking-[0.1em] text-muted-foreground">
-                Photo not added
-              </span>
-            </>
-          )}
-        </div>
+        {item.url ? <a href={item.url} target="_blank" rel="noreferrer" className={imageClassName} aria-label={`Open product page for ${name}`}>{imageContent}</a> : <div className={imageClassName}>{imageContent}</div>}
         <div className="min-w-0 p-3.5 sm:p-4">
           <div className="flex items-start justify-between gap-2">
             <StatusBadge status={status} />
@@ -76,7 +76,7 @@ export function ItemCard({ item, compact = false }: { item: SeedItem; compact?: 
             {item.category.replaceAll("_", " ")}
           </p>
           <h3 className="mt-1 line-clamp-2 text-sm font-semibold leading-snug tracking-[-0.015em]">{name}</h3>
-          <p className="mt-1.5 text-xs font-semibold text-primary">{priceLabel(numericPrice !== null && Number.isFinite(numericPrice) ? numericPrice : null)}</p>
+          <p className="mt-1.5 text-xs font-semibold text-primary">{priceLabel(numericPrice !== null && Number.isFinite(numericPrice) ? numericPrice : null, item.price?.currency)}</p>
           {!compact && note ? <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">{note}</p> : null}
           {item.url ? (
             <Button asChild variant="ghost" size="sm" className="mt-2 -ml-3">

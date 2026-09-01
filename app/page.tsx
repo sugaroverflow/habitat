@@ -1,10 +1,9 @@
-import { ArrowRight, Ruler } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 import { RoomCard } from "@/components/features/room-card";
 import { PageHeader } from "@/components/layout/page-header";
 import { Badge } from "@/components/ui/badge";
-import { pendingMeasurements } from "@/lib/data";
 import { seedData } from "@/lib/seed-data";
 
 function SectionHeading({ title, href }: { title: string; href: string }) {
@@ -21,7 +20,7 @@ function SectionHeading({ title, href }: { title: string; href: string }) {
 export default function OverviewPage() {
   const openDecisions = seedData.needs.filter((need) => need.status !== "resolved");
   const purchases = seedData.items.filter((item) => item.ownership_status === "purchased");
-  const featuredRooms = seedData.rooms.filter((room) => ["living_room", "bedroom", "hallway"].includes(room.id));
+  const featuredRooms = seedData.rooms.filter((room) => ["living_room", "bedroom", "bathroom", "hallway"].includes(room.id));
   const roomNames = new Map(seedData.rooms.map((room) => [room.id, room.name]));
 
   return (
@@ -29,19 +28,18 @@ export default function OverviewPage() {
       <PageHeader
         eyebrow="Home"
         title="Clover 29"
-        description={`${openDecisions.length} open decisions · ${pendingMeasurements.length} measurements needed · ${purchases.length} purchases tracked`}
+        description={`${openDecisions.length} open decisions · ${purchases.length} purchases tracked`}
       />
 
       <section>
         <SectionHeading title="Start with a room" href="/rooms" />
-        <div className="grid gap-3 lg:grid-cols-3">
+        <div className="grid gap-3 md:grid-cols-2">
           {featuredRooms.map((room, index) => (
             <RoomCard
               key={room.id}
               room={room}
               itemCount={seedData.items.filter((item) => item.room_id === room.id).length}
               needCount={seedData.needs.filter((need) => need.room_id === room.id).length}
-              measurementCount={seedData.measurements.filter((measurement) => measurement.room_id === room.id).length}
               priority={index === 0}
             />
           ))}
@@ -49,7 +47,7 @@ export default function OverviewPage() {
       </section>
 
       <section>
-        <SectionHeading title="Decide next" href="/needs" />
+        <SectionHeading title="Decision tracker" href="/needs" />
         <div className="ruled-surface divide-y divide-border overflow-hidden rounded-2xl border bg-card">
           {openDecisions.slice(0, 5).map((need) => (
             <Link
@@ -70,16 +68,6 @@ export default function OverviewPage() {
         </div>
       </section>
 
-      <div className="max-w-xl">
-        <Link href="/measurements" className="dot-field ruled-surface block rounded-2xl border bg-card p-5 transition-colors hover:border-primary/40">
-          <span className="grid size-10 place-items-center rounded-xl border border-primary/15 bg-warning text-warning-foreground">
-            <Ruler aria-hidden="true" size={19} />
-          </span>
-          <h2 className="mt-4 text-lg font-semibold tracking-[-0.035em]">Measurements needed</h2>
-          <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{pendingMeasurements.length} checks still block a fit decision.</p>
-          <span className="mt-4 flex items-center gap-1 text-xs font-semibold text-primary">View measurements <ArrowRight aria-hidden="true" size={14} /></span>
-        </Link>
-      </div>
     </div>
   );
 }

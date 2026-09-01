@@ -5,7 +5,7 @@ import {
   HouseLine,
   Sparkle,
 } from "@phosphor-icons/react";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 import { ChatKitPanel } from "@/components/features/chatkit-panel";
 import { Button } from "@/components/ui/button";
@@ -25,24 +25,50 @@ interface Message {
   text: string;
 }
 
-const starterPrompts = [
-  "What can I order now?",
-  "What still needs measuring?",
-  "Compare the living room sofas",
-];
+const roomNames: Record<string, string> = {
+  living_room: "Living Room",
+  dining_area: "Dining Area",
+  bedroom: "Bedroom",
+  office: "Office",
+  hallway: "Hallway",
+  bathroom: "Bathroom",
+  kitchen: "Kitchen",
+};
 
-export function AskHome() {
+export function AskHome({ pathname }: { pathname: string }) {
   const chatKitEnabled = process.env.NEXT_PUBLIC_CHATKIT_ENABLED === "true";
+  const roomId = pathname.match(/^\/rooms\/([^/]+)/)?.[1] ?? null;
+  const roomName = roomId ? roomNames[roomId] : null;
+  const roomStarterPrompts: Record<string, string[]> = {
+    living_room: ["Compare the TV shortlist", "Compare the audio routes", "Compare the sofas"],
+    bedroom: ["Compare Egerie and Evelyn", "Compare the mattresses", "What would you choose next?"],
+  };
+  const starterPrompts = roomId && roomStarterPrompts[roomId]
+    ? roomStarterPrompts[roomId]
+    : roomName
+      ? [`Compare the ${roomName.toLowerCase()} options`, "What have I already decided here?", "What would you choose next?"]
+      : ["What can I order now?", "Compare the living room sofas", "What decisions are still open?"];
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
       role: "assistant",
-      text: "I can check Clover 29's rooms, measurements, items, and decisions. What do you need?",
+      text: "I can compare saved items and use your room decisions and conversation notes. What are you working through?",
     },
   ]);
   const [value, setValue] = useState("");
+  const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    function openWithContext(event: Event) {
+      const prompt = (event as CustomEvent<{ prompt?: string }>).detail?.prompt;
+      if (prompt) setValue(prompt);
+      setOpen(true);
+    }
+    window.addEventListener("clover29:ask-home", openWithContext);
+    return () => window.removeEventListener("clover29:ask-home", openWithContext);
+  }, []);
 
   async function submitMessage(message: string) {
     const trimmed = message.trim();
@@ -59,7 +85,7 @@ export function AskHome() {
       const response = await fetch("/api/assistant", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: trimmed }),
+        body: JSON.stringify({ message: trimmed, roomId }),
       });
       if (!response.ok) throw new Error("Assistant request failed");
       const payload = (await response.json()) as { reply: string };
@@ -80,7 +106,7 @@ export function AskHome() {
   }
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button
           size="lg"
@@ -96,9 +122,9 @@ export function AskHome() {
             <DialogHeader className="border-b border-border/70">
               <div className="flex items-center gap-2 text-primary">
                 <HouseLine aria-hidden="true" size={18} weight="fill" />
-                <DialogTitle>Ask Home</DialogTitle>
+                <DialogTitle>{roomName ? `Ask about ${roomName}` : "Ask Home"}</DialogTitle>
               </div>
-              <DialogDescription>Ask about a room, item, measurement, or decision.</DialogDescription>
+              <DialogDescription>{roomName ? `Using the items and decisions saved to ${roomName}.` : "Ask about a room, item, or decision."}</DialogDescription>
             </DialogHeader>
             <div className="min-h-0 flex-1">
               <ChatKitPanel />
@@ -109,9 +135,9 @@ export function AskHome() {
         <DialogHeader className="border-b border-border/70">
           <div className="flex items-center gap-2 text-primary">
             <HouseLine aria-hidden="true" size={18} weight="fill" />
-            <DialogTitle>Ask Home</DialogTitle>
+            <DialogTitle>{roomName ? `Ask about ${roomName}` : "Ask Home"}</DialogTitle>
           </div>
-          <DialogDescription>Ask about a room, item, measurement, or decision.</DialogDescription>
+          <DialogDescription>{roomName ? `Using the items and decisions saved to ${roomName}.` : "Ask about a room, item, or decision."}</DialogDescription>
         </DialogHeader>
 
         <div className="min-h-0 flex-1 space-y-3 overflow-y-auto px-4 py-5 sm:px-5">
@@ -120,8 +146,8 @@ export function AskHome() {
               key={message.id}
               className={
                 message.role === "user"
-                  ? "ml-10 rounded-2xl rounded-br-md bg-primary px-4 py-3 text-sm leading-relaxed text-primary-foreground"
-                  : "mr-5 rounded-2xl rounded-bl-md bg-muted px-4 py-3 text-sm leading-relaxed text-foreground"
+                  ? "ml-10 whitespace-pre-line rounded-2xl rounded-br-md bg-primary px-4 py-3 text-sm leading-relaxed text-primary-foreground"
+                  : "mr-5 whitespace-pre-line rounded-2xl rounded-bl-md bg-muted px-4 py-3 text-sm leading-relaxed text-foreground"
               }
             >
               {message.text}
