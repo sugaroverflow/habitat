@@ -186,10 +186,10 @@ function Stars({ value, onChange, label }: { value: number; onChange: (value: nu
           key={star}
           type="button"
           onClick={() => onChange(star)}
-          className="grid size-8 place-items-center rounded-lg text-primary transition-transform hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.94]"
+          className="grid size-7 place-items-center rounded-lg text-primary transition-transform hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.94]"
           aria-label={`Rate ${label} ${star} out of 5`}
         >
-          <Star aria-hidden="true" size={18} weight={star <= value ? "fill" : "regular"} />
+          <Star aria-hidden="true" size={16} weight={star <= value ? "fill" : "regular"} />
         </button>
       ))}
     </div>
@@ -269,15 +269,15 @@ export function RoomDecisionBoard({ needs, items }: { needs: SeedData["needs"]; 
                       {group.items.map((item) => {
                         const name = names[item.id] ?? item.name;
                         return (
-                          <th key={item.id} className="w-[210px] min-w-[210px] border-r border-border/70 p-3 align-top last:border-r-0">
+                      <th key={item.id} className="w-[164px] min-w-[164px] border-r border-border/70 p-3 align-top last:border-r-0">
                             {item.url ? (
                               <a href={item.url} target="_blank" rel="noreferrer" className="group/photo relative block aspect-[4/3] overflow-hidden rounded-xl border border-border bg-secondary/25">
-                                {item.image ? <Image src={item.image} alt={name} fill sizes="210px" className="object-contain p-2 transition-transform duration-300 group-hover/photo:scale-[1.025]" /> : <ImageSquare aria-hidden="true" size={24} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary" />}
+                                {item.image ? <Image src={item.image} alt={name} fill sizes="164px" className="object-contain p-2 transition-transform duration-300 group-hover/photo:scale-[1.025]" /> : <ImageSquare aria-hidden="true" size={24} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary" />}
                                 <span className="absolute bottom-2 right-2 grid size-8 place-items-center rounded-full border border-border bg-background/95 text-primary"><ArrowSquareOut aria-hidden="true" size={14} /></span>
                               </a>
                             ) : (
                               <div className="relative grid aspect-[4/3] place-items-center overflow-hidden rounded-xl border border-border bg-secondary/25 text-primary">
-                                {item.image ? <Image src={item.image} alt={name} fill sizes="210px" className="object-contain p-2" /> : <ImageSquare aria-hidden="true" size={24} />}
+                                {item.image ? <Image src={item.image} alt={name} fill sizes="164px" className="object-contain p-2" /> : <ImageSquare aria-hidden="true" size={24} />}
                               </div>
                             )}
                             <div className="mt-3 flex items-start gap-2">

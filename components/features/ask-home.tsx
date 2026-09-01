@@ -109,8 +109,9 @@ export function AskHome({ pathname }: { pathname: string }) {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button
-          size="lg"
-          className="fixed bottom-[calc(5.7rem+env(safe-area-inset-bottom))] right-4 z-30 h-12 rounded-full px-4 shadow-[0_16px_30px_-16px_oklch(0.31_0.08_176/0.72)] md:bottom-6 md:right-6"
+          variant="outline"
+          size="sm"
+          className="h-10 rounded-full px-3 sm:px-4"
         >
           <Sparkle aria-hidden="true" size={18} weight="fill" />
           Ask Home

@@ -11,50 +11,86 @@ export const ROOM_COVERS: Record<RoomId, string> = {
   kitchen: "/media/rooms/room-photo-003.jpeg",
 };
 
+const corePalette = {
+  softSage: { name: "soft sage", value: "#99B4AA" },
+  olive: { name: "olive", value: "#6B6D43" },
+  gardenOchre: { name: "garden ochre", value: "#ABA66F" },
+  fadedCoral: { name: "faded coral", value: "#CF7D65" },
+  shellPink: { name: "shell pink", value: "#E1B8A2" },
+  warmCream: { name: "warm cream", value: "#F2DEC7" },
+} as const;
+
 export const ROOM_PALETTES: Record<RoomId, Array<{ name: string; value: string }>> = {
   living_room: [
-    { name: "sage", value: "#879779" },
-    { name: "faded blush", value: "#d7aaa4" },
-    { name: "cream", value: "#eee4ce" },
-    { name: "jade", value: "#4f8175" },
-    { name: "soft blue", value: "#9bb7c8" },
+    corePalette.softSage,
+    corePalette.olive,
+    corePalette.gardenOchre,
+    corePalette.fadedCoral,
+    corePalette.shellPink,
+    corePalette.warmCream,
   ],
   dining_area: [
-    { name: "light pink", value: "#e4bbb2" },
-    { name: "warm cream", value: "#eee4ce" },
-    { name: "pale wood", value: "#c8a878" },
-    { name: "honey", value: "#d7a85e" },
+    corePalette.warmCream,
+    corePalette.shellPink,
+    corePalette.fadedCoral,
+    corePalette.gardenOchre,
+    corePalette.softSage,
   ],
   bedroom: [
-    { name: "lavender", value: "#b7acc8" },
-    { name: "powder blue", value: "#abc2cf" },
-    { name: "dusty rose", value: "#cf8f91" },
-    { name: "cream", value: "#eee4ce" },
+    corePalette.warmCream,
+    corePalette.shellPink,
+    corePalette.fadedCoral,
+    corePalette.softSage,
+    corePalette.olive,
   ],
   office: [
-    { name: "rose", value: "#c889a1" },
-    { name: "cyan", value: "#78b9bd" },
-    { name: "charcoal", value: "#4e4d4a" },
-    { name: "lavender", value: "#aaa0c3" },
+    corePalette.warmCream,
+    corePalette.softSage,
+    corePalette.shellPink,
+    corePalette.fadedCoral,
+    corePalette.olive,
   ],
   hallway: [
-    { name: "dusty sage", value: "#899985" },
-    { name: "warm wood", value: "#a77a52" },
-    { name: "butter", value: "#e2c886" },
-    { name: "soft blue", value: "#a7bdca" },
+    corePalette.warmCream,
+    corePalette.softSage,
+    corePalette.olive,
+    corePalette.gardenOchre,
+    corePalette.shellPink,
   ],
   bathroom: [
-    { name: "mineral green", value: "#52746d" },
-    { name: "soft blue", value: "#8eafc4" },
-    { name: "coral", value: "#ce8474" },
-    { name: "charcoal", value: "#464743" },
+    corePalette.olive,
+    corePalette.softSage,
+    corePalette.warmCream,
+    corePalette.fadedCoral,
+    corePalette.shellPink,
   ],
   kitchen: [
-    { name: "warm cream", value: "#eee4ce" },
-    { name: "jade", value: "#4f8175" },
-    { name: "pale wood", value: "#c8a878" },
-    { name: "terracotta", value: "#bc7964" },
+    corePalette.warmCream,
+    corePalette.gardenOchre,
+    corePalette.softSage,
+    corePalette.olive,
+    corePalette.fadedCoral,
   ],
+};
+
+export const ROOM_DESCRIPTIONS: Record<RoomId, string> = {
+  living_room: "A soft, layered room for movie nights, books, plants, art, and the floral rug you already own.",
+  dining_area: "A compact dining nook with its own lighting moment and enough art to feel distinct from the living area.",
+  bedroom: "A calm bedroom with romantic shapes and practical hidden storage, sharing its footprint with the office.",
+  office: "The working and gaming layer of the bedroom, with cleaner storage around the white steel desk and a sharper graphic edge.",
+  hallway: "A useful first landing point for shoes, bags, a mirror, and small objects without narrowing the route through.",
+  bathroom: "A green-led bathroom with consistent hardware, soft contrast, and one strong botanical pattern.",
+  kitchen: "Keep the existing kitchen quiet and warm, then add useful objects and small amounts of colour instead of a full restyle.",
+};
+
+export const ROOM_PLANS: Record<RoomId, string[]> = {
+  living_room: ["warm wood", "low shelves", "gallery TV wall", "layered lighting"],
+  dining_area: ["paper pendant", "loose art wall", "pale wood", "soft seating"],
+  bedroom: ["sculptural bed", "floral rug", "hidden storage", "coloured bedside tables"],
+  office: ["white steel desk", "closed storage", "graphic art", "pink and cyan light"],
+  hallway: ["shallow storage", "full-length mirror", "warm wood", "hooks and landing shelf"],
+  bathroom: ["mineral green", "blue floral runner", "pure-finish hardware", "wallpaper detail"],
+  kitchen: ["warm cream", "pale wood", "jade accents", "clear worktops"],
 };
 
 export function normalizeItemStatus(item: SeedItem): ItemStatus {

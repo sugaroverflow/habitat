@@ -15,16 +15,24 @@ export function RoomPins({ roomId, pins }: { roomId: RoomId; pins: InspirationRe
         </Button>
       </div>
       <div className="-mx-4 flex snap-x gap-2.5 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0">
-        {pins.map((pin) => {
+        {pins.map((pin, index) => {
           const preview = (
             <>
-              <Image src={pin.image} alt={pin.title} fill sizes="(max-width: 768px) 38vw, 180px" className="object-cover transition-transform duration-300 group-hover:scale-[1.025]" />
+              <Image
+                src={pin.image}
+                alt={pin.title}
+                fill
+                sizes="(max-width: 768px) 35vw, 142px"
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
+                className="object-contain transition-transform duration-300 group-hover:scale-[1.025]"
+              />
               <span className="absolute right-2.5 top-2.5 grid size-8 place-items-center rounded-full border border-primary/15 bg-background/94 text-primary">
                 <PushPin aria-hidden="true" size={14} weight="fill" />
               </span>
             </>
           );
-          const className = "group relative aspect-[4/5] w-[38vw] max-w-[158px] shrink-0 snap-start overflow-hidden rounded-xl border border-border bg-card";
+          const className = "group relative aspect-[4/5] w-[35vw] max-w-[142px] shrink-0 snap-start overflow-hidden rounded-xl border border-border bg-card";
           return pin.sourceUrl ? (
             <a key={pin.id} href={pin.sourceUrl} target="_blank" rel="noreferrer" aria-label={`Open ${pin.title} source`} className={className}>
               {preview}

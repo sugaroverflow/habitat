@@ -230,3 +230,56 @@ Every Furniture card can be edited through the same pencil control used elsewher
 ### Next Recommended Step
 
 Persist item state, notes, prices, and votes so purchasing a candidate automatically moves it into Furniture and keeps the decision history attached.
+
+## 2026-09-01 - Room direction and media-fit audit
+
+### Goal
+
+Use the available desktop width more deliberately, keep every room visibly related to the core floral reference palette, and correct media that reads as broken, cropped, or oversized inside compact cards.
+
+### Changes
+
+- Combined current photos, room description, palette, and plan into one responsive Room Overview: one column on mobile and an asymmetric photo/direction split on desktop.
+- Standardised every room palette around the six colours sampled from the shared garden reference: soft sage, olive, garden ochre, faded coral, shell pink, and warm cream.
+- Added a concrete four-point plan to every room, covering material, storage, lighting, and styling direction without inventing new decision objects.
+- Moved the decision tracker below photos, palette, and inspiration so the room reads from context into choices.
+- Reduced inspiration previews and comparison columns, preserved whole pin images instead of cropping landscape references, and made Furniture thumbnails compact squares.
+- Moved Ask Home into the persistent header so it no longer covers cards and table rows.
+- Reassigned the office cover photo to the Office room and normalised weak sofa and art-TV assets onto consistent 4:3 canvases. Replaced the Squishblocks detail crop with an official full-product image.
+
+### Decisions
+
+- Room palettes are subsets of one core palette. Room-specific variation now lives in the plan language and objects rather than unrelated swatch families.
+- Missing owned-item photography is represented by an explicit Add photo state; no guessed product image is attached when the exact model or finish is unknown.
+- Inspiration uses contain rather than cover because preserving the full reference is more valuable than edge-to-edge crops in a planning tool.
+
+### Tradeoffs
+
+- Contained landscape pins can show quiet space inside portrait thumbnails, but no longer lose the part of the reference the user saved.
+- Several owned pieces and bathroom purchases remain without photos until exact images are supplied or confirmed.
+- Comparison tables still scroll horizontally, but smaller columns expose more than one candidate at a time on mobile.
+
+### Risks
+
+- Retailer imagery can change or disappear; the local copies remain the stable display source.
+- The exact Shark fan, air purifier, and Monster Hunter chair variants are not known, so image matching remains intentionally incomplete.
+
+### Verification
+
+- A separate review agent inspected the live site at mobile and desktop breakpoints, checked 101 media files and 95 references, and found no missing or corrupt files.
+- The agent identified layout, assignment, and weak-asset problems; accepted recommendations were implemented locally and rechecked in a real browser.
+- Desktop and 390 × 844 screenshots confirmed the new dual-column room overview, compact Furniture media, smaller comparison columns, and non-overlapping Ask Home trigger.
+- Seed validation, TypeScript, ESLint, diff validation, and the repository privacy scan passed.
+- The production Webpack build passed with all 23 routes generated.
+
+### Demo Impact
+
+Rooms now communicate a coherent design direction before presenting long decision tables, while more candidates remain visible during mobile comparison.
+
+### Customer-Facing Context
+
+The app distinguishes a genuinely missing image from a failed image request and avoids silently substituting uncertain product photography.
+
+### Next Recommended Step
+
+Add confirmed photos for the four unpictured owned pieces and the four bathroom purchases, then persist room direction and palette edits alongside item edits.

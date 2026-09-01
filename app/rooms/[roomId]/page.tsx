@@ -1,12 +1,12 @@
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { RoomDecisionBoard } from "@/components/features/room-decision-board";
 import { RoomDecisionTracker } from "@/components/features/room-decision-tracker";
+import { RoomOverview } from "@/components/features/room-overview";
 import { RoomPins } from "@/components/features/room-pins";
-import { ROOM_PALETTES, getRoom, roomDecisions, roomInspiration, roomItems, roomNeeds, roomPhotos } from "@/lib/data";
+import { getRoom, roomDecisions, roomInspiration, roomItems, roomNeeds, roomPhotos } from "@/lib/data";
 import type { RoomId } from "@/lib/domain";
 
 export function generateStaticParams() {
@@ -42,47 +42,11 @@ export default async function RoomPage({ params }: { params: Promise<{ roomId: s
         </div>
       </header>
 
-      <RoomDecisionTracker needs={needs} initialDecisions={decisions} />
-
-      <section>
-        <h2 className="mb-4 text-xl font-semibold tracking-[-0.035em]">Current room</h2>
-        {photos.length ? (
-          <div className="-mx-4 flex snap-x gap-2.5 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0">
-            {photos.map((photo, index) => (
-              <div key={photo.id} className="relative aspect-[4/3] w-[42vw] max-w-[168px] shrink-0 snap-start overflow-hidden rounded-xl border border-border">
-                <Image
-                  src={photo.path}
-                  alt={`${room.name} photo ${index + 1}`}
-                  fill
-                  sizes="(max-width: 768px) 42vw, 180px"
-                  loading={index === 0 ? "eager" : "lazy"}
-                  fetchPriority={index === 0 ? "high" : "auto"}
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="dot-field rounded-2xl border border-dashed border-border px-5 py-10 text-center">
-            <p className="text-sm font-semibold">No room photos yet</p>
-            <p className="mt-1 text-xs text-muted-foreground">Add one when you have it.</p>
-          </div>
-        )}
-      </section>
-
-      <section>
-        <h2 className="mb-4 text-xl font-semibold tracking-[-0.035em]">Palette</h2>
-        <div className="-mx-4 flex snap-x gap-2.5 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0">
-          {ROOM_PALETTES[typedRoomId].map((color) => (
-            <div key={color.name} className="w-28 shrink-0 snap-start overflow-hidden rounded-xl border border-border bg-card">
-              <div className="h-20 border-b border-border" style={{ backgroundColor: color.value }} />
-              <p className="px-3 py-2.5 text-xs font-semibold capitalize">{color.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <RoomOverview roomId={typedRoomId} roomName={room.name} photos={photos} />
 
       <RoomPins roomId={typedRoomId} pins={pins} />
+
+      <RoomDecisionTracker needs={needs} initialDecisions={decisions} />
 
       <RoomDecisionBoard needs={needs} items={items} />
     </div>

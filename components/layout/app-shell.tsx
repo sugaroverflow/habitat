@@ -65,6 +65,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           </nav>
 
           <div className="ml-auto flex items-center gap-2">
+            <AskHome pathname={pathname} />
             <AddMenu />
           </div>
         </div>
@@ -73,8 +74,6 @@ export function AppShell({ children }: { children: ReactNode }) {
       <main className="mx-auto min-h-[calc(100dvh-4rem)] w-full max-w-[1280px] border-x border-border/55 px-4 pb-36 pt-6 sm:px-6 sm:pt-8 lg:px-8 lg:pb-24">
         {children}
       </main>
-
-      <AskHome pathname={pathname} />
 
       <nav
         className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-background/96 pb-[env(safe-area-inset-bottom)] backdrop-blur-md lg:hidden"

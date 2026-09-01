@@ -47,22 +47,22 @@ export function ItemCard({ item, compact = false }: { item: SeedItem; compact?: 
 
   const numericPrice = price.trim() === "" ? null : Number(price);
   const imageContent = item.image ? (
-    <Image src={item.image} alt={name} fill sizes="104px" className="object-contain p-1.5" />
+    <Image src={item.image} alt={name} fill sizes="72px" className="object-contain p-1.5" />
   ) : (
     <>
       <ImageSquare aria-hidden="true" size={24} />
-      <span className="absolute inset-x-2 bottom-2 text-center text-[9px] font-bold uppercase tracking-[0.1em] text-muted-foreground">
-        Photo not added
+      <span className="absolute inset-x-1.5 bottom-1.5 text-center text-[8px] font-bold uppercase tracking-[0.08em] text-muted-foreground">
+        Add photo
       </span>
     </>
   );
-  const imageClassName = "dot-field relative grid min-h-32 place-items-center overflow-hidden border-r border-border/70 text-primary";
+  const imageClassName = "relative grid aspect-square place-items-center m-3 overflow-hidden rounded-xl border border-border/70 bg-secondary/25 text-primary";
 
   return (
     <>
-      <article className="ruled-surface grid min-w-0 grid-cols-[88px_1fr] overflow-hidden rounded-2xl border bg-card sm:grid-cols-[104px_1fr]">
+      <article className="grid min-w-0 grid-cols-[96px_1fr] items-start overflow-hidden rounded-2xl border bg-card">
         {item.url ? <a href={item.url} target="_blank" rel="noreferrer" className={imageClassName} aria-label={`Open product page for ${name}`}>{imageContent}</a> : <div className={imageClassName}>{imageContent}</div>}
-        <div className="min-w-0 p-3.5 sm:p-4">
+        <div className="min-w-0 py-3.5 pr-3.5 sm:py-4 sm:pr-4">
           <div className="flex items-start justify-between gap-2">
             <StatusBadge status={status} />
             <div className="flex items-center gap-1">

@@ -2405,10 +2405,10 @@
         }
       },
       {
-        "id": "asset_unit_photo_009",
+      "id": "asset_unit_photo_009",
         "kind": "room_photo",
         "path": "/media/rooms/room-photo-009.jpeg",
-        "room_id": "bedroom",
+      "room_id": "office",
         "status": "reviewed",
         "privacy": {
           "safe_filename": true,
