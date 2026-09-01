@@ -4,7 +4,7 @@ import { ArrowSquareOut, ChatCircleText, ImageSquare, PencilSimple, Star } from 
 import Image from "next/image";
 import { useMemo, useState } from "react";
 
-import { ITEM_STATUS_LABELS } from "@/components/features/status-badge";
+import { DECISION_STATUS_OPTIONS, getDecisionStatus } from "@/components/features/status-badge";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -13,8 +13,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { normalizeItemStatus } from "@/lib/data";
 import type { ItemStatus } from "@/lib/domain";
 import type { SeedData, SeedItem } from "@/lib/seed-data";
-
-const itemStatuses = Object.entries(ITEM_STATUS_LABELS) as Array<[ItemStatus, string]>;
 
 const categoryLabels: Record<string, string> = {
   appliance: "Home appliances",
@@ -41,16 +39,6 @@ const categoryLabels: Record<string, string> = {
   underbed_storage: "Under-bed storage",
   wallpaper: "Wallpaper",
 };
-
-function tier(status: ItemStatus) {
-  if (status === "arrived") return { label: "Owned", variant: "success" as const };
-  if (status === "ordered" || status === "shipped") return { label: "Bought", variant: "success" as const };
-  if (status === "favourite") return { label: "Top pick", variant: "default" as const };
-  if (status === "shortlisted") return { label: "Shortlist", variant: "secondary" as const };
-  if (status === "considering") return { label: "Considering", variant: "outline" as const };
-  if (status === "rejected" || status === "returned") return { label: "Passed", variant: "outline" as const };
-  return { label: "Saved", variant: "outline" as const };
-}
 
 function defaultRating(item: SeedItem) {
   if (item.preference_rating) return item.preference_rating;
@@ -143,9 +131,10 @@ function buildGroups(needs: SeedData["needs"], items: SeedItem[]) {
   });
 
   for (const item of activeItems.filter((candidate) => !used.has(candidate.id))) {
+    const categoryName = (categoryLabels[item.category] ?? item.category.replaceAll("_", " ")).toLowerCase();
     const matchingGroup = item.ownership_status === "owned" ? undefined : groups.find((group) =>
       group.items.some((candidate) => candidate.category === item.category) ||
-      group.name.toLowerCase().includes((categoryLabels[item.category] ?? item.category.replaceAll("_", " ")).split(" ")[0]),
+      group.name.toLowerCase().includes(categoryName.split(" ")[0]),
     );
     if (matchingGroup) {
       matchingGroup.items.push(item);
@@ -215,7 +204,7 @@ export function RoomDecisionBoard({ needs, items }: { needs: SeedData["needs"]; 
       caption: captions[item.id] ?? "",
       userNote: userNotes[item.id] ?? "",
       price: prices[item.id]?.toString() ?? "",
-      status: statuses[item.id] ?? normalizeItemStatus(item),
+      status: getDecisionStatus(statuses[item.id] ?? normalizeItemStatus(item)).value,
     });
   }
 
@@ -256,7 +245,7 @@ export function RoomDecisionBoard({ needs, items }: { needs: SeedData["needs"]; 
                 >
                   <ChatCircleText aria-hidden="true" size={14} /> Ask
                 </Button>
-                <Badge variant={group.status === "open" ? "warning" : "secondary"}>{group.status}</Badge>
+                <Badge variant={group.status === "open" ? "warning" : "success"}>{group.status}</Badge>
               </div>
             </header>
 
@@ -271,13 +260,13 @@ export function RoomDecisionBoard({ needs, items }: { needs: SeedData["needs"]; 
                         return (
                       <th key={item.id} className="w-[164px] min-w-[164px] border-r border-border/70 p-3 align-top last:border-r-0">
                             {item.url ? (
-                              <a href={item.url} target="_blank" rel="noreferrer" className="group/photo relative block aspect-[4/3] overflow-hidden rounded-xl border border-border bg-secondary/25">
-                                {item.image ? <Image src={item.image} alt={name} fill sizes="164px" className="object-contain p-2 transition-transform duration-300 group-hover/photo:scale-[1.025]" /> : <ImageSquare aria-hidden="true" size={24} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary" />}
+                              <a href={item.url} target="_blank" rel="noreferrer" className="group/photo relative mx-auto block aspect-[4/3] w-28 overflow-hidden rounded-xl border border-border bg-secondary/25">
+                                {item.image ? <Image src={item.image} alt={name} fill sizes="112px" className="object-contain p-2 transition-transform duration-300 group-hover/photo:scale-[1.025]" /> : <ImageSquare aria-hidden="true" size={24} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary" />}
                                 <span className="absolute bottom-2 right-2 grid size-8 place-items-center rounded-full border border-border bg-background/95 text-primary"><ArrowSquareOut aria-hidden="true" size={14} /></span>
                               </a>
                             ) : (
-                              <div className="relative grid aspect-[4/3] place-items-center overflow-hidden rounded-xl border border-border bg-secondary/25 text-primary">
-                                {item.image ? <Image src={item.image} alt={name} fill sizes="164px" className="object-contain p-2" /> : <ImageSquare aria-hidden="true" size={24} />}
+                              <div className="relative mx-auto grid aspect-[4/3] w-28 place-items-center overflow-hidden rounded-xl border border-border bg-secondary/25 text-primary">
+                                {item.image ? <Image src={item.image} alt={name} fill sizes="112px" className="object-contain p-2" /> : <ImageSquare aria-hidden="true" size={24} />}
                               </div>
                             )}
                             <div className="mt-3 flex items-start gap-2">
@@ -300,7 +289,10 @@ export function RoomDecisionBoard({ needs, items }: { needs: SeedData["needs"]; 
                     </tr>
                     <tr>
                       <th className="sticky left-0 z-10 border-r border-border bg-card p-3 font-semibold text-muted-foreground">State</th>
-                      {group.items.map((item) => { const itemTier = tier(statuses[item.id] ?? normalizeItemStatus(item)); return <td key={item.id} className="border-r border-border/70 p-3 last:border-r-0"><Badge variant={itemTier.variant}>{itemTier.label}</Badge></td>; })}
+                      {group.items.map((item) => {
+                        const decisionStatus = getDecisionStatus(statuses[item.id] ?? normalizeItemStatus(item));
+                        return <td key={item.id} className={`border-r border-border/70 p-3 last:border-r-0 ${decisionStatus.surface}`}><Badge variant={decisionStatus.variant} className="whitespace-nowrap">{decisionStatus.label}</Badge></td>;
+                      })}
                     </tr>
                     {comparisonRows.map(([key, label]) => group.items.some((item) => item.comparison?.[key]) ? (
                       <tr key={key}>
@@ -342,7 +334,7 @@ export function RoomDecisionBoard({ needs, items }: { needs: SeedData["needs"]; 
           <div className="space-y-4 p-5">
             <div className="space-y-2"><label htmlFor="comparison-name" className="text-sm font-semibold">Name</label><Input id="comparison-name" value={draft.name} onChange={(event) => setDraft((current) => ({ ...current, name: event.target.value }))} /></div>
             <div className="grid grid-cols-2 gap-3">
-              <div className="space-y-2"><label htmlFor="comparison-state" className="text-sm font-semibold">State</label><select id="comparison-state" value={draft.status} onChange={(event) => setDraft((current) => ({ ...current, status: event.target.value as ItemStatus }))} className="h-11 w-full rounded-xl border border-input bg-background px-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring">{itemStatuses.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></div>
+            <div className="space-y-2"><label htmlFor="comparison-state" className="text-sm font-semibold">State</label><select id="comparison-state" value={draft.status} onChange={(event) => setDraft((current) => ({ ...current, status: event.target.value as ItemStatus }))} className="h-11 w-full rounded-xl border border-input bg-background px-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring">{DECISION_STATUS_OPTIONS.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></div>
               <div className="space-y-2"><label htmlFor="comparison-price" className="text-sm font-semibold">Price (£)</label><Input id="comparison-price" inputMode="decimal" value={draft.price} onChange={(event) => setDraft((current) => ({ ...current, price: event.target.value }))} placeholder="Optional" /></div>
             </div>
             <div className="space-y-2"><label htmlFor="comparison-user-note" className="text-sm font-semibold">You said</label><Textarea id="comparison-user-note" value={draft.userNote} onChange={(event) => setDraft((current) => ({ ...current, userNote: event.target.value }))} className="min-h-24" /></div>

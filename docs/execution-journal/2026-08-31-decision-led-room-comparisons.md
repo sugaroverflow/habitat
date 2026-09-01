@@ -246,12 +246,16 @@ Use the available desktop width more deliberately, keep every room visibly relat
 - Reduced inspiration previews and comparison columns, preserved whole pin images instead of cropping landscape references, and made Furniture thumbnails compact squares.
 - Moved Ask Home into the persistent header so it no longer covers cards and table rows.
 - Reassigned the office cover photo to the Office room and normalised weak sofa and art-TV assets onto consistent 4:3 canvases. Replaced the Squishblocks detail crop with an official full-product image.
+- Standardised comparison-table product previews at 112 × 84 px with contained imagery, including the tall bedside-table asset.
+- Collapsed candidate display states into Purchased (yay!), Considering, and Rejected, with stronger teal, butter, and red treatments across cards and comparison tables.
+- Fixed category matching so uncoupled candidates such as the Maude bedside table land in their named decision group instead of appearing as an empty category.
 
 ### Decisions
 
 - Room palettes are subsets of one core palette. Room-specific variation now lives in the plan language and objects rather than unrelated swatch families.
 - Missing owned-item photography is represented by an explicit Add photo state; no guessed product image is attached when the exact model or finish is unknown.
 - Inspiration uses contain rather than cover because preserving the full reference is more valuable than edge-to-edge crops in a planning tool.
+- Detailed imported lifecycle values remain supported in seed data, but the planning UI translates them into the three decision states the user actually needs; edits now use those same three choices.
 
 ### Tradeoffs
 
@@ -269,6 +273,7 @@ Use the available desktop width more deliberately, keep every room visibly relat
 - A separate review agent inspected the live site at mobile and desktop breakpoints, checked 101 media files and 95 references, and found no missing or corrupt files.
 - The agent identified layout, assignment, and weak-asset problems; accepted recommendations were implemented locally and rechecked in a real browser.
 - Desktop and 390 × 844 screenshots confirmed the new dual-column room overview, compact Furniture media, smaller comparison columns, and non-overlapping Ask Home trigger.
+- A 390 × 844 browser check confirmed the Maude bedside table preview fits its comparison card and that purchased, considering, and rejected states are visually distinct.
 - Seed validation, TypeScript, ESLint, diff validation, and the repository privacy scan passed.
 - The production Webpack build passed with all 23 routes generated.
 

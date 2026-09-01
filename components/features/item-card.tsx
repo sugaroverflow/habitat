@@ -4,7 +4,7 @@ import { ArrowSquareOut, Heart, ImageSquare, PencilSimple } from "@phosphor-icon
 import Image from "next/image";
 import { useState } from "react";
 
-import { StatusBadge, ITEM_STATUS_LABELS } from "@/components/features/status-badge";
+import { DECISION_STATUS_OPTIONS, getDecisionStatus, StatusBadge } from "@/components/features/status-badge";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -12,8 +12,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { normalizeItemStatus } from "@/lib/data";
 import type { ItemStatus } from "@/lib/domain";
 import type { SeedItem } from "@/lib/seed-data";
-
-const itemStatuses = Object.entries(ITEM_STATUS_LABELS) as Array<[ItemStatus, string]>;
 
 function priceLabel(amount: number | null, currency = "GBP") {
   if (amount === null) return "Price not added";
@@ -33,7 +31,7 @@ export function ItemCard({ item, compact = false }: { item: SeedItem; compact?: 
   const [draft, setDraft] = useState({ name, status, note, price });
 
   function openEditor() {
-    setDraft({ name, status, note, price });
+    setDraft({ name, status: getDecisionStatus(status).value, note, price });
     setEditing(true);
   }
 
@@ -108,7 +106,7 @@ export function ItemCard({ item, compact = false }: { item: SeedItem; compact?: 
                   onChange={(event) => setDraft((current) => ({ ...current, status: event.target.value as ItemStatus }))}
                   className="h-11 w-full rounded-xl border border-input bg-background px-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
-                  {itemStatuses.map(([value, label]) => <option key={value} value={value}>{label}</option>)}
+                  {DECISION_STATUS_OPTIONS.map(([value, label]) => <option key={value} value={value}>{label}</option>)}
                 </select>
               </div>
               <div className="space-y-2">
