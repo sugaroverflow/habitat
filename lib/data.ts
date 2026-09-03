@@ -74,21 +74,21 @@ export const ROOM_PALETTES: Record<RoomId, Array<{ name: string; value: string }
 };
 
 export const ROOM_DESCRIPTIONS: Record<RoomId, string> = {
-  living_room: "A soft, layered room for movie nights, books, plants, art, and the floral rug you already own.",
-  dining_area: "A compact dining nook with its own lighting moment and enough art to feel distinct from the living area.",
-  bedroom: "A calm bedroom with romantic shapes and practical hidden storage, sharing its footprint with the office.",
+  living_room: "A soft, layered room for movie nights, books, plants, art, and one deliberately strange glowing object.",
+  dining_area: "A distinct dining nook anchored by a round ornamental rug, pale sculptural furniture, and its own floral lighting moment.",
+  bedroom: "A calm bedroom with romantic shapes, a pink-and-floral direction, and practical storage that does not crowd the king bed.",
   office: "The working and gaming layer of the bedroom, with cleaner storage around the white steel desk and a sharper graphic edge.",
-  hallway: "A useful first landing point for shoes, bags, a mirror, and small objects without narrowing the route through.",
+  hallway: "A sage-and-warm-wood landing zone with separate places for coats, seating, closed storage, a playful mirror, and a washable runner.",
   bathroom: "A green-led bathroom with consistent hardware, soft contrast, and one strong botanical pattern.",
   kitchen: "Keep the existing kitchen quiet and warm, then add useful objects and small amounts of colour instead of a full restyle.",
 };
 
 export const ROOM_PLANS: Record<RoomId, string[]> = {
-  living_room: ["warm wood", "low shelves", "gallery TV wall", "layered lighting"],
-  dining_area: ["paper pendant", "loose art wall", "pale wood", "soft seating"],
-  bedroom: ["sculptural bed", "floral rug", "hidden storage", "coloured bedside tables"],
+  living_room: ["two-level oak console", "gallery TV wall", "dining-side bookcase", "weird glowing lamp"],
+  dining_area: ["Maru oak table", "cream and oak seating", "Adeline sage round rug", "pink floral pendant"],
+  bedroom: ["pink Evelyn direction", "floral rug", "low bedroom storage", "coloured bedside tables"],
   office: ["white steel desk", "closed storage", "graphic art", "pink and cyan light"],
-  hallway: ["shallow storage", "full-length mirror", "warm wood", "hooks and landing shelf"],
+  hallway: ["sage coat zone", "sculptural bench", "painted BESTÅ hack", "wavy mirror and runner"],
   bathroom: ["mineral green", "blue floral runner", "pure-finish hardware", "wallpaper detail"],
   kitchen: ["warm cream", "pale wood", "jade accents", "clear worktops"],
 };

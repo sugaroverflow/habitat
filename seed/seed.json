@@ -1194,6 +1194,7 @@
       "purchase_status": "not_ordered",
       "status": "considering",
       "url": "https://www.laredoute.co.uk/ppdp/prod-351222333.aspx",
+      "active_comparison": false,
       "price": null,
       "dimensions": null,
       "user_notes": "Reference for the living-room storage and display decision.",
@@ -1249,12 +1250,17 @@
       "room_id": "hallway",
       "ownership_status": "not_owned",
       "purchase_status": "not_ordered",
-      "status": "considering",
-      "url": "https://tylko.com/",
+      "status": "rejected",
+      "url": "https://tylko.com/en-uk/furniture/sideboard/1430278,w",
+      "active_comparison": false,
       "price": null,
-      "dimensions": null,
-      "user_notes": "Potential long console/storage solution.",
-      "assistant_assessment": "Functional/customizable reference; exact configuration TBD."
+      "dimensions": { "width_cm": 214, "depth_cm": 36, "height_cm": 87.8 },
+      "preference_rating": 1,
+      "comparison": {
+        "status_note": "Moved out of the hallway — keep Tylko visually special for the living-room TV language"
+      },
+      "user_notes": "Previously considered for the hallway; now rejected here so the modular language is not repeated.",
+      "assistant_assessment": "A good system in the wrong room now that the hallway has a painted arch-cabinet direction."
     },
     {
       "id": "rug_ranier",
@@ -1417,6 +1423,925 @@
       "dimensions": null,
       "user_notes": "Initially cute; shifted toward something more paper-like/floral.",
       "assistant_assessment": "Superseded by the paper flower pendant direction."
+    },
+    {
+      "id": "dining_rug_adeline_sage_round",
+      "name": "Ruggable Adeline Natural Sage — 185cm Round",
+      "category": "rug",
+      "room_id": "dining_area",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://ruggable.co.uk/products/adeline-natural-sage-tufted-rug?size=185round&system=rug-cvr",
+      "image": "/media/products/product-057.jpeg",
+      "price": { "amount": 449, "currency": "GBP" },
+      "dimensions": { "diameter_cm": 185 },
+      "preference_rating": 5,
+      "comparison": {
+        "fabric_direction": "Washable tufted rug; sage, terracotta, gold, teal and cream medallion",
+        "size_depth": "185cm round; 37.5cm beyond the 110cm tabletop on each side",
+        "wall_fit": "Fits the roughly 206cm nook with about 10cm breathing room each side",
+        "status_note": "Favourite — gives the pale furniture its ornamental heirloom layer"
+      },
+      "user_notes": "Favourite. This is the design brief translated into a dining rug.",
+      "assistant_assessment": "Best overall dining-nook rug. It makes the Maru oak table and cream chairs feel intentional while doing the ornamental heavy lifting."
+    },
+    {
+      "id": "dining_rug_provence_sage_round",
+      "name": "Ruggable Provence Sage — 185cm Round",
+      "category": "rug",
+      "room_id": "dining_area",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://ruggable.co.uk/products/provence-sage-tufted-rug?size=185round&system=rug-cvr",
+      "image": "/media/products/product-058.jpeg",
+      "price": { "amount": 449, "currency": "GBP" },
+      "dimensions": { "diameter_cm": 185 },
+      "preference_rating": 4,
+      "comparison": {
+        "fabric_direction": "Washable tufted rug; sage, cream, dusty pink and plum botanical block-print feel",
+        "size_depth": "185cm round; chairs will partly leave the rug when pulled out",
+        "status_note": "Very close second — the softer, more romantic and floral route"
+      },
+      "user_notes": "Gorgeous if the nook should feel more botanical and romantic.",
+      "assistant_assessment": "A strong second choice, but Adeline adds more of the Persian/heirloom story missing from the pale furniture."
+    },
+    {
+      "id": "dining_rug_sakura_indigo_round",
+      "name": "Ruggable Gracie Sakura Indigo — 185cm Round",
+      "category": "rug",
+      "room_id": "dining_area",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://ruggable.co.uk/products/gracie-sakura-indigo-tufted-rug?size=185round&system=rug-cvr",
+      "image": "/media/products/product-059.jpeg",
+      "price": { "amount": 549, "currency": "GBP" },
+      "dimensions": { "diameter_cm": 185 },
+      "preference_rating": 3,
+      "comparison": {
+        "fabric_direction": "Washable tufted rug; deep indigo and cream",
+        "size_depth": "185cm round",
+        "status_note": "Beautiful, but creates another large blue field beside the Mythica Sky sofa"
+      },
+      "user_notes": "Considering, but darker and cooler than the preferred dining-nook direction.",
+      "assistant_assessment": "The pattern works; the colour balance does not beat Adeline or Provence in this room."
+    },
+    {
+      "id": "dining_rug_bonnie_sage_round",
+      "name": "Dunelm Bonnie Scallop Border Wool Round Rug — Sage",
+      "category": "rug",
+      "room_id": "dining_area",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.dunelm.com/product/bonnie-scallop-border-wool-round-rug-1000246128",
+      "image": "/media/products/product-060.jpeg",
+      "price": { "amount": 89, "currency": "GBP" },
+      "dimensions": { "diameter_cm": 133 },
+      "preference_rating": 1,
+      "comparison": {
+        "fabric_direction": "100% wool with a playful sage scalloped border",
+        "size_depth": "Only 11.5cm beyond the 110cm tabletop on each side",
+        "status_note": "Rejected for under the table — chairs would miss it almost completely"
+      },
+      "user_notes": "Adorable and good value, but much too small for the Maru table.",
+      "assistant_assessment": "A useful size check, not a viable dining-rug purchase."
+    },
+    {
+      "id": "bedroom_storage_maru_sage",
+      "name": "Maru 6 Drawer Chest — Sage",
+      "category": "chest_of_drawers",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.daals.co.uk/products/maru-chest-of-6-drawers-sage-green",
+      "image": "/media/products/product-061.jpeg",
+      "price": { "amount": 539.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 150.4, "depth_cm": 45, "height_cm": 80 },
+      "preference_rating": 5,
+      "comparison": {
+        "storage": "Six soft-close drawers",
+        "construction_fabric": "Ash veneer with solid-ash reeding",
+        "aesthetic_rug": "Pink Evelyn + sage + reeding feels decorative and intentional",
+        "status_note": "Favourite — strongest texture and personality"
+      },
+      "user_notes": "Current winner. More visually substantial, but the material and colour earn that presence.",
+      "assistant_assessment": "The best aesthetic choice; use Kaci Wide only if the room needs a quieter, lighter-scaled anchor."
+    },
+    {
+      "id": "bedroom_storage_maude_ash",
+      "name": "Maude 6 Drawer Chest — Natural Ash with Raffia",
+      "category": "chest_of_drawers",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.daals.co.uk/products/maude-chest-of-6-drawers-natural-ash-with-raffia",
+      "image": "/media/products/product-062.jpeg",
+      "price": { "amount": 489.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 160, "depth_cm": 40, "height_cm": 80 },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "Six drawers",
+        "construction_fabric": "Ash veneer, raffia fronts and solid pine legs",
+        "aesthetic_rug": "Airier and warmer; could be customised with paint",
+        "status_note": "Shortlist — matches the bedside language, but Maru has more character"
+      },
+      "user_notes": "The shape and warmth work; custom paint could make it feel more personal.",
+      "assistant_assessment": "Second aesthetic route after Maru, though its 160cm width makes it the largest option."
+    },
+    {
+      "id": "bedroom_storage_kaci_wide",
+      "name": "MADE Kaci 4 Drawer Wide Chest — Oak Effect",
+      "category": "chest_of_drawers",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.made.com/style/su396692/w51357",
+      "image": "/media/products/product-063.jpeg",
+      "price": { "amount": 499, "currency": "GBP" },
+      "dimensions": { "width_cm": 138, "depth_cm": 39.5, "height_cm": 69.5 },
+      "preference_rating": 3,
+      "comparison": {
+        "storage": "Four handle-free drawers",
+        "construction_fabric": "Oak effect with a recessed frame",
+        "aesthetic_rug": "Lower, narrower and calmer; gives the king bed more breathing room",
+        "status_note": "Sensible shortlist — the quieter alternative if Maru feels too substantial"
+      },
+      "user_notes": "Interesting because it fixes the scale concern around Maru and Maude.",
+      "assistant_assessment": "The real practical alternative, but at nearly Maru money it offers less material richness and personality."
+    },
+    {
+      "id": "bedroom_storage_kaci_tall",
+      "name": "MADE Kaci 4 Drawer Tall Chest — Oak Effect",
+      "category": "chest_of_drawers",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.made.com/style/su396692/w51357",
+      "price": { "amount": 429, "currency": "GBP" },
+      "dimensions": { "width_cm": 50.5, "depth_cm": 39.5, "height_cm": 114 },
+      "preference_rating": 2,
+      "comparison": {
+        "storage": "Four-drawer tallboy",
+        "construction_fabric": "Oak effect; handle-free",
+        "aesthetic_rug": "Excellent space-saving footprint but not a bedroom anchor",
+        "status_note": "Considering for space efficiency, below the wide chests"
+      },
+      "user_notes": "Solves a different problem: small footprint rather than a beautiful low anchor.",
+      "assistant_assessment": "Keep only if floor space becomes more important than the low, furniture-like composition."
+    },
+    {
+      "id": "bedroom_storage_penn_dark_oak",
+      "name": "MADE Penn 9 Drawer Chest — Dark Stain Oak",
+      "category": "chest_of_drawers",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.made.com/style/st471736/n23448",
+      "image": "/media/products/product-064.jpeg",
+      "price": { "amount": 899, "currency": "GBP" },
+      "dimensions": { "width_cm": 80, "depth_cm": 44, "height_cm": 144 },
+      "preference_rating": 1,
+      "comparison": {
+        "storage": "Nine drawers",
+        "construction_fabric": "Dark-stain oak with solid-oak tapered legs and finger-jointed details",
+        "aesthetic_rug": "Beautiful alone, but too dark, tall and serious for the pink floral room",
+        "status_note": "Rejected — heavy mood and price"
+      },
+      "user_notes": "Gorgeous furniture, but belongs in a moodier grown-up room.",
+      "assistant_assessment": "The quality does not overcome the 144cm height, £899 price, or mismatch with the intended bedroom mood."
+    },
+    {
+      "id": "living_lamp_wave",
+      "name": "Dunelm Wave Modern LED Floor Lamp",
+      "category": "floor_lamp",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.dunelm.com/product/wave-modern-led-floor-lamp-1000266719?defaultSkuId=30969534",
+      "image": "/media/products/product-065.jpeg",
+      "price": { "amount": 99, "currency": "GBP" },
+      "dimensions": { "width_cm": 20, "depth_cm": 20, "height_cm": 126 },
+      "preference_rating": 5,
+      "comparison": {
+        "fabric_direction": "Real wood and steel; sculptural botanical squiggle",
+        "delivery_stock": "Integrated 3000K LED, 820 lm; not dimmable",
+        "wall_fit": "Small 20 × 20cm footprint",
+        "status_note": "Favourite — weird, warm and organic rather than futuristic"
+      },
+      "user_notes": "The surprise winner: a lamp behaving strangely without introducing cold metal.",
+      "assistant_assessment": "Best match for the playful soft-maximalist brief, subject to confirming its position around the sofa."
+    },
+    {
+      "id": "living_lamp_clementine_pistachio",
+      "name": "Dunelm Clementine Boho Floor Lamp — Pistachio",
+      "category": "floor_lamp",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.dunelm.com/product/clementine-boho-floor-lamp-1000254243?defaultSkuId=31046955",
+      "image": "/media/products/product-066.jpeg",
+      "price": { "amount": 99, "currency": "GBP" },
+      "dimensions": { "width_cm": 26, "depth_cm": 26, "height_cm": 130 },
+      "preference_rating": 4,
+      "comparison": {
+        "fabric_direction": "Pistachio skinny glowing column",
+        "wall_fit": "Compact 26cm footprint",
+        "status_note": "Shortlist — extremely on-palette, with a slight generic-boho risk"
+      },
+      "user_notes": "Very cute; the surrounding art and objects should keep it from reading too generic.",
+      "assistant_assessment": "Strong colour-led second choice after Wave."
+    },
+    {
+      "id": "living_lamp_lilly_arc",
+      "name": "Dunelm Lilly Adjustable Arc Floor Lamp",
+      "category": "floor_lamp",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.dunelm.com/product/lilly-adjustable-floor-lamp-1000292491?defaultSkuId=31038206",
+      "image": "/media/products/product-067.jpeg",
+      "price": { "amount": 120, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "depth_cm": 55, "height_cm": 171 },
+      "preference_rating": 3,
+      "comparison": {
+        "fabric_direction": "Warm brass with a romantic two-tier pleated shade",
+        "wall_fit": "Large 75 × 55cm footprint; useful arc over sofa seating",
+        "status_note": "Considering — most useful task light, but needs dramatically more floor space"
+      },
+      "user_notes": "Actually very good, but placement must be solved before buying.",
+      "assistant_assessment": "The functional choice beside the sofa, below Wave and Clementine for sculptural character and footprint."
+    },
+    {
+      "id": "living_lamp_mirissa",
+      "name": "Dunelm Mirissa Slubby Handloom Floor Lamp",
+      "category": "floor_lamp",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.dunelm.com/product/pacific-lifestyle-mirissa-slubby-handloom-fabric-floor-lamp-1000282278",
+      "image": "/media/products/product-068.jpeg",
+      "price": { "amount": 179, "currency": "GBP" },
+      "dimensions": { "width_cm": 36, "depth_cm": 36, "height_cm": 83 },
+      "preference_rating": 2,
+      "comparison": {
+        "fabric_direction": "White handloom texture; soft ambient glow; made in India",
+        "delivery_stock": "Currently unavailable",
+        "wall_fit": "Only 83cm tall — closer to a giant table lamp",
+        "status_note": "Lower-priority considering — gorgeous glow object, but expensive for its height"
+      },
+      "user_notes": "Lovely material direction, but £179 and very short.",
+      "assistant_assessment": "A beautiful object, but the scale and availability make it a weaker floor-lamp solution."
+    },
+    {
+      "id": "living_lamp_apollo_chrome",
+      "name": "Dunelm Apollo Integrated LED Floor Lamp — Chrome",
+      "category": "floor_lamp",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.dunelm.com/product/apollo-integrated-led-touch-dimmable-chrome-floor-lamp-1000158488",
+      "price": { "amount": 85, "currency": "GBP" },
+      "dimensions": { "diameter_cm": 23, "height_cm": 166 },
+      "preference_rating": 1,
+      "comparison": {
+        "fabric_direction": "Sculptural spiral in chrome",
+        "delivery_stock": "Integrated, non-replaceable LED",
+        "status_note": "Rejected in chrome — excellent shape, wrong finish, poor DIY-paint candidate"
+      },
+      "user_notes": "Shape yes, chrome no.",
+      "assistant_assessment": "Wave captures the same playful movement in a warmer and more compatible material."
+    },
+    {
+      "id": "hall_coat_nell_sage",
+      "name": "DUSK Nell Hallway Shelf with Hooks — Sage",
+      "category": "coat_storage",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://dusk.com/products/nell-hallway-shelf-with-hooks-sage",
+      "image": "/media/products/product-070.jpeg",
+      "price": { "amount": 125, "currency": "GBP" },
+      "dimensions": { "width_cm": 110, "depth_cm": 36.5, "height_cm": 173 },
+      "preference_rating": 5,
+      "comparison": {
+        "storage": "Hooks, top shelf and four shoe shelves",
+        "delivery_stock": "Currently sold out",
+        "wall_fit": "Best near the entrance; depth is slightly beyond the 35cm console guideline",
+        "status_note": "Favourite coat-and-drop station — sage prevents an all-oak hallway"
+      },
+      "user_notes": "Favourite if it returns. Solves coats, bags and everyday shoes in one piece.",
+      "assistant_assessment": "The strongest functional coat zone and the right colour counterweight to the natural-oak elements."
+    },
+    {
+      "id": "hall_coat_hay_beam",
+      "name": "HAY Beam Coat Rack — Light Grey",
+      "category": "coat_storage",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.nest.co.uk/product/hay-beam-coat-rack/light-grey",
+      "price": { "amount": 115, "currency": "GBP" },
+      "dimensions": { "width_options_cm": "60 or 90" },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "Adjustable wooden hooks and a small shelf",
+        "delivery_stock": "Availability is patchy",
+        "wall_fit": "Much lighter than a hall tree; needs separate shoe storage below",
+        "status_note": "Concept favourite and best fallback if Nell stays unavailable"
+      },
+      "user_notes": "The simpler, lighter coat-zone route.",
+      "assistant_assessment": "A strong alternative system, but it does not solve as many everyday objects by itself as Nell."
+    },
+    {
+      "id": "hall_bench_hattie",
+      "name": "DUSK Hattie Storage Bench — Light Wood",
+      "category": "storage_bench",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://dusk.com/products/hattie-storage-bench-light-wood",
+      "image": "/media/products/product-071.jpeg",
+      "price": { "amount": 179, "currency": "GBP" },
+      "dimensions": { "width_cm": 90, "depth_cm": 39, "height_cm": 45 },
+      "preference_rating": 5,
+      "comparison": {
+        "storage": "Hidden bulky storage plus a cushioned seat",
+        "construction_fabric": "Light wood effect; fluted front and rounded corners",
+        "status_note": "Favourite practical bench — good for bags, picnic blanket and supplies"
+      },
+      "user_notes": "Gorgeous with Nell because they relate without becoming a matching furniture set.",
+      "assistant_assessment": "The best bench if hidden storage matters more than making the seat the decorative focal point."
+    },
+    {
+      "id": "hall_bench_maru_oak",
+      "name": "Daals Maru Storage Ottoman Bench — Oak",
+      "category": "storage_bench",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.daals.co.uk/products/maru-storage-bench-oak",
+      "image": "/media/products/product-078.jpeg",
+      "price": { "amount": 289.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 135, "depth_cm": 40, "height_cm": 48.3 },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "Large interior: 127.8 × 32.5 × 44.5cm",
+        "construction_fabric": "Solid-oak reeding",
+        "status_note": "Shortlist — more luxurious and sculptural than Hattie, but larger and pricier"
+      },
+      "user_notes": "Especially good if the closed-storage console becomes painted rather than oak.",
+      "assistant_assessment": "The premium practical bench, supplying real wood texture when the opposite cabinet carries colour."
+    },
+    {
+      "id": "hall_bench_beryl_sage",
+      "name": "MADE Beryl Bench — Natural and Sage Embossed Chenille",
+      "category": "storage_bench",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.made.com/style/su752423/h48653",
+      "image": "/media/products/product-079.jpeg",
+      "price": { "amount": 299, "currency": "GBP" },
+      "dimensions": { "width_cm": 135, "depth_cm": 44, "height_cm": 50 },
+      "preference_rating": 5,
+      "comparison": {
+        "storage": "No storage",
+        "construction_fabric": "Natural frame, sage patterned chenille and chunky arched legs",
+        "status_note": "Decorative favourite — pattern + sage + arches gives the hallway its strongest story"
+      },
+      "user_notes": "Favourite Beryl version and favourite balance with a cream or dusty-blue hacked BESTÅ.",
+      "assistant_assessment": "The right bench if the closed-storage cabinet carries the practical load."
+    },
+    {
+      "id": "hall_bench_beryl_boucle",
+      "name": "MADE Beryl Bench — Off White Bouclé",
+      "category": "storage_bench",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.made.com/style/su752423/h48648",
+      "image": "/media/products/product-080.jpeg",
+      "price": { "amount": 299, "currency": "GBP" },
+      "dimensions": { "width_cm": 135, "depth_cm": 44, "height_cm": 50 },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "No storage",
+        "construction_fabric": "Off-white bouclé with chunky arched legs",
+        "status_note": "Decorative shortlist — adorable shape, but less rich than the sage chenille version"
+      },
+      "user_notes": "Use only if the console becomes the ornate colourful piece.",
+      "assistant_assessment": "The arch shape is excellent, but the sage patterned version carries more of the design brief."
+    },
+    {
+      "id": "hall_bench_brixton",
+      "name": "MADE Brixton Bench — Off White Bouclé",
+      "category": "storage_bench",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.made.com/style/su456635/af7066",
+      "image": "/media/products/product-081.jpeg",
+      "price": { "amount": 225, "currency": "GBP" },
+      "dimensions": null,
+      "preference_rating": 2,
+      "comparison": {
+        "storage": "No storage",
+        "construction_fabric": "Soft curved bouclé silhouette",
+        "status_note": "Considering behind Beryl — pleasant, but less distinctive"
+      },
+      "user_notes": "Fine with a very ornate console, but Beryl gives us more story.",
+      "assistant_assessment": "A viable soft bench that does not win either the practical or decorative comparison."
+    },
+    {
+      "id": "hall_bench_frances_rattan",
+      "name": "Daals Frances Rattan Storage Bench — White",
+      "category": "storage_bench",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.daals.co.uk/products/frances-woven-rattan-storage-bench-with-cushion-white",
+      "image": "/media/products/product-072.jpeg",
+      "price": { "amount": 143.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 96, "depth_cm": 39, "height_cm": 60 },
+      "preference_rating": 1,
+      "comparison": {
+        "storage": "Seat plus shoe/storage cabinet",
+        "construction_fabric": "White frame, woven rattan and cushion",
+        "status_note": "Rejected aesthetically — useful function, but too boho/Japandi"
+      },
+      "user_notes": "Keep only as a functional reference.",
+      "assistant_assessment": "Good proportions and function, wrong finish and design language."
+    },
+    {
+      "id": "hall_console_besta_180",
+      "name": "IKEA BESTÅ Storage Combination — 180cm",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.ikea.com/gb/en/p/besta-storage-combination-with-drawers-white-lappviken-stubbarp-white-s99412686/",
+      "image": "/media/products/product-082.jpeg",
+      "price": { "amount": 175, "currency": "GBP" },
+      "dimensions": { "width_cm": 180, "depth_cm": 42, "height_cm": 74 },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "Drawers and cupboards with blank fronts",
+        "wall_fit": "Long console; 42cm is deeper than the earlier 35cm working limit",
+        "status_note": "Favourite hack base — add a dusty-colour finish, natural-oak arches and restrained floral details"
+      },
+      "user_notes": "The most flexible cheap base for a custom Slab/Skramso-inspired cabinet.",
+      "assistant_assessment": "Strong concept, but compare the 120cm version before committing this much wall and depth."
+    },
+    {
+      "id": "hall_console_besta_120",
+      "name": "IKEA BESTÅ Storage Combination — 120cm Hack Base",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.ikea.com/gb/en/cat/besta-storage-system-46053/",
+      "image": "/media/products/product-092.jpeg",
+      "price": { "amount": 120, "currency": "GBP" },
+      "dimensions": { "width_cm": 120, "depth_cm": 42, "height_cm": 74 },
+      "preference_rating": 5,
+      "comparison": {
+        "storage": "Smaller doors-and-drawers configuration",
+        "wall_fit": "Probably the best starting width; still verify the 42cm depth in the route",
+        "status_note": "Preferred hack size until the final wall position is tested"
+      },
+      "user_notes": "Same custom potential without committing 180cm of hallway wall.",
+      "assistant_assessment": "Current closed-storage base favourite, with exact configuration still to be chosen."
+    },
+    {
+      "id": "hall_console_hattie_shoe",
+      "name": "DUSK Hattie Shoe Cabinet — Light Wood",
+      "category": "shoe_storage",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://dusk.com/products/hattie-shoe-cabinet-light-wood",
+      "image": "/media/products/product-083.jpeg",
+      "price": { "amount": 199, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "depth_cm": 25, "height_cm": 126.5 },
+      "preference_rating": 3,
+      "comparison": {
+        "storage": "Dedicated shallow shoe storage",
+        "wall_fit": "Excellent 25cm hallway depth",
+        "status_note": "Practical backup — easier fit, less special than the arched DIY cabinet"
+      },
+      "user_notes": "Very hallway-friendly fallback.",
+      "assistant_assessment": "The depth-safe ready-made option if the BESTÅ hack proves too deep or involved."
+    },
+    {
+      "id": "hall_console_kaci_sideboard",
+      "name": "MADE Kaci Extra Large Sideboard — Oak Effect",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.made.com/style/su422373/w11716",
+      "image": "/media/products/product-090.jpeg",
+      "price": { "amount": 489, "currency": "GBP" },
+      "dimensions": { "width_cm": 181.5, "depth_cm": 39.5, "height_cm": 69.5 },
+      "preference_rating": 1,
+      "comparison": {
+        "storage": "Three doors and two drawers",
+        "status_note": "Rejected — sleek and useful, but too generic and too close to Tylko's modular language"
+      },
+      "user_notes": "Does not add the texture or ornament the hallway needs.",
+      "assistant_assessment": "Functional but not worth repeating the modern modular language reserved for the living-room TV wall."
+    },
+    {
+      "id": "hall_console_logstand_reference",
+      "name": "Slab Studio LogStand Arch Shoe Cabinet",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://slabstudiohongkong.com/en-ae/products/logstand-japandi-arch-panel-wooden-shoe-cabinet",
+      "active_comparison": false,
+      "price": null,
+      "dimensions": { "width_cm": 180, "depth_cm": 40, "height_cm": 85 },
+      "preference_rating": 2,
+      "comparison": {
+        "construction_fabric": "Solid wood with repeated tall arch panels",
+        "status_note": "Primary design reference, not a purchase — too expensive; translate its arches into the BESTÅ hack"
+      },
+      "user_notes": "Visual brief for the DIY cabinet, potentially with restrained painted flowers.",
+      "assistant_assessment": "Steal the arch rhythm, not the price tag or exact furniture."
+    },
+    {
+      "id": "hall_console_skramso_reference",
+      "name": "Skramso Large Sideboard",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://thedenandnow.co.uk/products/skramso-large-sideboard",
+      "active_comparison": false,
+      "price": { "amount": 1190, "currency": "GBP" },
+      "dimensions": { "width_cm": 166, "depth_cm": 45, "height_cm": 70 },
+      "preference_rating": 2,
+      "comparison": {
+        "construction_fabric": "Mango wood; arch-front rhythm, rounded feet and texture",
+        "status_note": "Design reference — too costly and deep to be the obvious purchase"
+      },
+      "user_notes": "One of the references for the BESTÅ front design.",
+      "assistant_assessment": "A strong source of shape language, not the sensible hallway buy."
+    },
+    {
+      "id": "hall_hack_artvoom_besta",
+      "name": "Artvoom BESTÅ-Specific Oak Overlays",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.etsy.com/uk/listing/1690291460/ikea-besta-overlays-decorative-furniture",
+      "price": { "amount": 44.4, "currency": "GBP" },
+      "dimensions": { "depth_mm": 4 },
+      "preference_rating": 5,
+      "comparison": {
+        "construction_fabric": "Real oak veneer overlays supplied with tape",
+        "status_note": "Best off-the-shelf hack route for adding natural wood texture over a painted BESTÅ"
+      },
+      "user_notes": "Ask about a repeated tall-arch layout in a suitable veneer colour.",
+      "assistant_assessment": "The practical bridge between the inexpensive modular base and the custom arch-cabinet brief."
+    },
+    {
+      "id": "hall_runner_santiago_blue_cream",
+      "name": "Ruggable Santiago Blue Cream Tufted Runner",
+      "category": "runner_rug",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://ruggable.co.uk/products/santiago-blue-cream-tufted-rug?size=75x215&system=rug-cvr",
+      "image": "/media/products/product-074.jpeg",
+      "price": { "amount": 159, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "length_cm": 215 },
+      "preference_rating": 5,
+      "comparison": {
+        "fabric_direction": "Washable tufted runner; ornamental blue and cream",
+        "wall_fit": "75cm width leaves roughly 36cm of floor each side in the 147cm hall",
+        "status_note": "Favourite — the strongest immediate colour and pattern response"
+      },
+      "user_notes": "Love this one.",
+      "assistant_assessment": "Current hallway runner favourite; compare in context against sage Nell and the painted cabinet before ordering."
+    },
+    {
+      "id": "hall_runner_montreal_jade",
+      "name": "Ruggable Morris & Co. Montreal Natural Jade Tufted Runner",
+      "category": "runner_rug",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://ruggable.co.uk/products/morris-and-co-montreal-natural-jade-tufted-rug?size=75x215&system=rug-cvr",
+      "image": "/media/products/product-073.jpeg",
+      "price": { "amount": 189, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "length_cm": 215 },
+      "preference_rating": 4,
+      "comparison": {
+        "fabric_direction": "Washable tufted Morris & Co. runner; natural and jade",
+        "status_note": "Considering — directly supports the sage and botanical hallway language"
+      },
+      "user_notes": "Convenient washable option for a dirty hallway.",
+      "assistant_assessment": "The most palette-coherent alternative to Santiago."
+    },
+    {
+      "id": "hall_runner_sakura_indigo",
+      "name": "Ruggable Gracie Sakura Indigo Tufted Runner",
+      "category": "runner_rug",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://ruggable.co.uk/products/gracie-sakura-indigo-tufted-rug?size=75x215&system=rug-cvr",
+      "image": "/media/products/product-059.jpeg",
+      "price": { "amount": 189, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "length_cm": 215 },
+      "preference_rating": 3,
+      "comparison": {
+        "fabric_direction": "Washable tufted runner; indigo and cream",
+        "status_note": "Considering — ornate, but potentially a heavier blue field than Santiago"
+      },
+      "user_notes": "Worth comparing as a runner even though it felt too dark for the dining nook.",
+      "assistant_assessment": "The hallway can absorb the depth better than the dining nook, but Santiago is the more exciting blue route."
+    },
+    {
+      "id": "hall_runner_meadow_sweet",
+      "name": "Ruggable Morris & Co. Meadow Sweet Ivory Green Tufted Runner",
+      "category": "runner_rug",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://ruggable.co.uk/products/morris-and-co-meadow-sweet-ivory-green-tufted-rug?size=75x215&system=rug-cvr",
+      "image": "/media/products/product-075.jpeg",
+      "price": { "amount": 189, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "length_cm": 215 },
+      "preference_rating": 3,
+      "comparison": {
+        "fabric_direction": "Washable tufted runner; ivory and green botanical pattern",
+        "status_note": "Considering — soft botanical route that may become too coordinated with sage furniture"
+      },
+      "user_notes": "Practical and on-brief; needs an in-room colour comparison.",
+      "assistant_assessment": "Pretty and safe, but the hallway may benefit from Santiago's stronger contrast."
+    },
+    {
+      "id": "hall_runner_calabria_blue",
+      "name": "Ruggable Calabria Cream Light Blue Tufted Runner",
+      "category": "runner_rug",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://ruggable.co.uk/products/calabria-cream-light-blue-tufted-rug?size=75x215&system=rug-cvr",
+      "image": "/media/products/product-076.jpeg",
+      "price": { "amount": 159, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "length_cm": 215 },
+      "preference_rating": 3,
+      "comparison": {
+        "fabric_direction": "Washable tufted runner; cream and light blue",
+        "status_note": "Considering — lighter and quieter blue option"
+      },
+      "user_notes": "Could support a dusty-blue cabinet finish without making the hall dark.",
+      "assistant_assessment": "A useful low-contrast blue route, though it has less ornamental punch than Santiago."
+    },
+    {
+      "id": "hall_runner_mazzy_blue",
+      "name": "Ruggable Mazzy Ornamental Blue Tufted Runner",
+      "category": "runner_rug",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://ruggable.co.uk/products/humberto-leon-mazzy-ornamental-blue-tufted-rug?size=75x215&system=rug-cvr",
+      "image": "/media/products/product-077.jpeg",
+      "price": { "amount": 159, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "length_cm": 215 },
+      "preference_rating": 3,
+      "comparison": {
+        "fabric_direction": "Washable tufted runner; graphic ornamental blue",
+        "status_note": "Considering — more graphic than the Persian-botanical preference"
+      },
+      "user_notes": "Added once; duplicate link removed.",
+      "assistant_assessment": "Keep in the runner set, but Santiago and Montreal currently fit the room direction more naturally."
+    },
+    {
+      "id": "tv_storage_ellie_integrated_reference",
+      "name": "Tikamoon Ellie TV Stand + Shelving",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": null,
+      "active_comparison": false,
+      "price": { "amount": 1399, "currency": "GBP" },
+      "dimensions": { "width_cm": 180, "depth_cm": 40, "height_cm": 179, "tv_opening": "111.8 × 71.6cm" },
+      "preference_rating": 5,
+      "comparison": {
+        "construction_fabric": "Integrated solid-oak media shelving with thin uprights and mixed open/closed storage",
+        "wall_fit": "Freestanding, but the TV opening only supports roughly 45 inches",
+        "status_note": "Aesthetic benchmark, rejected functionally for the 55-inch TV"
+      },
+      "user_notes": "Closest real product to the desired architectural warmth, but it cannot fit the TV.",
+      "assistant_assessment": "Use its light oak architecture as a reference, not as the purchase."
+    },
+    {
+      "id": "tv_storage_ellie_console",
+      "name": "Tikamoon Ellie 180cm Solid Oak TV Unit",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.tikamoon.co.uk/art-ellie-180-cm-solid-oak-tv-stand-6793.htm",
+      "image": "/media/products/product-084.jpeg",
+      "price": { "amount": 899, "currency": "GBP" },
+      "dimensions": { "width_cm": 180, "depth_cm": 40, "height_cm": 46 },
+      "preference_rating": 5,
+      "comparison": {
+        "construction_fabric": "FSC-certified solid oak; two doors, two drawers and open niches",
+        "wall_fit": "Leaves about 10.5cm within the 190.5cm window-to-heater run",
+        "status_note": "Strong console shortlist — the best low-base continuation of the Ellie aesthetic"
+      },
+      "user_notes": "Ideal basis for the newer gallery-wall concept; upper shelving would be separate.",
+      "assistant_assessment": "Current low-console aesthetic leader, provided 40cm depth works in the final placement."
+    },
+    {
+      "id": "tv_storage_arto_console",
+      "name": "Tikamoon Arto 180cm Solid Oak TV Unit",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.tikamoon.co.uk/art-arto-180-cm-solid-oak-tv-unit-6790.htm",
+      "image": "/media/products/product-085.jpeg",
+      "price": { "amount": 899, "currency": "GBP" },
+      "dimensions": { "width_cm": 180, "depth_cm": 40, "height_cm": 45 },
+      "preference_rating": 3,
+      "comparison": {
+        "construction_fabric": "FSC-certified solid oak; four drawers and two open compartments",
+        "wall_fit": "Ideal width and a quiet architectural base",
+        "status_note": "Considering — beautiful, but possibly too sleek and minimal"
+      },
+      "user_notes": "Real solid oak and excellent proportions; less characterful than Ellie or a ribbed-front direction.",
+      "assistant_assessment": "A safe high-quality base that does not yet create the collected, soft-maximalist story by itself."
+    },
+    {
+      "id": "tv_storage_elina_console",
+      "name": "La Redoute Elina 180cm Oak Veneer TV Unit",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.laredoute.co.uk/ppdp/prod-351373818.aspx",
+      "image": "/media/products/product-086.jpeg",
+      "price": { "amount": 629.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 180, "depth_cm": 40, "height_cm": 60 },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "Three drawers plus a full-width open compartment",
+        "construction_fabric": "Oak-veneered MDF with solid ash legs",
+        "status_note": "Worth revisiting — already has the desired closed-below and open-above structure"
+      },
+      "user_notes": "More layered and furniture-like than a normal TV bench; lacks ribbed fronts.",
+      "assistant_assessment": "The best ready-made structural match to the current two-level console idea at a lower price than solid oak."
+    },
+    {
+      "id": "tv_storage_cloe",
+      "name": "Woodendot Cloe Oak TV Stand",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://woodendot.com/en-gb/collections/cloe/products/cloe-oak-tv-stand-with-wood-doors",
+      "image": "/media/products/product-088.jpeg",
+      "price": { "amount": 703.34, "currency": "GBP" },
+      "dimensions": { "width_cm": 160, "depth_cm": 38, "height_cm": 49 },
+      "preference_rating": 3,
+      "comparison": {
+        "construction_fabric": "Modular oak system with a solid-oak structure and invisible hardware",
+        "status_note": "Considering / component inspiration — flexible, but cubby-like and costly once expanded"
+      },
+      "user_notes": "Useful proof that the wall can grow horizontally and vertically in separate pieces.",
+      "assistant_assessment": "A better component reference than a complete answer to the warmer, less modular final composition."
+    },
+    {
+      "id": "tv_storage_shelved_system",
+      "name": "Shelved Modular TV System",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.shelved.co.uk/",
+      "active_comparison": false,
+      "price": { "amount": 1754.05, "currency": "GBP" },
+      "dimensions": { "tv_capacity": "up to 65 inches", "configuration": "modular" },
+      "preference_rating": 2,
+      "comparison": {
+        "storage": "Configurable cupboards, shelves, TV opening and cable management",
+        "status_note": "Mostly superseded — functionally correct, visually too symmetrical, repetitive and grid-like"
+      },
+      "user_notes": "Useful engineering reference, not the desired cozy collected wall.",
+      "assistant_assessment": "The system solves the checklist but not the emotional or visual brief."
+    },
+    {
+      "id": "tv_side_rymo_bookcase",
+      "name": "La Redoute Rymo Asymmetric Oak Bookcase",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.laredoute.co.uk/ppdp/prod-350276274.aspx",
+      "image": "/media/products/product-087.jpeg",
+      "price": { "amount": 439.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 90, "depth_cm": 30, "height_cm": 140 },
+      "preference_rating": 4,
+      "comparison": {
+        "construction_fabric": "Finger-jointed oak with asymmetric compartments",
+        "wall_fit": "Useful on the dining side, but only medium height",
+        "status_note": "Side-shelf shortlist — real oak and genuine asymmetry"
+      },
+      "user_notes": "Could be the dining-side vertical element, though it is not dramatically tall.",
+      "assistant_assessment": "The strongest current ready-made side-bookcase candidate."
+    },
+    {
+      "id": "tv_side_orga_bookcase",
+      "name": "La Redoute Orga Asymmetric Oak Bookcase",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.laredoute.co.uk/ppdp/prod-350272286.aspx",
+      "image": "/media/products/product-091.jpeg",
+      "price": { "amount": 1039.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 189, "depth_cm": 33, "height_cm": 193 },
+      "preference_rating": 3,
+      "comparison": {
+        "construction_fabric": "Large oak-veneer shelving with irregular compartments",
+        "wall_fit": "Architectural and dramatic, but visually competes with the gallery wall",
+        "status_note": "Considering for the right side; expensive and probably too dominant"
+      },
+      "user_notes": "More irregular than a conventional bookcase, but could become the whole room.",
+      "assistant_assessment": "Keep as a scale and asymmetry reference; Rymo is the more plausible side piece."
+    },
+    {
+      "id": "tv_storage_litto_reference",
+      "name": "Kave Home Litto Modular Oak Shelving — 4 Piece",
+      "category": "shelving",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://kavehome.com/gb/en/p/litto-set-of-4-modular-shelving-units-in-oak-wood-veneer-168-x-76-cm",
+      "active_comparison": false,
+      "image": "/media/products/product-089.jpeg",
+      "price": { "amount": 1195, "currency": "GBP" },
+      "dimensions": { "width_cm": 168, "depth_cm": 30, "height_cm": 76 },
+      "preference_rating": 2,
+      "comparison": {
+        "construction_fabric": "Oak veneer modular shelves with wall brackets",
+        "status_note": "Dropped down list — light geometry, but still boxy, expensive and wall-attached"
+      },
+      "user_notes": "Useful modular reference, not a current purchase priority.",
+      "assistant_assessment": "Superseded by a simpler low console plus independent side bookcase."
     },
     {
       "id": "ikea_vidga",
@@ -1990,19 +2915,85 @@
       "candidate_item_ids": []
     },
     {
+      "id": "need_bedroom_storage",
+      "room_id": "bedroom",
+      "name": "Bedroom chest of drawers",
+      "status": "decision_in_progress",
+      "priority": "high",
+      "requirements": [
+        "enough closed clothing storage",
+        "does not crowd the king bed",
+        "works with the pink Evelyn and floral rug direction",
+        "low furniture-like anchor preferred over a tallboy"
+      ],
+      "candidate_item_ids": [
+        "bedroom_storage_maru_sage",
+        "bedroom_storage_maude_ash",
+        "bedroom_storage_kaci_wide",
+        "bedroom_storage_kaci_tall",
+        "bedroom_storage_penn_dark_oak"
+      ]
+    },
+    {
       "id": "need_hallway_storage",
       "room_id": "hallway",
-      "name": "Hallway storage",
-      "status": "open",
+      "name": "Closed hallway storage + console",
+      "status": "decision_in_progress",
       "priority": "high",
       "requirements": [
         "shoe storage",
         "bags/backpacks/hats organization",
         "room for flowers/trinkets/art/photos on console surface",
-        "respect narrow hallway clearance"
+        "respect narrow hallway clearance",
+        "painted or ornamented fronts rather than another plain oak unit"
       ],
       "candidate_item_ids": [
+        "hall_console_besta_120",
+        "hall_console_besta_180",
+        "hall_hack_artvoom_besta",
+        "hall_console_hattie_shoe",
+        "hall_console_logstand_reference",
+        "hall_console_skramso_reference",
+        "hall_console_kaci_sideboard",
         "hallway_tylko_console"
+      ]
+    },
+    {
+      "id": "need_hallway_coat_zone",
+      "room_id": "hallway",
+      "name": "Coat + everyday drop zone",
+      "status": "decision_in_progress",
+      "priority": "high",
+      "requirements": [
+        "hooks for coats, purses, backpacks and hats",
+        "everyday shoes or slippers nearby",
+        "keep the entry visually light",
+        "sage or restrained warm wood"
+      ],
+      "candidate_item_ids": [
+        "hall_coat_nell_sage",
+        "hall_coat_hay_beam"
+      ]
+    },
+    {
+      "id": "need_hallway_bench",
+      "room_id": "hallway",
+      "name": "Hallway bench",
+      "status": "decision_in_progress",
+      "priority": "medium",
+      "requirements": [
+        "one sculptural seating moment",
+        "hidden bulky storage is useful but optional",
+        "avoid a matching light-oak furniture set",
+        "arched, fluted or patterned detail preferred"
+      ],
+      "candidate_item_ids": [
+        "hall_bench_hattie",
+        "hall_bench_beryl_sage",
+        "hall_bench_maru_oak",
+        "hall_bench_beryl_boucle",
+        "hall_bench_brixton",
+        "hall_bench_frances_rattan"
       ]
     },
     {
@@ -2027,14 +3018,57 @@
       "status": "open",
       "priority": "medium",
       "requirements": [
-        "design around Frame-style TV as art rather than a dominant TV unit",
-        "long closed + open two-story shelf concept",
-        "texture such as ribbing",
-        "possible tall/wide bookcase on right",
-        "gallery wall integration"
+        "long roughly 180cm two-level console",
+        "closed storage below with some open display",
+        "subtle fluting or ribbing if possible",
+        "55-inch art TV floats above inside a dense but soft gallery wall",
+        "keep the window side lighter"
       ],
       "candidate_item_ids": [
-        "shelving_laredoute_reference"
+        "tv_storage_ellie_console",
+        "tv_storage_elina_console",
+        "tv_storage_arto_console",
+        "tv_storage_cloe",
+        "tv_storage_shelved_system",
+        "tv_storage_ellie_integrated_reference",
+        "tv_storage_litto_reference"
+      ]
+    },
+    {
+      "id": "need_tv_side_shelving",
+      "room_id": "living_room",
+      "name": "Dining-side bookcase",
+      "status": "decision_in_progress",
+      "priority": "medium",
+      "requirements": [
+        "separate wider or taller open bookcase",
+        "more shelving density toward the dining side",
+        "asymmetric and furniture-like rather than built-in",
+        "does not compete with the gallery wall"
+      ],
+      "candidate_item_ids": [
+        "tv_side_rymo_bookcase",
+        "tv_side_orga_bookcase"
+      ]
+    },
+    {
+      "id": "need_living_floor_lamp",
+      "room_id": "living_room",
+      "name": "Weird little glowing object",
+      "status": "decision_in_progress",
+      "priority": "medium",
+      "requirements": [
+        "sculptural and playful rather than respectable",
+        "warm ambient light",
+        "confirm its position around the main sofa",
+        "avoid cold chrome"
+      ],
+      "candidate_item_ids": [
+        "living_lamp_wave",
+        "living_lamp_clementine_pistachio",
+        "living_lamp_lilly_arc",
+        "living_lamp_mirissa",
+        "living_lamp_apollo_chrome"
       ]
     },
     {
@@ -2090,6 +3124,48 @@
       ],
       "candidate_item_ids": [
         "dining_flower_pendant"
+      ]
+    },
+    {
+      "id": "need_dining_rug",
+      "room_id": "dining_area",
+      "name": "Dining nook rug",
+      "status": "near_decision",
+      "priority": "high",
+      "requirements": [
+        "round rug for the 110cm Maru table",
+        "approximately 185cm to fit the 206cm nook",
+        "washable tufted construction preferred",
+        "ornamental sage, terracotta, teal and cream direction",
+        "accept that chairs partly leave the rug when pulled out"
+      ],
+      "candidate_item_ids": [
+        "dining_rug_adeline_sage_round",
+        "dining_rug_provence_sage_round",
+        "dining_rug_sakura_indigo_round",
+        "dining_rug_bonnie_sage_round"
+      ]
+    },
+    {
+      "id": "need_hallway_runner",
+      "room_id": "hallway",
+      "name": "Washable patterned runner",
+      "status": "decision_in_progress",
+      "priority": "medium",
+      "requirements": [
+        "approximately 70–80cm wide",
+        "washable or easy to clean for a high-traffic hallway",
+        "botanical or ornamental rather than plain",
+        "connects sage, oak, blue and the painted cabinet finish"
+      ],
+      "candidate_item_ids": [
+        "hall_runner_santiago_blue_cream",
+        "hall_runner_montreal_jade",
+        "hall_runner_sakura_indigo",
+        "hall_runner_meadow_sweet",
+        "hall_runner_calabria_blue",
+        "hall_runner_mazzy_blue",
+        "peking_runner"
       ]
     },
     {
@@ -2170,12 +3246,44 @@
       "reasoning": "The soundbar is easier to wire and visually slim. Separate speakers improve stereo placement and music but add amplifier and cable-planning work."
     },
     {
+      "id": "d_tv_storage_direction",
+      "room_id": "living_room",
+      "topic": "tv_storage",
+      "status": "leaning",
+      "decision": "Use a roughly 180cm two-level console with closed storage and some open display, a floating art TV inside a soft gallery wall, and a separate bookcase on the dining side.",
+      "reasoning": "Ellie remains the aesthetic benchmark but its integrated shelving cannot fit a 55-inch TV. The low Ellie console and Elina are the strongest console routes; Rymo is the current side-bookcase shortlist. Shelved, Kave Litto, Wayfair sets, Gipey, Flintham, Wingrove, Treku Bost, bespoke Italian systems and custom joinery were useful references but became too boxy, attached, expensive, discontinued or overbuilt for the collected gallery-wall direction."
+    },
+    {
+      "id": "d_living_floor_lamp",
+      "room_id": "living_room",
+      "topic": "floor_lamp",
+      "status": "leaning",
+      "decision": "Wave is the floor-lamp favourite, followed by Clementine Pistachio; do not buy until the lamp position around the main sofa is settled.",
+      "reasoning": "Wave has the playful glowing-object energy without cold metal and uses only a 20cm footprint. Lilly is more useful over seating but needs much more floor space. Apollo's chrome finish is rejected."
+    },
+    {
       "id": "d_bed_shortlist",
       "room_id": "bedroom",
       "topic": "bed_frame",
       "status": "leaning",
       "decision": "The real finalists are Egerie and Evelyn; check whether attractive low wheeled drawers make Evelyn's lack of ottoman storage acceptable.",
       "reasoning": "Egerie is the best overall decision for storage and flexibility. Evelyn is the stronger heart choice and is more compact, but needs a convincing storage plan."
+    },
+    {
+      "id": "d_bedroom_storage",
+      "room_id": "bedroom",
+      "topic": "chest_of_drawers",
+      "status": "leaning",
+      "decision": "Maru Sage is the bedroom-storage favourite; Maude is the customisable second route and Kaci Wide is the quieter scale-conscious alternative.",
+      "reasoning": "Maru's sage finish and solid-ash reeding give the pink Evelyn room the most character. Kaci Wide is lower and narrower, but its oak-effect construction offers less texture for almost the same price. Kaci Tall solves floor-space pressure rather than the desired low-anchor composition; Penn is rejected as too tall, dark, serious and expensive."
+    },
+    {
+      "id": "d_hallway_storage_system",
+      "room_id": "hallway",
+      "topic": "storage_system",
+      "status": "leaning",
+      "decision": "Build the hall as four distinct moments: sage coat zone, one sculptural bench, a painted BESTÅ-based closed-storage console with natural-oak arch overlays, and a wavy mirror over a patterned runner.",
+      "reasoning": "The preferred balance is Nell Sage, Beryl Sage, a cream or dusty-blue 120cm BESTÅ hack with oak arches, and the Santiago runner. Hattie remains the practical bench alternative. LogStand and Skramso are design references rather than purchases; Tylko is reserved for the living-room TV language."
     },
     {
       "id": "d_bathroom_color",
@@ -2208,6 +3316,14 @@
       "status": "leaning",
       "decision": "Prefer a paper-like floral pendant; large paper flower pendant is current favourite.",
       "reasoning": "More characterful and aligned than the earlier Dazuma direction."
+    },
+    {
+      "id": "d_dining_rug",
+      "room_id": "dining_area",
+      "topic": "dining_rug",
+      "status": "leaning",
+      "decision": "Adeline Natural Sage in the 185cm round size is the dining-nook favourite; Provence Sage is the close romantic second choice.",
+      "reasoning": "Adeline's sage, terracotta, gold, teal and cream medallion gives the Maru oak table and cream chairs the ornamental heirloom layer they need. A 185cm rug is a deliberate compromise: only 37.5cm extends beyond the 110cm tabletop, but a larger ideal dining rug would intrude into the island zone within the roughly 206cm nook. Bonnie is rejected at 133cm because chairs would miss it."
     },
     {
       "id": "d_office_prayer_nook",

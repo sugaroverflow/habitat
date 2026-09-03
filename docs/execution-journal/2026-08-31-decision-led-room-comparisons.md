@@ -288,3 +288,55 @@ The app distinguishes a genuinely missing image from a failed image request and 
 ### Next Recommended Step
 
 Add confirmed photos for the four unpictured owned pieces and the four bathroom purchases, then persist room direction and palette edits alongside item edits.
+
+## 2026-09-03T15:51:01+01:00 - Multi-room decision-record expansion
+
+### Goal
+
+Turn the latest dining, bedroom-storage, hallway, lighting, runner, and TV-wall conversations into focused room comparisons without making the mobile boards feel like unfiltered shopping archives.
+
+### Changes
+
+- Added structured dining-rug, bedroom-chest, hallway-zone, hallway-runner, living-floor-lamp, TV-console, and dining-side-bookcase candidates with prices, dimensions, preference votes, links, and conversation takeaways.
+- Updated the room direction and plan copy for the Living Room, Dining Area, Bedroom, and Hallway.
+- Added category labels for the new decision groups.
+- Added stripped, generated-name product assets for the active candidates, including corrected TV-console, bookcase, bedroom-storage, lamp, bench, and rug imagery.
+- Preserved older TV-wall and hallway references in the seed decision history while excluding superseded or purely aspirational pieces from the live comparison tables.
+
+### Decisions
+
+- Adeline Natural Sage is the dining-rug favourite; Maru Sage is the bedroom-chest favourite; Santiago Blue Cream is the current hallway-runner favourite; Wave is the current floor-lamp favourite.
+- The TV-wall direction is a roughly 180 cm two-level console below a floating art TV and soft gallery wall, plus an independent bookcase toward the dining side.
+- The live TV-console comparison is limited to Ellie, Elina, Arto, and Cloe. The integrated Ellie, Shelved, Kave Litto, and other historic systems remain useful design evidence but are not current purchase candidates.
+- The Hallway is treated as separate functional zones: coat/drop storage, one bench, a decorated BESTA-based closed-storage moment, a wavy mirror, and a washable runner.
+
+### Tradeoffs
+
+- Retail prices and stock are conversation snapshots and must be rechecked before purchase.
+- Some reference-only products deliberately have no image because a trustworthy exact product asset was not available.
+- Long comparisons still use horizontal swipe on mobile; narrowing the active candidate set keeps that interaction usable.
+
+### Risks
+
+- Retailer URLs and externally sourced product photography can change, although display copies are now local.
+- Hallway furniture depth and the final floor-lamp position still need physical placement checks before ordering.
+- Votes and edits remain session-only until persistence is added.
+
+### Verification
+
+- Seed JSON parsed with 114 unique items, 19 needs, and 16 decisions; candidate references and local image paths were complete.
+- TypeScript, ESLint, diff validation, and the repository privacy scan passed before the production build.
+- A 390 × 844 Playwright review covered the Dining Area, Bedroom, Hallway, and Living Room decision boards. It confirmed swipeable tables, consistent thumbnails, active-candidate filtering, and lazy-loaded product images.
+- No subagents were used.
+
+### Demo Impact
+
+The room pages now preserve the reasoning that made the original ChatGPT conversations valuable: a user can see the shortlist, the rejected paths, the physical constraint, and the current recommendation without rereading a long chat.
+
+### Customer-Facing Context
+
+The seed remains a sanitized, reviewable source of truth. Images are stored under generated filenames with metadata stripped, and reference-only records are separated from active purchase choices at the data layer.
+
+### Next Recommended Step
+
+Persist item votes, notes, and lifecycle edits, then let Ask Home answer against those edited records rather than the initial seed alone.
