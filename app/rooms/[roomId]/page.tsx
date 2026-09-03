@@ -24,8 +24,9 @@ export default async function RoomPage({ params }: { params: Promise<{ roomId: s
   const needs = roomNeeds(roomId);
   const decisions = roomDecisions(roomId);
   const pins = roomInspiration(roomId);
-  const madeCount = decisions.filter((decision) => decision.status !== "leaning").length;
-  const openCount = needs.length + decisions.filter((decision) => decision.status === "leaning").length;
+  const resolvedNeeds = needs.filter((need) => ["resolved", "decided"].includes(need.status));
+  const madeCount = resolvedNeeds.length + decisions.filter((decision) => decision.status !== "leaning").length;
+  const openCount = needs.length - resolvedNeeds.length + decisions.filter((decision) => decision.status === "leaning").length;
 
   return (
     <div className="space-y-9">

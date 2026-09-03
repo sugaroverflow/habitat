@@ -833,34 +833,34 @@
     },
     {
       "id": "sofa_sky",
-      "name": "OPA Living Sky Modular 3-Seat Chaise",
+      "name": "OPA Living Sky Modular 3-Seat Chaise + Ottoman — Mythica Sky",
       "category": "sofa",
       "room_id": "living_room",
-      "ownership_status": "not_owned",
-      "purchase_status": "not_ordered",
-      "status": "considering",
+      "ownership_status": "purchased",
+      "purchase_status": "ordered",
+      "status": "purchased",
       "url": "https://www.opaliving.co.uk/products/sky-modular-3-seater-chaise-end",
-      "image": "/media/products/product-034.jpeg",
       "active_comparison": true,
       "price": {
         "amount": 1999.99,
         "currency": "GBP"
       },
+      "preference_rating": 5,
       "dimensions": {
         "width_cm": 245,
         "depth_cm": 170
       },
       "comparison": {
-        "approx_setup_price": "£1,999.99 chaise + optional stool",
+        "approx_setup_price": "Chaise listing £1,999.99; ottoman included in the purchase",
         "size_depth": "245 × 170 cm chaise",
-        "fabric_direction": "100+ fabric choices",
-        "delivery_stock": "Standard 4–6 weeks; express can be much faster",
+        "fabric_direction": "Mythica Sky",
+        "delivery_stock": "Purchased; delivery timing not recorded",
         "movie_pit": "4 / 5",
         "facing_halves": "4.5 / 5",
-        "status_note": "Need swatches + exact module breakdown"
+        "status_note": "Purchased (yay!) — chosen main sofa with matching ottoman"
       },
-      "user_notes": "Promising compact footprint and fabric choice; needs swatches and a confirmed module breakdown.",
-      "assistant_assessment": "Worth investigating, but the layout scores trail the full-score modular options."
+      "user_notes": "Purchased the chaise with ottoman in Mythica Sky.",
+      "assistant_assessment": "Main sofa decision complete. The compact modular footprint, ottoman, and cool blue finish won over the earlier Auburn benchmark."
     },
     {
       "id": "sofa_romy",
@@ -2848,7 +2848,7 @@
       "id": "need_main_sofa",
       "room_id": "living_room",
       "name": "Main sofa",
-      "status": "decision_in_progress",
+      "status": "resolved",
       "priority": "high",
       "requirements": [
         "excellent movie-pit setup",
@@ -3225,9 +3225,9 @@
       "id": "d_sofa_benchmark",
       "room_id": "living_room",
       "topic": "main_sofa",
-      "status": "leaning",
-      "decision": "Auburn remains #1; investigate a custom build from in-stock modules and stool.",
-      "reasoning": "It remains the favourite look and scores 5/5 for both the movie pit and facing-halves layouts. Carlyle is the strongest functional/value fallback."
+      "status": "decided",
+      "decision": "Purchased the OPA Living Sky Modular 3-Seat Chaise with ottoman in Mythica Sky.",
+      "reasoning": "The Sky configuration gives the room a compact chaise-and-ottoman setup in the preferred cool blue direction. It replaces Auburn as the active main-sofa choice; the other options remain comparison history."
     },
     {
       "id": "d_tv_shortlist",
