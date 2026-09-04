@@ -33,7 +33,10 @@ export function RoomDecisionTracker({ needs, initialDecisions }: { needs: SeedDa
     <section aria-labelledby="decision-tracker-title">
       <div className="mb-3 flex items-center justify-between gap-3"><h2 id="decision-tracker-title" className="text-sm font-semibold">Decision tracker</h2><p className="text-[11px] text-muted-foreground">Open and made</p></div>
       <div className="-mx-4 flex snap-x gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0">
-        {needs.map((need) => <Link key={need.id} href={`#decision-${need.id}`} className="flex w-[210px] shrink-0 snap-start items-start gap-2 rounded-xl border border-border bg-card p-3 transition-colors hover:border-primary/45 active:translate-y-px"><Badge variant="warning">open</Badge><span className="line-clamp-2 text-xs font-semibold leading-relaxed">{need.name}</span></Link>)}
+        {needs.map((need) => {
+          const made = ["resolved", "decided"].includes(need.status);
+          return <Link key={need.id} href={`#decision-${need.id}`} className={`flex w-[210px] shrink-0 snap-start items-start gap-2 rounded-xl border p-3 transition-colors hover:border-primary/45 active:translate-y-px ${made ? "border-success/25 bg-success/8" : "border-border bg-card"}`}><Badge variant={made ? "success" : "warning"}>{made ? "made" : "open"}</Badge><span className="line-clamp-2 text-xs font-semibold leading-relaxed">{need.name}</span></Link>;
+        })}
         {decisions.map((decision) => {
           const open = decision.status === "leaning";
           return <button key={decision.id} type="button" onClick={() => editDecision(decision.id)} className={`flex w-[230px] shrink-0 snap-start items-start gap-2 rounded-xl border p-3 text-left transition-colors hover:border-primary/45 active:translate-y-px ${open ? "border-border bg-card" : "border-success/25 bg-success/8"}`}><Badge variant={open ? "warning" : "success"}>{open ? "open" : "made"}</Badge><span className="line-clamp-2 min-w-0 flex-1 text-xs font-semibold leading-relaxed">{decision.decision}</span><PencilSimple aria-hidden="true" size={14} className="mt-0.5 shrink-0 text-muted-foreground" /></button>;

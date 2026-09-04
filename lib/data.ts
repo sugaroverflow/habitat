@@ -74,23 +74,23 @@ export const ROOM_PALETTES: Record<RoomId, Array<{ name: string; value: string }
 };
 
 export const ROOM_DESCRIPTIONS: Record<RoomId, string> = {
-  living_room: "A soft, layered room for movie nights, books, plants, art, and one deliberately strange glowing object.",
-  dining_area: "A distinct dining nook anchored by a round ornamental rug, pale sculptural furniture, and its own floral lighting moment.",
+  living_room: "A soft, layered room for movie nights, books, plants, art, a serious Persian hero rug, and one deliberately strange glowing object.",
+  dining_area: "A distinct dining nook with an oval-or-pedestal table, pale sculptural seating, an ornamental round rug, and its own floral lighting moment.",
   bedroom: "A calm bedroom with romantic shapes, a pink-and-floral direction, and practical storage that does not crowd the king bed.",
   office: "The working and gaming layer of the bedroom, with cleaner storage around the white steel desk and a sharper graphic edge.",
   hallway: "A sage-and-warm-wood landing zone with separate places for coats, seating, closed storage, a playful mirror, and a washable runner.",
   bathroom: "A green-led bathroom with consistent hardware, soft contrast, and one strong botanical pattern.",
-  kitchen: "Keep the existing kitchen quiet and warm, then add useful objects and small amounts of colour instead of a full restyle.",
+  kitchen: "Keep the existing kitchen quiet and warm, then use a hazy blue-green zellige-style backsplash to soften the dark wood and black worktop.",
 };
 
 export const ROOM_PLANS: Record<RoomId, string[]> = {
-  living_room: ["two-level oak console", "gallery TV wall", "dining-side bookcase", "weird glowing lamp"],
-  dining_area: ["Maru oak table", "cream and oak seating", "Adeline sage round rug", "pink floral pendant"],
-  bedroom: ["pink Evelyn direction", "floral rug", "low bedroom storage", "coloured bedside tables"],
+  living_room: ["Mythica Sky sofa", "Persian hero rug", "teal velvet and white sheers", "gallery TV wall"],
+  dining_area: ["oval table first", "pedestal fallback", "cream and oak seating", "Adeline rug and floral light"],
+  bedroom: ["pink Evelyn direction", "white sheers and blue outer curtains", "low bedroom storage", "coloured bedside tables"],
   office: ["white steel desk", "closed storage", "graphic art", "pink and cyan light"],
   hallway: ["sage coat zone", "sculptural bench", "painted BESTÅ hack", "wavy mirror and runner"],
   bathroom: ["mineral green", "blue floral runner", "pure-finish hardware", "wallpaper detail"],
-  kitchen: ["warm cream", "pale wood", "jade accents", "clear worktops"],
+  kitchen: ["Asilah blue-green tile", "dark wood", "warm cream", "clear worktops"],
 };
 
 export function normalizeItemStatus(item: SeedItem): ItemStatus {

@@ -340,3 +340,63 @@ The seed remains a sanitized, reviewable source of truth. Images are stored unde
 ### Next Recommended Step
 
 Persist item votes, notes, and lifecycle edits, then let Ask Home answer against those edited records rather than the initial seed alone.
+
+## 2026-09-04T23:49:29Z - Rugs, dining, curtains, and kitchen decision consolidation
+
+### Goal
+
+Turn four dense conversation records into focused room decisions without losing the rejected paths or inventing product imagery.
+
+### Changes
+
+- Added the five-item living-room hero-rug comparison led by Nain Trading Keshan 320937 and 266065, plus Rugway Kashan 1128407, Kashan 1098068, and Nain 1095474.
+- Preserved the remaining rug research as inactive reference records and collapsed the Thames Oriental Carpets batch into one archive summary.
+- Added the dining-table decision tree, chair routes, exact table and chair dimensions, and the conditional Deauville-versus-Maru conclusion.
+- Marked the unanswered Etsy pendant listing as inactive while keeping the soft floral or sculptural lighting direction open.
+- Added the decided STENFRO white inner layers, focused living- and bedroom-outer-curtain comparisons, and an inactive archive of the superseded curtain research.
+- Added the Asilah, Rabat, and Metro Babe kitchen-backsplash comparison, with an explicit sample-first action.
+- Added exact, stripped local imagery for Deauville, Swyft, Maru, STENFRO, Cascade, Asilah, and Rabat.
+- Updated Ask Home prompts and deterministic replies so the latest purchase and decision records replace the stale Auburn and pendant guidance.
+- Updated retrieved agent room context to exclude inactive archive items while keeping them searchable by name.
+- Fixed decided needs so the room decision tracker gives them the stronger made treatment.
+
+### Decisions
+
+- Never substitute similar rug imagery. Rugway candidates stay image-free until the exact item image can be verified.
+- The living-room hero decision is the first four rugs compared beside the purchased Mythica Sky sofa, with Nain 1095474 as the next tier.
+- Deauville is the dining aesthetic favourite only if four chairs tuck and the island route remains comfortable; Maru is the pedestal fallback and Swyft the compact functional fallback.
+- Four Halston chairs are preferred if they tuck; two permanent chairs plus two folding Nomads remain the space-saving alternative.
+- White STENFRO sheers are decided for both rooms. Cascade teal velvet is the living-room outer benchmark; soft blue or duck-egg blackout is the bedroom direction.
+- Asilah is the kitchen favourite, but only a small physical sample should be ordered before full packs because the retailer's colour description is inconsistent.
+
+### Tradeoffs
+
+- Reference items remain in the seed for search and provenance but are hidden from live comparison boards and default agent room retrieval.
+- Several active candidates deliberately show an honest no-image state.
+- Retail prices are verified or conversation-time snapshots and still need a final basket check before purchase.
+
+### Risks
+
+- The Deauville decision still depends on an in-room four-chair and circulation check.
+- The exact Ludlow chair, bedroom soft-blue blackout, Metro Babe tile, and replacement dining pendant links are still missing.
+- Rug colour judgments still require a direct comparison with Mythica Sky under the room's actual light.
+
+### Verification
+
+- Parsed 182 unique items, 27 needs, and 22 decisions with no duplicate IDs or missing candidate references; Rugway 1098068 appears exactly once.
+- TypeScript, ESLint, diff validation, and the repository privacy scan passed.
+- The production Webpack build completed with all 23 routes generated.
+- A 390 x 844 browser review covered the living-room hero-rug, dining-table, and kitchen-backsplash comparisons. The tables scroll horizontally, exact local assets fit the standardized cells, and deliberate no-image states do not render as broken requests.
+- No subagents were used.
+
+### Demo Impact
+
+The room pages now show the actual shortlist, the decision rule, and the next physical check instead of treating every historic link as an equal option.
+
+### Customer-Facing Context
+
+The separation between live candidates and searchable history makes retrieval smaller and more relevant while preserving the sanitized reasoning trail. Exact-image verification is treated as a trust boundary rather than a cosmetic detail.
+
+### Next Recommended Step
+
+Run the Deauville footprint and four-chair tuck check, then update the table decision and re-evaluate the 185 cm dining rug around the winner.

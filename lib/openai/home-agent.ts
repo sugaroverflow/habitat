@@ -12,7 +12,9 @@ const roomTool = tool({
   execute: ({ room_id }) =>
     removeSensitiveFields({
       room: seedData.rooms.find((room) => room.id === room_id) ?? null,
-      items: seedData.items.filter((item) => item.room_id === room_id),
+      items: seedData.items.filter(
+        (item) => item.room_id === room_id && item.active_comparison !== false,
+      ),
       needs: seedData.needs.filter((need) => need.room_id === room_id),
       decisions: seedData.decisions.filter((decision) => decision.room_id === room_id),
     }),
