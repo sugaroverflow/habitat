@@ -74,21 +74,21 @@ export const ROOM_PALETTES: Record<RoomId, Array<{ name: string; value: string }
 };
 
 export const ROOM_DESCRIPTIONS: Record<RoomId, string> = {
-  living_room: "A soft, layered room for movie nights, books, plants, art, a serious Persian hero rug, and one deliberately strange glowing object.",
+  living_room: "A soft, layered room for movie nights, books, plants, art, a serious Persian hero rug, and one deliberately strange glowing object. The television wall is becoming a calm gallery field over one architectural botanical border.",
   dining_area: "A distinct dining nook with an oval-or-pedestal table, pale sculptural seating, an ornamental round rug, and its own floral lighting moment.",
-  bedroom: "A calm bedroom with romantic shapes, a pink-and-floral direction, and practical storage that does not crowd the king bed.",
+  bedroom: "A calm bedroom with romantic shapes, a pink-and-floral direction, and two distinct storage jobs: a low room anchor and a compact behind-door zone.",
   office: "The working and gaming layer of the bedroom, with cleaner storage around the white steel desk and a sharper graphic edge.",
-  hallway: "A sage-and-warm-wood landing zone with separate places for coats, seating, closed storage, a playful mirror, and a washable runner.",
+  hallway: "A collected sage-and-warm-wood landing zone: one sculptural bench, one carved anchor, one quieter storage companion, deliberate gaps, a playful mirror, and a washable runner.",
   bathroom: "A green-led bathroom with consistent hardware, soft contrast, and one strong botanical pattern.",
   kitchen: "Keep the existing kitchen quiet and warm, then use a hazy blue-green zellige-style backsplash to soften the dark wood and black worktop.",
 };
 
 export const ROOM_PLANS: Record<RoomId, string[]> = {
-  living_room: ["Mythica Sky sofa", "Persian hero rug", "teal velvet and white sheers", "gallery TV wall"],
+  living_room: ["Mythica Sky sofa", "Persian hero rug", "teal velvet and white sheers", "blue botanical gallery wall"],
   dining_area: ["oval table first", "pedestal fallback", "cream and oak seating", "Adeline rug and floral light"],
-  bedroom: ["pink Evelyn direction", "white sheers and blue outer curtains", "low bedroom storage", "coloured bedside tables"],
+  bedroom: ["pink Evelyn direction", "white sheers and blue outer curtains", "two-zone bedroom storage", "coloured bedside tables"],
   office: ["white steel desk", "closed storage", "graphic art", "pink and cyan light"],
-  hallway: ["sage coat zone", "sculptural bench", "painted BESTÅ hack", "wavy mirror and runner"],
+  hallway: ["sage coat zone", "Beryl bench", "Florrie plus quiet companion", "gaps, mirror and runner"],
   bathroom: ["mineral green", "blue floral runner", "pure-finish hardware", "wallpaper detail"],
   kitchen: ["Asilah blue-green tile", "dark wood", "warm cream", "clear worktops"],
 };
@@ -482,7 +482,28 @@ export const conversationPreviews = seedData.conversation_sources.map((source) =
   importStatus: source.import_status as "summary_seed_only",
 }));
 
-export const pendingMeasurements: Array<{ id: string; label: string; roomId: string }> = [];
+export const pendingMeasurements: Array<{
+  id: string;
+  label: string;
+  roomId: string;
+  priority: "critical" | "secondary";
+}> = [
+  { id: "pm_bathroom_main_door", label: "Main door — width × height", roomId: "bathroom", priority: "critical" },
+  { id: "pm_bathroom_cabinet_panel", label: "Cabinet door / panel — width × height", roomId: "bathroom", priority: "critical" },
+  { id: "pm_bathroom_main_door_wall", label: "Wall around main door — full width + left and right edge heights", roomId: "bathroom", priority: "critical" },
+  { id: "pm_bathroom_cabinet_wall", label: "Wall around cabinet — full width + both edge heights", roomId: "bathroom", priority: "critical" },
+  { id: "pm_bathroom_diagonal_ceiling", label: "Diagonal ceiling — width × slope length", roomId: "bathroom", priority: "critical" },
+  { id: "pm_bathroom_red_returns", label: "Any small red strips / returns for Mineral Green — width × height", roomId: "bathroom", priority: "secondary" },
+  { id: "pm_bedroom_wardrobe", label: "Relocated wardrobe — width × depth × height + separate carcasses", roomId: "bedroom", priority: "critical" },
+  { id: "pm_bedroom_office_corner", label: "Office corner rectangle — wall to wall, hallway door and lounge opening", roomId: "bedroom", priority: "critical" },
+  { id: "pm_bedroom_window_wall", label: "Window wall — full width, each window and all side gaps", roomId: "bedroom", priority: "critical" },
+  { id: "pm_bedroom_bed_wall", label: "Current bed wall — usable width, sockets, skirting and obstructions", roomId: "bedroom", priority: "secondary" },
+  { id: "pm_bedroom_magnus", label: "Magnus Pro — confirm 150 × 70cm or XL 177 × 80cm", roomId: "bedroom", priority: "secondary" },
+  { id: "pm_bedroom_divider", label: "Divider shelf test — 35–40cm depth and 120–150cm height", roomId: "bedroom", priority: "secondary" },
+  { id: "pm_bedroom_clearances", label: "Desk/chair to divider + divider to bed clearances; target at least 90cm behind chair", roomId: "bedroom", priority: "secondary" },
+  { id: "pm_bedroom_ceiling", label: "Ceiling height for tall shelving and office lighting", roomId: "bedroom", priority: "secondary" },
+  { id: "pm_dining_table_test", label: "Test 130 × 100cm oval with four tucked chairs and a clear island route", roomId: "dining_area", priority: "critical" },
+];
 
 export const appData = {
   ...seedData,

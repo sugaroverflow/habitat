@@ -15,6 +15,12 @@ function localReply(message: string, roomId?: string | null) {
   const text = message.toLowerCase();
   if (
     roomId === "living_room" &&
+    ["wall treatment", "wall treatments", "frieze", "wallpaper", "plaster", "scallop", "ogee", "jaali", "middle wall", "border"].some((term) => text.includes(term))
+  ) {
+    return "Current lead — dusty sea-blue above, one moulded decorative divider, and a delicate botanical wallpaper below. It keeps the art TV and gallery on a calm field while bringing pattern and dimension lower down.\nBest alternative — two parallel moulding rails with a restrained floral frieze and colour below. Lotus and palmette is the strongest structured motif; the Mughal vine is softer.\nAdd raised plaster flowers only in selected gaps after the television and art are placed.\nUse one MDF arch on the narrow middle wall, not a repeated arch treatment across the television wall.\n\nThe next decision is wallpaper-lower-field versus raised-frieze—not another all-wall concept.";
+  }
+  if (
+    roomId === "living_room" &&
     ["tv", "television", "frame", "hisense", "tcl", "gallery"].some((term) => text.includes(term))
   ) {
     return "TCL A400 Pro 55 — current favourite at £899. It gives you the best balance of art-TV styling, MiniLED picture quality and 144 Hz gaming; confirm that the retailer's batch includes the ultra-slim mount before ordering.\nSamsung The Frame 55 — £1,299 — the safest, most polished art-mode choice, but costs about £400 more.\nHisense Canvas S7S 55 — £1,099 — gaming-friendly and well framed, but only becomes compelling if discounted below the TCL.\nLG Gallery LX7 — £999 — rejected because its 60 Hz panel is the wrong compromise for gaming.\nSamsung Frame Pro — £1,399 — interesting, but wait for independent 2026 latency testing before paying the premium.";
@@ -38,7 +44,7 @@ function localReply(message: string, roomId?: string | null) {
     return "Inner layer — decided: two white IKEA STENFRÖ sheer panels, £15 each.\nOuter favourite — Cascade matte teal velvet, from about £160. It is calm, rich and practical beside Mythica Sky and a patterned hero rug.\nBest embroidered challenger — dusty blue-grey linen with ivory botanical embroidery.\nFavourite motif — blue botanical linen, but its oatmeal ground is too warm.\nSage/mint embroidery remains possible, though it risks making green too dominant with the mint coffee table.\n\nThe decision is teal velvet versus a restrained embroidered linen that can genuinely beat it—not a new broad curtain search.";
   }
   if (text.includes("compare") && roomId === "living_room") {
-    return "The Sky chaise-and-ottoman sofa in Mythica Sky is already purchased, so the sofa comparison is closed. The live living-room decisions are the five-rug hero shortlist, teal velvet versus restrained embroidered curtains, the art TV and audio route, the two-level TV console, and the floor lamp. Ask me to compare any one of those and I’ll use its prices, dimensions, status and conversation notes.";
+    return "The Sky chaise-and-ottoman sofa in Mythica Sky is already purchased, so the sofa comparison is closed. The live living-room decisions are the five-rug hero shortlist, teal velvet versus restrained embroidered curtains, the art TV and audio route, the two-level TV console, the blue botanical wall treatment, and the floor lamp. Ask me to compare any one of those and I’ll use its prices, dimensions, status and conversation notes.";
   }
   if (
     roomId === "bedroom" &&
@@ -52,14 +58,26 @@ function localReply(message: string, roomId?: string | null) {
   ) {
     return "Inner layer — decided: two white IKEA STENFRÖ sheer panels, matching the living room.\nOuter direction — soft blue or duck-egg blackout, which keeps the pink bedroom dreamy without turning it cottagey.\nPlayful alternative — a plain star-cutout blackout with no attached tulle. The STENFRÖ already supplies the softness.\nThe double-layer star curtain fell behind because the attached tulle reads too princessy.\n\nThe next step is finding the exact soft-blue blackout product, not revisiting the inner layer.";
   }
+  if (
+    roomId === "bedroom" &&
+    ["secondary storage", "bennett", "agnes", "pax", "behind-door", "wardrobe-side"].some((term) => text.includes(term))
+  ) {
+    return "Bennett — aesthetic leader at £599. It is 120 × 38 × 75cm, arrives assembled, and its oak construction and soft recessed curves suit Evelyn and Maude best; it was out of stock at the saved check.\nAgnes — value leader at £249.99. Its 120 × 40 × 76cm footprint is almost identical, but the oak-effect construction reads heavier and less refined.\nSlim PAX extension — conditional. It only wins if the real problem is hanging capacity rather than folded storage.\n\nFor this secondary zone: Bennett aesthetically, Agnes on value, PAX by storage type.";
+  }
   if (text.includes("compare") && roomId === "bedroom") {
     return "Egerie — about £440 — the best overall decision. Its curved ivory bouclé look works with the floral rug, the king fits the measured window zone with 184 cm spare, and the end-lift ottoman solves storage cleanly.\nEvelyn — £419 — the heart choice. It is 10 cm shorter than Egerie, leaves 190 cm spare, and its blush scalloped headboard with pale wood has more personality; the unresolved question is whether low wheeled drawers make the lack of built-in storage acceptable.\nMira is the practical custom-upholstery fallback, while Onda is the strongest colourful option. Chadwell is exceptional value but a more generic silhouette. The MADE concepts, Get Laid and Loaf now sit below the two finalists.\n\nThe next useful decision is not another bed search: it is testing a convincing drawer solution for Evelyn, then choosing Evelyn or Egerie.";
   }
   if (text.includes("compare") && roomId === "bathroom") {
     return "Della Soft Blue Coral remains the favourite: it connects Mineral Green walls to the existing blue towels and keeps the room playful. Ranier and Allura are calmer copper-and-sage alternatives, but both move the room in a more earthy direction.";
   }
+  if (
+    roomId === "hallway" &&
+    ["storage", "pairing", "layout", "florrie", "gabrielle", "soren", "wovena", "besta", "sideboard", "cabinet"].some((term) => text.includes(term))
+  ) {
+    return "Favourite layout — Beryl 135 + Florrie 80 + Gabrielle 100 = 315cm. It leaves about 135cm of the 450cm hall for deliberate gaps; Florrie can hold shoes and Gabrielle can take tennis, picnic and household overflow.\nAirier layout — Beryl + Florrie + Soren = 290cm. Soren is only 35cm deep and its fluting is a quiet companion to the carving.\nMost functional — Beryl + Wovena + Florrie = 295cm. Wovena gives dedicated shallow shoe storage, but it is still a placeholder for a nicer slim cabinet.\n\nDo not fill the whole run. Keep 20–40cm gaps for art, hooks, a mirror, a plant or lamp. The 180cm BESTÅ is now the storage-first fallback, not the preferred design.";
+  }
   if (text.includes("compare") && roomId === "hallway") {
-    return "For the mirror, Yearn is the stronger soft-curve option at £209. Arden is £149.25 and gives you an arch instead; choose it if the oval feels too gentle beside the console.";
+    return "The main hallway comparison is now the three collected storage layouts. For the mirror alone, Yearn is the stronger soft-curve option and Arden is the simpler arch. Ask about storage, mirror, bench or runner and I’ll keep those decisions separate.";
   }
   if (
     roomId === "dining_area" &&
@@ -86,13 +104,13 @@ function localReply(message: string, roomId?: string | null) {
     return "The four white IKEA STENFRÖ sheer panels are decided, but confirm the final track quantities before ordering. The Della Soft Blue bathroom runner remains a near-decision. For the kitchen, order only the small Asilah colour sample first. Do not order a dining table until the four-chair tuck and island-route check, and do not order a living-room hero rug until the active four are compared beside Mythica Sky.";
   }
   if (text.includes("measure")) {
-    return "There are no missing measurement tasks in the current plan. I can still use the recorded dimensions when you ask whether an item fits.";
+    return "Tomorrow's critical checks are: bathroom door, cabinet panel, surrounding wall edges and diagonal ceiling; relocated wardrobe footprint and carcasses; the full bedroom office-corner rectangle; the complete bedroom window wall; and a 130 × 100cm dining-table footprint with four chairs and the island route.\n\nSecondary checks are the bedroom bed wall and obstructions, Magnus Pro size, divider depth and height, chair and bed clearances, ceiling height, plus any small bathroom returns that should become Mineral Green. The full grouped checklist is on the Measurements page, linked from Home.";
   }
   if (text.includes("sofa") || text.includes("green") || text.includes("blue")) {
     return "The OPA Living Sky modular three-seat chaise with ottoman in Mythica Sky is purchased. The sofa decision is closed; use Mythica Sky as the fixed reference when comparing the hero rug, curtains, TV wall and lighting.";
   }
   if (text.includes("hallway") || text.includes("cabinet") || text.includes("find")) {
-    return "For the hallway console location, 35 cm is the useful-depth limit. A cabinet that is 32 cm deep fits with 3 cm to spare. I would still check door swing and the item’s condition before replacing the custom-console candidate.";
+    return "The hallway now favours smaller related pieces rather than one long matching unit: one carved anchor, one quieter companion, and deliberate gaps. Florrie + Gabrielle is the favourite pairing; Florrie + Soren is airier; Wovena + Florrie is the functional shoe-storage route. Keep the 180cm BESTÅ only as the high-capacity fallback.";
   }
   if (roomId) {
     return `I’m using ${roomId.replaceAll("_", " ")} as the current room. Ask me to compare its saved items, summarize what you said about them, or identify the next decision.`;

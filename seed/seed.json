@@ -1901,19 +1901,19 @@
       "room_id": "hallway",
       "ownership_status": "not_owned",
       "purchase_status": "not_ordered",
-      "status": "favourite",
+      "status": "shortlist",
       "url": "https://www.ikea.com/gb/en/p/besta-storage-combination-with-drawers-white-lappviken-stubbarp-white-s99412686/",
       "image": "/media/products/product-082.jpeg",
       "price": { "amount": 175, "currency": "GBP" },
       "dimensions": { "width_cm": 180, "depth_cm": 42, "height_cm": 74 },
-      "preference_rating": 4,
+      "preference_rating": 3,
       "comparison": {
         "storage": "Drawers and cupboards with blank fronts",
         "wall_fit": "Long console; 42cm is deeper than the earlier 35cm working limit",
-        "status_note": "Favourite hack base — add a dusty-colour finish, natural-oak arches and restrained floral details"
+        "status_note": "Strong functional fallback — the collected multi-piece layout is now preferred"
       },
-      "user_notes": "The most flexible cheap base for a custom Slab/Skramso-inspired cabinet.",
-      "assistant_assessment": "Strong concept, but compare the 120cm version before committing this much wall and depth."
+      "user_notes": "Keep as the simple high-capacity fallback if the smaller collected pieces do not store enough.",
+      "assistant_assessment": "Useful and inexpensive, but it fills the hall as one installation rather than a sequence of distinct moments."
     },
     {
       "id": "hall_console_besta_120",
@@ -1922,9 +1922,10 @@
       "room_id": "hallway",
       "ownership_status": "not_owned",
       "purchase_status": "not_ordered",
-      "status": "favourite",
+      "status": "considering",
       "url": "https://www.ikea.com/gb/en/cat/besta-storage-system-46053/",
       "image": "/media/products/product-092.jpeg",
+      "active_comparison": false,
       "price": { "amount": 120, "currency": "GBP" },
       "dimensions": { "width_cm": 120, "depth_cm": 42, "height_cm": 74 },
       "preference_rating": 5,
@@ -1946,6 +1947,7 @@
       "status": "shortlist",
       "url": "https://dusk.com/products/hattie-shoe-cabinet-light-wood",
       "image": "/media/products/product-083.jpeg",
+      "active_comparison": false,
       "price": { "amount": 199, "currency": "GBP" },
       "dimensions": { "width_cm": 75, "depth_cm": 25, "height_cm": 126.5 },
       "preference_rating": 3,
@@ -1967,6 +1969,7 @@
       "status": "rejected",
       "url": "https://www.made.com/style/su422373/w11716",
       "image": "/media/products/product-090.jpeg",
+      "active_comparison": false,
       "price": { "amount": 489, "currency": "GBP" },
       "dimensions": { "width_cm": 181.5, "depth_cm": 39.5, "height_cm": 69.5 },
       "preference_rating": 1,
@@ -2026,6 +2029,7 @@
       "purchase_status": "not_ordered",
       "status": "favourite",
       "url": "https://www.etsy.com/uk/listing/1690291460/ikea-besta-overlays-decorative-furniture",
+      "active_comparison": false,
       "price": { "amount": 44.4, "currency": "GBP" },
       "dimensions": { "depth_mm": 4 },
       "preference_rating": 5,
@@ -4038,6 +4042,622 @@
       },
       "user_notes": "Still pretty, but Asilah and Rabat have more story.",
       "assistant_assessment": "Keep as the simple fallback, not the current design direction."
+    },
+    {
+      "id": "bedroom_storage_bennett_oak",
+      "name": "Dunelm Bennett 6 Drawer Chest — Light Oak",
+      "category": "chest_of_drawers",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.dunelm.com/product/bennett-6-drawer-chest-light-oak-1000254350?defaultSkuId=30927466",
+      "image": "/media/products/product-100.jpeg",
+      "active_comparison": true,
+      "price": { "amount": 599, "currency": "GBP" },
+      "dimensions": { "width_cm": 120, "depth_cm": 38, "height_cm": 75 },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "Six drawers; arrives assembled",
+        "construction_fabric": "Oak frame with oak veneer and a recessed curved base",
+        "room_fit": "Same compact width as Agnes, with a slimmer and more refined silhouette beside Evelyn and Maude",
+        "delivery_stock": "Out of stock at the saved check",
+        "status_note": "Aesthetic leader for the behind-door / wardrobe-side zone"
+      },
+      "user_notes": "The grown-up Agnes: beautiful curves and real oak presence, but expensive for secondary storage.",
+      "assistant_assessment": "Best-looking folded-storage option for this zone; Agnes remains the much stronger value comparison."
+    },
+    {
+      "id": "bedroom_storage_agnes_oak",
+      "name": "Daals Agnes Curved Edge 6 Drawer Chest — Natural",
+      "category": "chest_of_drawers",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.daals.co.uk/products/agnes-curved-edge-chest-of-6-drawers-natural",
+      "image": "/media/products/product-101.jpeg",
+      "active_comparison": true,
+      "price": { "amount": 249.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 120, "depth_cm": 40, "height_cm": 76 },
+      "preference_rating": 3,
+      "comparison": {
+        "storage": "Six drawers",
+        "construction_fabric": "Oak-effect finish and engineered wood",
+        "room_fit": "Nearly the same practical footprint as Bennett, with more visual weight and less material presence",
+        "delivery_stock": "Listed in stock at the saved check",
+        "status_note": "Value leader"
+      },
+      "user_notes": "Dramatically cheaper than Bennett for almost the same footprint.",
+      "assistant_assessment": "Choose Agnes if this remains a secondary practical piece and the £349 saving matters more than the finish."
+    },
+    {
+      "id": "bedroom_storage_pax_extension",
+      "name": "Slim PAX Wardrobe Extension",
+      "category": "wardrobe",
+      "room_id": "bedroom",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.ikea.com/gb/en/cat/pax-wardrobes-with-doors-24337/",
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 3,
+      "comparison": {
+        "storage": "Adds hanging storage rather than a low bank of folded storage",
+        "construction_fabric": "Configurable wardrobe system",
+        "room_fit": "Solves a different storage problem from Bennett and Agnes",
+        "status_note": "Conditional option — keep only if hanging capacity is the real gap"
+      },
+      "user_notes": "Still undecided until the type of storage needed in this zone is clear.",
+      "assistant_assessment": "Do not compare it on looks alone; it wins only if the room needs more hanging space."
+    },
+    {
+      "id": "hall_storage_florrie",
+      "name": "Dunelm Florrie Carved Small Sideboard — Mango Wood",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.dunelm.com/product/florrie-carved-small-sideboard-mango-wood-1000283972",
+      "image": "/media/products/product-102.jpeg",
+      "active_comparison": true,
+      "price": { "amount": 329, "currency": "GBP" },
+      "dimensions": { "width_cm": 80, "depth_cm": 35, "height_cm": 70 },
+      "preference_rating": 5,
+      "comparison": {
+        "storage": "Two doors and one internal shelf; candidate for shoes",
+        "construction_fabric": "Solid mango wood with a carved floral front",
+        "wall_fit": "Compact 80 × 35cm decorative anchor",
+        "delivery_stock": "Out of stock at the saved check",
+        "status_note": "Favourite anchor"
+      },
+      "user_notes": "The best decorative anchor: a proper carved Indo-Persian note without being huge.",
+      "assistant_assessment": "Build the collected hallway around this piece if it returns; pair it with something quieter rather than another carved cabinet."
+    },
+    {
+      "id": "hall_storage_gabrielle",
+      "name": "Tikamoon Gabrielle Solid Mango Sideboard",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.tikamoon.co.uk/art-gabrielle-100-cm-solid-mango-wood-sideboard-6679.htm",
+      "image": "/media/products/product-103.jpeg",
+      "active_comparison": true,
+      "price": { "amount": 599, "currency": "GBP" },
+      "dimensions": { "width_cm": 100, "depth_cm": 40, "height_cm": 81 },
+      "preference_rating": 5,
+      "comparison": {
+        "storage": "Two drawers and two cupboards for tennis, picnic and household overflow",
+        "construction_fabric": "Solid mango wood with soft rounded geometry",
+        "wall_fit": "Quiet 100cm companion; 40cm deep",
+        "delivery_stock": "In stock at the saved check",
+        "reviews_catches": "63 reviews on the product page",
+        "status_note": "New favourite pairing with Florrie"
+      },
+      "user_notes": "The quieter wood grain and rounded form balance Florrie's carving beautifully.",
+      "assistant_assessment": "Best companion to Florrie when storage and visual calm matter equally."
+    },
+    {
+      "id": "hall_storage_soren",
+      "name": "Bokel Soren Fluted Curve Cabinet — Small Golden Teak",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.bokel.co.uk/products/soren-fluted-curve-cabinet-small-golden-teak",
+      "image": "/media/products/product-104.jpeg",
+      "active_comparison": true,
+      "price": { "amount": 540, "currency": "GBP" },
+      "dimensions": { "width_cm": 75, "depth_cm": 35, "height_cm": 80 },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "Two doors and two shelves",
+        "construction_fabric": "Solid mango wood, curved corners, fluting and brass handles",
+        "wall_fit": "Airy 75 × 35cm companion",
+        "delivery_stock": "Sold out at the saved check",
+        "status_note": "Strong shortlist"
+      },
+      "user_notes": "Almost purpose-built as the quiet companion to Florrie.",
+      "assistant_assessment": "The prettiest lighter-footprint pairing, though less capacious than Gabrielle."
+    },
+    {
+      "id": "hall_storage_khari",
+      "name": "Dunelm Khari 2 Door Sideboard — Mango Wood",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.dunelm.com/product/khari-2-door-sideboard-mango-wood-1000214651?defaultSkuId=30821886",
+      "active_comparison": true,
+      "price": { "amount": 349, "currency": "GBP" },
+      "dimensions": { "width_cm": 77, "depth_cm": 39 },
+      "preference_rating": 3,
+      "comparison": {
+        "construction_fabric": "Slatted mango wood rather than carved",
+        "wall_fit": "Small companion at 77 × 39cm",
+        "delivery_stock": "Out of stock at the saved check",
+        "status_note": "Considering"
+      },
+      "user_notes": "Quiet enough to sit beside Florrie without competing.",
+      "assistant_assessment": "A workable middle option, but Gabrielle and Soren make clearer pairings."
+    },
+    {
+      "id": "hall_storage_sahab",
+      "name": "Wayfair Sahab 80cm Carved Sideboard",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.wayfair.co.uk/furniture/pdp/latitude-vive-sahab-80cm-sideboard-u110254003.html",
+      "active_comparison": true,
+      "price": { "amount": 179.99, "currency": "GBP" },
+      "dimensions": { "width_cm": 80, "depth_cm": 33 },
+      "preference_rating": 3,
+      "comparison": {
+        "construction_fabric": "Hand-carved floral front",
+        "wall_fit": "Excellent 33cm hallway depth",
+        "reviews_catches": "Quality confidence is low; one saved review mentioned missing screw holes",
+        "status_note": "Budget backup"
+      },
+      "user_notes": "Great dimensions and price, but the quality evidence is weak.",
+      "assistant_assessment": "Keep as the budget carved option, not the anchor to plan around."
+    },
+    {
+      "id": "hall_storage_kirei",
+      "name": "Kirei Hand-Carved Mango Sideboard — Creamwash",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://kireifurniture.co.uk/products/hand-carved-mango-wood-sideboard-creamwashed",
+      "image": "/media/products/product-105.jpeg",
+      "active_comparison": true,
+      "price": { "amount": 595, "currency": "GBP" },
+      "dimensions": { "width_cm": 100, "depth_cm": 40, "height_cm": 82 },
+      "preference_rating": 4,
+      "comparison": {
+        "storage": "Double-door cupboard with an internal shelf",
+        "construction_fabric": "Solid mango wood with hand-carved floral doors and a creamwash finish",
+        "wall_fit": "100 × 40cm alternative statement piece",
+        "delivery_stock": "Available at the saved check",
+        "status_note": "Alternative anchor"
+      },
+      "user_notes": "Use instead of Florrie, not beside it.",
+      "assistant_assessment": "A strong single carved anchor, but pairing it with Florrie would make the hall too busy."
+    },
+    {
+      "id": "hall_storage_rosie",
+      "name": "Graham & Green Rosie Twelve Drawer Sideboard",
+      "category": "sideboard",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": "https://www.grahamandgreen.co.uk/rosie-twelve-drawer-sideboard",
+      "image": "/media/products/product-106.jpeg",
+      "active_comparison": true,
+      "price": { "amount": 950, "currency": "GBP" },
+      "dimensions": { "width_cm": 114, "depth_cm": 35.5, "height_cm": 79 },
+      "preference_rating": 1,
+      "comparison": {
+        "storage": "Twelve drawers",
+        "construction_fabric": "Whitewashed mango wood and carved texture",
+        "wall_fit": "Useful 35.5cm depth, but a visually busy 114cm piece",
+        "status_note": "Probably reject — too expensive and too busy"
+      },
+      "user_notes": "Beautiful, but £950 is too much for this role.",
+      "assistant_assessment": "The storage is generous, but it competes with Florrie's decorative role instead of complementing it."
+    },
+    {
+      "id": "hall_storage_wovena",
+      "name": "Wovena Rattan 2 Door Shoe Cabinet",
+      "category": "shoe_storage",
+      "room_id": "hallway",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://dreamhomestore.co.uk/products/wovena-rattan-2-door-shoe-storage-cabinet?variant=57003286495605",
+      "image": "/media/products/product-107.jpeg",
+      "active_comparison": true,
+      "price": { "amount": 66, "currency": "GBP" },
+      "dimensions": { "width_cm": 80, "depth_cm": 25 },
+      "preference_rating": 3,
+      "comparison": {
+        "storage": "Dedicated storage for roughly twelve pairs of shoes",
+        "construction_fabric": "Oak-effect body with rattan-effect fronts",
+        "wall_fit": "Only 25cm deep",
+        "status_note": "Functional option while a nicer slim shoe cabinet is still being sought"
+      },
+      "user_notes": "Useful if the prettier cabinets hold non-shoe storage, but not special enough yet.",
+      "assistant_assessment": "The best functional arrangement component, not the visual reason to choose the multi-piece plan."
+    },
+    {
+      "id": "tv_wall_scallop_half_paint",
+      "name": "Dusty Sea-blue Painted Scallop Half-wall",
+      "category": "wall_treatment",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 2,
+      "comparison": {
+        "construction_fabric": "DIY paint with a repeating scalloped edge",
+        "room_fit": "Playful and soft, but a straight scallop repeat could skew cottage or nursery",
+        "status_note": "Lower-priority concept"
+      },
+      "user_notes": "Still possible if the rest of the wall stays restrained.",
+      "assistant_assessment": "The later frieze and moulded-divider ideas feel more specific to the flat."
+    },
+    {
+      "id": "tv_wall_repeated_ogee_arches",
+      "name": "Repeated Painted Mughal / Ogee Arches",
+      "category": "wall_treatment",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 1,
+      "comparison": {
+        "construction_fabric": "DIY repeated painted arch border",
+        "room_fit": "Too literal and themed once repeated across the television wall",
+        "status_note": "Rejected for this wall"
+      },
+      "user_notes": "Keep the shape language, not the repeated wall treatment.",
+      "assistant_assessment": "One architectural arch on the middle wall is stronger than many painted arches around the television."
+    },
+    {
+      "id": "tv_wall_jaali_relief",
+      "name": "Carved Jaali-style Wall Relief",
+      "category": "wall_treatment",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 3,
+      "comparison": {
+        "construction_fabric": "Tone-on-tone carved or moulded relief",
+        "room_fit": "Beautiful shadow and architectural reference; risks becoming heavy beside the television, art and florals",
+        "status_note": "Use sparingly if retained"
+      },
+      "user_notes": "Lovely Indo-Persian architecture, but not across the whole wall.",
+      "assistant_assessment": "A detail or small panel could work; it should not become another full-wall layer."
+    },
+    {
+      "id": "tv_wall_arches_plaster_combo",
+      "name": "Moulded Arches, Colour Drench and Plaster Flowers",
+      "category": "wall_treatment",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "rejected",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 1,
+      "comparison": {
+        "construction_fabric": "Stick-on arches, saturated paint and raised floral details",
+        "room_fit": "Unusual, but too complicated and difficult to execute across the large wall",
+        "status_note": "Rejected as a combined scheme"
+      },
+      "user_notes": "The useful parts survived separately: the arch moved to the middle wall and the flowers stayed as a light add-on.",
+      "assistant_assessment": "Good exploration, but too many ideas in one place."
+    },
+    {
+      "id": "tv_wall_floral_frieze_system",
+      "name": "Two Moulding Rails with Floral Frieze and Colour Below",
+      "category": "wall_treatment",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 5,
+      "comparison": {
+        "construction_fabric": "Moulding, paint and a stencilled or lightly raised decorative frieze",
+        "room_fit": "Creates a continuous architectural datum while leaving the television and gallery art calm above",
+        "status_note": "Favourite base system"
+      },
+      "user_notes": "Feasible, architectural and ornamental without overwhelming the television wall.",
+      "assistant_assessment": "One of the two strongest schemes; choose one frieze language and let the gallery wall stay eclectic."
+    },
+    {
+      "id": "tv_wall_wallpaper_lower_field",
+      "name": "Sea-blue Upper Wall, Moulded Divider and Botanical Wallpaper Below",
+      "category": "wall_treatment",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 5,
+      "comparison": {
+        "construction_fabric": "Dusty sea-blue paint above, dimensional divider, delicate botanical wallpaper below",
+        "room_fit": "Keeps the Frame television and gallery art on a calm field while giving the lower wall colour, pattern and depth",
+        "status_note": "Strongest alternative; potentially the new lead"
+      },
+      "user_notes": "Use occasional plaster botanicals only where negative space needs them.",
+      "assistant_assessment": "The best balance of colour, pattern, ornament and breathing room if the wallpaper stays delicate."
+    },
+    {
+      "id": "tv_wall_mdf_scallop_divider",
+      "name": "MDF Scallop / Wave Wall Moulding",
+      "category": "wall_treatment",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.etsy.com/uk/listing/4451187136/mdf-wall-molding-scallop-wave-panel",
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 4,
+      "comparison": {
+        "construction_fabric": "Physical MDF scallop or wave profile",
+        "room_fit": "Makes the divider architectural rather than simply painted",
+        "order_check": "Pair with wallpaper below or a floral frieze, not both elaborate systems",
+        "status_note": "Promising divider"
+      },
+      "user_notes": "Could reinterpret the scallop as a more Mughal-shaped strip.",
+      "assistant_assessment": "A useful component once the upper-and-lower wall scheme is chosen."
+    },
+    {
+      "id": "tv_middle_wall_arch_panel",
+      "name": "Single MDF Arch Panel for the Middle Wall",
+      "category": "wall_treatment",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": "https://www.etsy.com/uk/listing/4452815398/mdf-arched-wall-panel-pre-cut-arch",
+      "active_comparison": true,
+      "price": { "amount": 92.36, "currency": "GBP" },
+      "dimensions": { "panel_width_cm": 80, "opening_width_cm": 70, "half_profile_height_cm": 148, "full_profile_height_cm": 228 },
+      "preference_rating": 5,
+      "comparison": {
+        "construction_fabric": "Pre-cut 6mm MDF arch profile",
+        "room_fit": "One strong vertical architectural gesture on the narrow wall between living room and bedroom",
+        "status_note": "Favourite for the middle wall"
+      },
+      "user_notes": "Arches belong here; the television wall should keep a horizontal botanical treatment.",
+      "assistant_assessment": "The strongest way to distribute the ornamental vocabulary across two walls without repeating it mechanically."
+    },
+    {
+      "id": "tv_frieze_mughal_vine",
+      "name": "Mughal Floral Vine Frieze",
+      "category": "wall_border",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 4,
+      "comparison": {
+        "finish": "Loose stems and individual flowers",
+        "room_fit": "Softest and most romantic border option",
+        "status_note": "Shortlist"
+      },
+      "user_notes": "Especially good if occasional matching plaster flowers appear around the art.",
+      "assistant_assessment": "The gentler motif if the gallery wall carries more structure."
+    },
+    {
+      "id": "tv_frieze_lotus_palmette",
+      "name": "Lotus and Palmette Frieze",
+      "category": "wall_border",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 5,
+      "comparison": {
+        "finish": "Structured ornamental rhythm",
+        "room_fit": "Gives the wall architecture while allowing eclectic art above",
+        "status_note": "Strong motif shortlist"
+      },
+      "user_notes": "More unmistakably ornamental than the vine.",
+      "assistant_assessment": "Current motif leader if the border, rather than wallpaper, becomes the main decorative language."
+    },
+    {
+      "id": "tv_frieze_tree_of_life",
+      "name": "Tree-of-life Botanical Frieze",
+      "category": "wall_border",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 3,
+      "comparison": {
+        "finish": "Illustrative botanical repeat",
+        "room_fit": "Charming but busier than the vine or lotus options",
+        "status_note": "Considering"
+      },
+      "user_notes": "Could work if the eventual gallery wall stays sparse.",
+      "assistant_assessment": "Likely too illustrative if the art wall becomes dense."
+    },
+    {
+      "id": "tv_wall_raised_botanicals",
+      "name": "Selected Raised Plaster Flowers and Leaves",
+      "category": "wall_border",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "favourite",
+      "url": null,
+      "active_comparison": true,
+      "price": null,
+      "dimensions": null,
+      "preference_rating": 5,
+      "comparison": {
+        "finish": "Small dimensional botanicals added after the television and art are placed",
+        "room_fit": "Makes the wall bespoke without committing to a fully raised strip",
+        "status_note": "Favourite add-on"
+      },
+      "user_notes": "Use only in strategic gaps, not everywhere.",
+      "assistant_assessment": "The smart final layer once the larger composition and negative space are visible."
+    },
+    {
+      "id": "tv_tool_sagar_stencil",
+      "name": "SAGAR Border Stencil — Dizzy Duck",
+      "category": "wall_tool",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://dizzyduckdesigns.com/products/sagar-border-stencil",
+      "active_comparison": true,
+      "price": { "amount": 8, "currency": "GBP" },
+      "dimensions": { "size_options_in": "4, 6 or 8" },
+      "preference_rating": 4,
+      "comparison": {
+        "finish": "Reusable 190-micron Mylar stencil with an Indian-flavoured repeat",
+        "order_check": "Sold for paint; test any plaster adaptation on a board first",
+        "status_note": "Shortlist"
+      },
+      "user_notes": "Good proportions for a framed frieze.",
+      "assistant_assessment": "A practical paint-stencil route, not proof that the motif will release cleanly from plaster."
+    },
+    {
+      "id": "tv_tool_taj_stencil",
+      "name": "Taj Indian Border Stencil — Stencil Studio",
+      "category": "wall_tool",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.thestencilstudio.com/products/taj-indian-border-stencil",
+      "active_comparison": true,
+      "price": { "amount": 10.16, "currency": "GBP" },
+      "dimensions": null,
+      "preference_rating": 5,
+      "comparison": {
+        "finish": "Reusable Mylar ornamental border in multiple sizes",
+        "order_check": "Designed for paint; test plaster separately",
+        "status_note": "Perhaps the best ready-made motif"
+      },
+      "user_notes": "More ornamental than SAGAR and suited to the framed border.",
+      "assistant_assessment": "Current stencil leader if the frieze system wins."
+    },
+    {
+      "id": "tv_tool_adoor_stencil",
+      "name": "Adoor Indian Border Stencil — Stencil Studio",
+      "category": "wall_tool",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.thestencilstudio.com/products/adoor-border-stencil",
+      "active_comparison": true,
+      "price": { "amount": 8.71, "currency": "GBP" },
+      "dimensions": null,
+      "preference_rating": 3,
+      "comparison": {
+        "finish": "Reusable geometric and rhythmic Indian border stencil",
+        "room_fit": "Useful if wallpaper and art already provide enough flowers",
+        "status_note": "Considering"
+      },
+      "user_notes": "The less floral option.",
+      "assistant_assessment": "A sensible restraint choice, though it carries less of the desired botanical character."
+    },
+    {
+      "id": "tv_tool_patternroller_1621",
+      "name": "Patternroller 1621 — Delicate Leaves",
+      "category": "wall_tool",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "shortlist",
+      "url": "https://www.etsy.com/listing/1756360339/pattern-roller-textured-roller-1621-with",
+      "active_comparison": true,
+      "price": { "amount": 37.45, "currency": "GBP" },
+      "dimensions": { "roller_width_cm": 15 },
+      "preference_rating": 4,
+      "comparison": {
+        "finish": "Leaf-pattern roller explicitly sold for embossing plaster or filler",
+        "order_check": "Holder and foam roller are separate",
+        "status_note": "Very interesting raised-frieze route"
+      },
+      "user_notes": "Potentially the easiest way to make a continuous raised strip.",
+      "assistant_assessment": "The most technically credible raised-border tool in the current set."
+    },
+    {
+      "id": "tv_tool_vintage_flower_roller",
+      "name": "Vintage Loose-flower Pattern Roller 569 KRN",
+      "category": "wall_tool",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.etsy.com/listing/4299164481/vintage-pattern-roller-texture-roller",
+      "active_comparison": true,
+      "price": null,
+      "dimensions": { "roller_width_cm": 15 },
+      "preference_rating": 3,
+      "comparison": {
+        "finish": "Loose vintage flower repeat suitable for plaster or filler",
+        "delivery_stock": "Vintage listing; availability is fragile",
+        "order_check": "Holder required",
+        "status_note": "Wildcard"
+      },
+      "user_notes": "Less mechanically repeated than a stencil.",
+      "assistant_assessment": "The most characterful tool, but not stable enough to build the plan around."
     }
   ],
   "needs": [
@@ -4186,27 +4806,47 @@
       ]
     },
     {
+      "id": "need_bedroom_secondary_storage",
+      "room_id": "bedroom",
+      "name": "Behind-door / wardrobe-side storage",
+      "status": "decision_in_progress",
+      "priority": "medium",
+      "requirements": [
+        "approximately 120cm wide and no deeper than about 40cm",
+        "decide whether the actual gap is folded or hanging storage",
+        "work with the Evelyn and Maude shape language",
+        "secondary furniture should not overpower the main bedroom anchor"
+      ],
+      "candidate_item_ids": [
+        "bedroom_storage_bennett_oak",
+        "bedroom_storage_agnes_oak",
+        "bedroom_storage_pax_extension"
+      ]
+    },
+    {
       "id": "need_hallway_storage",
       "room_id": "hallway",
       "name": "Closed hallway storage + console",
       "status": "decision_in_progress",
       "priority": "high",
       "requirements": [
-        "shoe storage",
-        "bags/backpacks/hats organization",
-        "room for flowers/trinkets/art/photos on console surface",
-        "respect narrow hallway clearance",
-        "painted or ornamented fronts rather than another plain oak unit"
+        "one decorative anchor plus one quieter companion",
+        "related pieces rather than a matching furniture suite",
+        "ideally 35–40cm deep",
+        "shoe storage plus tennis, picnic and household overflow",
+        "leave deliberate 20–40cm gaps rather than filling the 450cm run",
+        "make room for art, hooks, a mirror, a plant or a lamp"
       ],
       "candidate_item_ids": [
-        "hall_console_besta_120",
-        "hall_console_besta_180",
-        "hall_hack_artvoom_besta",
-        "hall_console_hattie_shoe",
-        "hall_console_logstand_reference",
-        "hall_console_skramso_reference",
-        "hall_console_kaci_sideboard",
-        "hallway_tylko_console"
+        "hall_storage_florrie",
+        "hall_storage_gabrielle",
+        "hall_storage_soren",
+        "hall_storage_khari",
+        "hall_storage_sahab",
+        "hall_storage_kirei",
+        "hall_storage_rosie",
+        "hall_storage_wovena",
+        "hall_console_besta_180"
       ]
     },
     {
@@ -4283,6 +4923,80 @@
         "tv_storage_shelved_system",
         "tv_storage_ellie_integrated_reference",
         "tv_storage_litto_reference"
+      ]
+    },
+    {
+      "id": "need_tv_wall_treatment",
+      "room_id": "living_room",
+      "name": "TV-wall colour and architecture",
+      "status": "decision_in_progress",
+      "priority": "medium",
+      "requirements": [
+        "keep the television and gallery art on a calm upper field",
+        "use one main border language rather than every decorative idea",
+        "combine architectural division, dusty colour and botanical ornament",
+        "avoid a nursery-like scallop repeat or a literal themed arch wall"
+      ],
+      "candidate_item_ids": [
+        "tv_wall_floral_frieze_system",
+        "tv_wall_wallpaper_lower_field",
+        "tv_wall_mdf_scallop_divider",
+        "tv_wall_jaali_relief",
+        "tv_wall_scallop_half_paint",
+        "tv_wall_arches_plaster_combo",
+        "tv_wall_repeated_ogee_arches"
+      ]
+    },
+    {
+      "id": "need_tv_wall_border",
+      "room_id": "living_room",
+      "name": "Botanical border language",
+      "status": "decision_in_progress",
+      "priority": "low",
+      "requirements": [
+        "choose only after the main wall scheme",
+        "ornamental without competing with the gallery art",
+        "raised details should be sparse and added after art placement"
+      ],
+      "candidate_item_ids": [
+        "tv_frieze_lotus_palmette",
+        "tv_frieze_mughal_vine",
+        "tv_frieze_tree_of_life",
+        "tv_wall_raised_botanicals"
+      ]
+    },
+    {
+      "id": "need_middle_wall_treatment",
+      "room_id": "living_room",
+      "name": "Middle-wall architectural gesture",
+      "status": "decision_in_progress",
+      "priority": "low",
+      "requirements": [
+        "one strong arch rather than a repeated motif",
+        "complement the horizontal treatment on the television wall",
+        "verify the chosen profile against the narrow wall before ordering"
+      ],
+      "candidate_item_ids": [
+        "tv_middle_wall_arch_panel"
+      ]
+    },
+    {
+      "id": "need_tv_wall_tools",
+      "room_id": "living_room",
+      "name": "Wall-treatment tools",
+      "status": "decision_in_progress",
+      "priority": "low",
+      "requirements": [
+        "buy only after choosing the border method",
+        "test plaster or filler techniques on a sample board",
+        "avoid treating paint stencils as proven plaster tools"
+      ],
+      "candidate_item_ids": [
+        "tv_tool_taj_stencil",
+        "tv_tool_sagar_stencil",
+        "tv_tool_adoor_stencil",
+        "tv_tool_patternroller_1621",
+        "tv_tool_vintage_flower_roller"
       ]
     },
     {
@@ -4633,6 +5347,14 @@
       "reasoning": "Maru's sage finish and solid-ash reeding give the pink Evelyn room the most character. Kaci Wide is lower and narrower, but its oak-effect construction offers less texture for almost the same price. Kaci Tall solves floor-space pressure rather than the desired low-anchor composition; Penn is rejected as too tall, dark, serious and expensive."
     },
     {
+      "id": "d_bedroom_secondary_storage",
+      "room_id": "bedroom",
+      "topic": "secondary_storage",
+      "status": "leaning",
+      "decision": "Bennett is the aesthetic leader for the behind-door / wardrobe-side zone; Agnes is the value choice, while a slim PAX extension only wins if the real need is hanging space.",
+      "reasoning": "Bennett and Agnes share an almost identical 120cm footprint, but Bennett is slimmer, more refined and materially stronger. Its £599 price and unavailable stock are meaningful drawbacks for secondary storage."
+    },
+    {
       "id": "d_bedroom_curtains",
       "room_id": "bedroom",
       "topic": "curtains",
@@ -4645,8 +5367,16 @@
       "room_id": "hallway",
       "topic": "storage_system",
       "status": "leaning",
-      "decision": "Build the hall as four distinct moments: sage coat zone, one sculptural bench, a painted BESTÅ-based closed-storage console with natural-oak arch overlays, and a wavy mirror over a patterned runner.",
-      "reasoning": "The preferred balance is Nell Sage, Beryl Sage, a cream or dusty-blue 120cm BESTÅ hack with oak arches, and the Santiago runner. Hattie remains the practical bench alternative. LogStand and Skramso are design references rather than purchases; Tylko is reserved for the living-room TV language."
+      "decision": "Prefer a collected multi-piece sequence: Beryl + Florrie + Gabrielle first, Beryl + Florrie + Soren second, and Beryl + Wovena + Florrie as the most functional route. Keep the 180cm BESTÅ as a storage-first fallback.",
+      "reasoning": "The three layouts occupy about 315cm, 290cm and 295cm of the roughly 450cm hall. Deliberate 20–40cm gaps leave room for art, hooks, a mirror, a plant or lamp, so the hallway reads as a series of moments rather than one long installation. Florrie supplies the carved anchor; its companion should be quieter rather than matching."
+    },
+    {
+      "id": "d_tv_wall_treatment",
+      "room_id": "living_room",
+      "topic": "tv_wall_treatment",
+      "status": "leaning",
+      "decision": "Keep the Frame television and gallery art on a dusty sea-blue upper field, use one moulded decorative transition, and give the lower field either a delicate botanical wallpaper or a restrained raised frieze. Reserve the single MDF arch for the narrow middle wall.",
+      "reasoning": "Architectural division, colour and botanical ornament feel specific to the flat without turning the whole television wall into a themed arch. Wallpaper below the divider is the strongest new lead; the two-rail floral frieze remains the best alternative. Raised flowers should be added only in selected gaps after the television and art are placed."
     },
     {
       "id": "d_bathroom_color",

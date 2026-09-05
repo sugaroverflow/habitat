@@ -1,9 +1,10 @@
-import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, Ruler } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 import { RoomCard } from "@/components/features/room-card";
 import { PageHeader } from "@/components/layout/page-header";
 import { Badge } from "@/components/ui/badge";
+import { pendingMeasurements } from "@/lib/data";
 import { seedData } from "@/lib/seed-data";
 
 function SectionHeading({ title, href }: { title: string; href: string }) {
@@ -22,6 +23,12 @@ export default function OverviewPage() {
   const purchases = seedData.items.filter((item) => item.ownership_status === "purchased");
   const featuredRooms = seedData.rooms.filter((room) => ["living_room", "bedroom", "bathroom", "hallway"].includes(room.id));
   const roomNames = new Map(seedData.rooms.map((room) => [room.id, room.name]));
+  const tomorrowChecks = Object.entries(
+    pendingMeasurements.reduce<Record<string, typeof pendingMeasurements>>((groups, measurement) => {
+      (groups[measurement.roomId] ??= []).push(measurement);
+      return groups;
+    }, {}),
+  );
 
   return (
     <div className="space-y-8">
@@ -42,6 +49,30 @@ export default function OverviewPage() {
               needCount={seedData.needs.filter((need) => need.room_id === room.id).length}
               priority={index === 0}
             />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <SectionHeading title="Measure tomorrow" href="/measurements" />
+        <div className="ruled-surface divide-y divide-border overflow-hidden rounded-2xl border bg-card">
+          {tomorrowChecks.map(([roomId, measurements]) => (
+            <Link
+              key={roomId}
+              href="/measurements"
+              className="flex min-h-[64px] items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50"
+            >
+              <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-warning/25 text-warning-foreground">
+                <Ruler aria-hidden="true" size={17} weight="fill" />
+              </span>
+              <div className="min-w-0 flex-1">
+                <p className="text-sm font-semibold">{roomNames.get(roomId) ?? roomId.replaceAll("_", " ")}</p>
+                <p className="mt-0.5 text-xs text-muted-foreground">
+                  {measurements.length} {measurements.length === 1 ? "check" : "checks"}
+                </p>
+              </div>
+              <Badge variant="warning">{measurements.filter((measurement) => measurement.priority === "critical").length} critical</Badge>
+            </Link>
           ))}
         </div>
       </section>

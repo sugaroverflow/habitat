@@ -40,9 +40,11 @@ export function AskHome({ pathname }: { pathname: string }) {
   const roomId = pathname.match(/^\/rooms\/([^/]+)/)?.[1] ?? null;
   const roomName = roomId ? roomNames[roomId] : null;
   const roomStarterPrompts: Record<string, string[]> = {
-    living_room: ["Compare the hero rugs", "Compare the curtains", "What is already purchased?"],
+    living_room: ["Compare the wall treatments", "Compare the hero rugs", "What is already purchased?"],
     dining_area: ["Compare the dining tables", "Which chairs work best?", "What still needs a product?"],
-    bedroom: ["Compare Egerie and Evelyn", "Compare the curtains", "What is already purchased?"],
+    bedroom: ["Compare the secondary storage", "Compare Egerie and Evelyn", "What should I measure tomorrow?"],
+    hallway: ["Compare the storage pairings", "What is the preferred layout?", "Which option stores shoes?"],
+    bathroom: ["What should I measure tomorrow?", "What is decided here?", "What is the current bathroom plan?"],
     kitchen: ["Compare the backsplash tiles", "What should I sample first?", "What is the current kitchen plan?"],
   };
   const starterPrompts = roomId && roomStarterPrompts[roomId]

@@ -400,3 +400,59 @@ The separation between live candidates and searchable history makes retrieval sm
 ### Next Recommended Step
 
 Run the Deauville footprint and four-chair tuck check, then update the table decision and re-evaluate the 185 cm dining rug around the winner.
+
+## 2026-09-05T02:03:23+01:00 - Collected hallway, wall treatment, and measurement-day update
+
+### Goal
+
+Replace the hallway's single-unit plan with a collected furniture sequence, capture the new bedroom secondary-storage and living-room wall-treatment decisions, and make tomorrow's physical checks usable from the mobile home screen.
+
+### Changes
+
+- Added Florrie, Gabrielle, Soren, Khari, Sahab, Kirei, Rosie, and Wovena to a focused hallway closed-storage comparison.
+- Added exact, metadata-stripped local product imagery for Florrie, Gabrielle, Soren, Kirei, Rosie, and Wovena.
+- Moved the 180 cm BESTÅ to fallback status and removed the older 120 cm hack route, overlays, Hattie shoe cabinet, and Kaci sideboard from the live hallway comparison.
+- Added a distinct bedroom behind-door / wardrobe-side comparison for Bennett, Agnes, and a conditional slim PAX extension, with exact local Bennett and Agnes imagery.
+- Split the living-room wall record into the overall wall scheme, border motifs, middle-wall arch, and making tools so decoration choices do not become mixed with the TV-console decision.
+- Added a grouped Measure tomorrow checklist for the Bathroom, Bedroom, and Dining Area, including critical and secondary priority levels.
+- Added room summaries to the home screen and room-specific Ask Home prompts and answers for the new decisions.
+
+### Decisions
+
+- The preferred hallway is Beryl + Florrie + Gabrielle; Florrie + Soren is the airier second route and Wovena + Florrie is the functional shoe-storage route.
+- The hall should retain deliberate 20–40 cm gaps rather than filling the full run. The 180 cm BESTÅ remains available only if the collected pieces do not provide enough storage.
+- Bennett is the aesthetic leader for secondary bedroom storage, Agnes is the value leader, and PAX is relevant only if hanging capacity is the real problem.
+- The living-room wall should keep the television and gallery art on a calm sea-blue upper field. A moulded transition with botanical wallpaper below is the current lead; a framed floral frieze is the alternative.
+- A single arch belongs on the narrow middle wall. Raised botanical details should be sparse and placed after the television and art.
+
+### Tradeoffs
+
+- Unavailable pieces remain visible because they define the preferred composition, but their saved stock state is explicit.
+- Retail prices and stock are snapshots and must be rechecked at the point of purchase.
+- Conceptual wall treatments use honest empty-image states because the referenced mockups were not repository assets; no substitute images were invented.
+
+### Risks
+
+- The hallway sequence still needs final placement against door swing and real circulation even though the component widths fit within the recorded hall length.
+- The wall treatment should be tested on a sample board before any plaster or filler technique is used at room scale.
+- Votes, item edits, and measurement checklist edits remain client-session state rather than persisted data.
+
+### Verification
+
+- Parsed 210 unique items and 32 needs with no missing candidate references.
+- TypeScript, ESLint, diff validation, repository privacy scanning, and the production Webpack build passed.
+- A 390 × 844 browser review confirmed the grouped measurement checklist, contained local product imagery, and swipeable hallway comparison.
+- Ask Home returned the intended narrowed answers for hallway layouts, secondary bedroom storage, living-room wall treatments, and measurement-day priorities.
+- No subagents were used.
+
+### Demo Impact
+
+The app now turns three dense conversation threads into separate, decision-shaped interfaces and gives the next visit to the flat a concrete mobile checklist.
+
+### Customer-Facing Context
+
+The hallway reads as a collected sequence rather than a generic storage installation, while the wall and bedroom records retain the reasoning that makes each option meaningful.
+
+### Next Recommended Step
+
+Capture tomorrow's measurements, then resolve the dining-table footprint and use the wardrobe and office-corner dimensions to update the bedroom layout model.

@@ -17,12 +17,25 @@ function imperial(cm: number) {
   return `${feet}′ ${remainder}″`;
 }
 
+const roomNames: Record<string, string> = {
+  bathroom: "Bathroom",
+  bedroom: "Bedroom",
+  dining_area: "Dining nook",
+};
+
 export function MeasurementList({ measurements }: { measurements: SeedData["measurements"] }) {
   const [unit, setUnit] = useState<"metric" | "imperial">("metric");
   const [records, setRecords] = useState(measurements);
-  const [pending, setPending] = useState<Array<{ id: string; label: string; roomId: string }>>([...pendingMeasurements]);
+  const [pending, setPending] = useState([...pendingMeasurements]);
   const [editing, setEditing] = useState<{ kind: "pending" | "captured"; id: string } | null>(null);
   const [draft, setDraft] = useState({ label: "", value: "", confidence: "measured" });
+  const pendingByRoom = Object.entries(
+    pending.reduce<Record<string, typeof pending>>((groups, measurement) => {
+      (groups[measurement.roomId] ??= []).push(measurement);
+      return groups;
+    }, {}),
+  );
+  const criticalCount = pending.filter((measurement) => measurement.priority === "critical").length;
 
   function editPending(id: string) {
     const record = pending.find((entry) => entry.id === id);
@@ -82,23 +95,36 @@ export function MeasurementList({ measurements }: { measurements: SeedData["meas
 
       <section>
         <div className="mb-3 flex items-center justify-between">
-          <h2 className="text-lg font-semibold tracking-[-0.02em]">Still needed</h2>
-          <Badge variant="warning">{pending.length} blocking</Badge>
+          <div>
+            <h2 className="text-lg font-semibold tracking-[-0.02em]">Measure tomorrow</h2>
+            <p className="mt-1 text-xs text-muted-foreground">Start with the critical checks; the rest can follow if there is time.</p>
+          </div>
+          <Badge variant="warning">{criticalCount} critical</Badge>
         </div>
-        <div className="space-y-2">
-          {pending.map((measurement) => (
-            <article key={measurement.id} className="flex items-center gap-3 rounded-2xl border border-warning/40 bg-warning/20 p-4">
-              <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-warning text-warning-foreground">
-                <Warning aria-hidden="true" size={17} weight="fill" />
-              </span>
-              <div className="min-w-0 flex-1">
-                <p className="text-sm font-semibold">{measurement.label}</p>
-                <p className="mt-0.5 text-xs text-muted-foreground">Needed before fit can be confirmed</p>
+        <div className="space-y-5">
+          {pendingByRoom.map(([roomId, roomMeasurements]) => (
+            <div key={roomId}>
+              <div className="mb-2 flex items-center justify-between">
+                <h3 className="text-sm font-semibold">{roomNames[roomId] ?? roomId.replaceAll("_", " ")}</h3>
+                <span className="text-xs tabular-nums text-muted-foreground">{roomMeasurements.length}</span>
               </div>
-              <Button variant="ghost" size="icon" className="size-9 min-h-9 shrink-0" onClick={() => editPending(measurement.id)} aria-label={`Edit ${measurement.label}`}>
-                <PencilSimple aria-hidden="true" size={15} />
-              </Button>
-            </article>
+              <div className="space-y-2">
+                {roomMeasurements.map((measurement) => (
+                  <article key={measurement.id} className={`flex items-center gap-3 rounded-2xl border p-4 ${measurement.priority === "critical" ? "border-warning/40 bg-warning/20" : "border-border bg-card"}`}>
+                    <span className={`grid size-9 shrink-0 place-items-center rounded-xl ${measurement.priority === "critical" ? "bg-warning text-warning-foreground" : "bg-muted text-muted-foreground"}`}>
+                      <Warning aria-hidden="true" size={17} weight="fill" />
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-semibold">{measurement.label}</p>
+                      <p className="mt-0.5 text-xs capitalize text-muted-foreground">{measurement.priority}</p>
+                    </div>
+                    <Button variant="ghost" size="icon" className="size-9 min-h-9 shrink-0" onClick={() => editPending(measurement.id)} aria-label={`Edit ${measurement.label}`}>
+                      <PencilSimple aria-hidden="true" size={15} />
+                    </Button>
+                  </article>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </section>
