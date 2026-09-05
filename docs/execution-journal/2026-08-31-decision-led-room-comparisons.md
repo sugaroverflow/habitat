@@ -456,3 +456,50 @@ The hallway reads as a collected sequence rather than a generic storage installa
 ### Next Recommended Step
 
 Capture tomorrow's measurements, then resolve the dining-table footprint and use the wardrobe and office-corner dimensions to update the bedroom layout model.
+
+## 2026-09-05T02:20:55+01:00 - Added the TCL 55- versus 65-inch wall test
+
+### Goal
+
+Turn the TCL screen-size question into a measured room decision rather than treating a larger television as automatically better.
+
+### Changes
+
+- Added separate 55- and 65-inch TCL A400 Pro candidates with their approximate widths, current retail snapshots, price difference, and wall-composition tradeoff.
+- Added a dedicated TCL screen-size need and decision record while keeping the A400 Pro as the chosen model direction.
+- Added five critical living-room checks to the mobile measurement list: clear window-to-heater width, heater dimensions and height, ceiling height, viewing distance, and the preferred TV/soundbar bottom edge.
+- Updated Ask Home prompts and replies to explain the 55-versus-65 decision rule and surface the required measurements.
+
+### Decisions
+
+- Lean toward 55 inches because its approximately 122 cm width preserves more gallery-wall breathing room.
+- Choose 65 inches only if a full-scale wall test or the sofa viewing distance makes 55 inches feel materially undersized.
+- The approximately 23 cm increase in width and £350 price difference must produce a visible room-scale improvement.
+
+### Tradeoffs
+
+- The 55-inch retail snapshot was updated to £749 while the 65-inch candidate is £1,099; both prices require a final retailer check before purchase.
+- Both sizes use the same verified official model-family product image because TCL publishes that image for both variants.
+
+### Risks
+
+- The decision still depends on physical measurements and a full-scale overlay on the actual wall.
+- Retail batches may differ in included wall-mount hardware, so the exact box contents must be confirmed before ordering.
+
+### Verification
+
+- Parsed 211 unique items, 33 needs, and 25 decisions with no missing candidate references.
+- TypeScript, ESLint, diff validation, repository privacy scanning, and the production Webpack build passed.
+- No subagents were used.
+
+### Demo Impact
+
+The living-room record now shows why the smaller or larger screen might win and turns tomorrow's visit into a focused fit check.
+
+### Customer-Facing Context
+
+The screen choice is connected to price, viewing distance, wall constraints, soundbar placement, and the gallery composition rather than being stored as an isolated product bookmark.
+
+### Next Recommended Step
+
+Measure the five living-room dimensions, tape or overlay 122 cm and 145 cm screen widths on the wall, then close the TCL size decision.

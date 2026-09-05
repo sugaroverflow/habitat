@@ -20,6 +20,7 @@ function imperial(cm: number) {
 const roomNames: Record<string, string> = {
   bathroom: "Bathroom",
   bedroom: "Bedroom",
+  living_room: "Living Room",
   dining_area: "Dining nook",
 };
 

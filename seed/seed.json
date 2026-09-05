@@ -2574,7 +2574,7 @@
       "active_comparison": true,
       "preference_rating": 5,
       "price": {
-        "amount": 899,
+        "amount": 749,
         "currency": "GBP"
       },
       "dimensions": {
@@ -2582,14 +2582,41 @@
       },
       "comparison": {
         "uk_sizes": "43 · 55 · 65 · 75 inch",
+        "size_depth": "Approximately 122cm wide; about 23cm narrower than the 65-inch screen",
         "panel_gaming": "QD-MiniLED · native 144 Hz · VRR / ALLM · Dolby Vision",
         "frame": "Light-walnut frame built in",
         "reviews_catches": "Independent review: 7.1 overall · 8.4 console gaming · 8.9 PC. Excellent contrast and input lag; catches are VA smearing, narrow viewing angles and two full HDMI 2.1 ports.",
         "order_check": "Confirm this retailer batch includes the ultra-slim wall mount before ordering.",
-        "status_note": "1st · favourite"
+        "wall_fit": "Current composition favourite; preserves more gallery-wall breathing room",
+        "status_note": "Model favourite · 55-inch size lean · £749 retail snapshot"
       },
       "user_notes": "Gaming and art-TV aesthetics are weighted heavily. The light-walnut frame fits the pale-wood gallery-wall direction.",
       "assistant_assessment": "Best balance of art-TV design, MiniLED picture quality, gaming performance and price. Independent testing materially increased confidence."
+    },
+    {
+      "id": "tv_tcl_a400_pro_65",
+      "name": "TCL A400 Pro NXTVISION — 65 inch",
+      "category": "television",
+      "room_id": "living_room",
+      "ownership_status": "not_owned",
+      "purchase_status": "not_ordered",
+      "status": "considering",
+      "url": "https://www.tcl.com/uk/en/tvs/65a400-pro",
+      "image": "/media/products/product-042.jpeg",
+      "active_comparison": true,
+      "preference_rating": 4,
+      "price": { "amount": 1099, "currency": "GBP" },
+      "dimensions": { "screen_inches": 65, "approx_screen_width_cm": 145 },
+      "comparison": {
+        "size_depth": "Approximately 145cm wide; about 23cm wider than the 55-inch screen",
+        "panel_gaming": "Same QD-MiniLED · native 144 Hz · VRR / ALLM · Dolby Vision direction",
+        "frame": "Light-walnut frame built in",
+        "order_check": "Confirm the wall-mount contents for the exact retailer batch before ordering.",
+        "wall_fit": "Worth testing at full scale; must earn the lost gallery-wall space",
+        "status_note": "Considering · pay £350 more only if it clearly looks better in the room"
+      },
+      "user_notes": "Bigger is not automatically better. Test it against the actual wall and viewing distance.",
+      "assistant_assessment": "Choose 65 inches only if the room scale or viewing distance makes 55 inches look genuinely undersized."
     },
     {
       "id": "tv_samsung_frame_2026_55",
@@ -5077,7 +5104,7 @@
       "status": "decision_in_progress",
       "priority": "high",
       "requirements": [
-        "55-inch art-led display",
+        "55- or 65-inch art-led display chosen by an in-room scale test",
         "strong console and PC gaming performance",
         "works with the pale-wood gallery-wall direction",
         "confirm the exact wall-mount contents before ordering"
@@ -5088,6 +5115,23 @@
         "tv_hisense_canvas_s7s_55",
         "tv_lg_gallery_lx7_55",
         "tv_samsung_frame_pro_2026_55"
+      ]
+    },
+    {
+      "id": "need_tcl_screen_size",
+      "room_id": "living_room",
+      "name": "TCL A400 Pro screen size",
+      "status": "decision_in_progress",
+      "priority": "high",
+      "requirements": [
+        "test both sizes at full scale on the actual wall",
+        "protect enough breathing room for the gallery composition",
+        "use sofa-to-TV distance to check whether 55 inches feels undersized",
+        "pay the £350 difference only for a material improvement in the room"
+      ],
+      "candidate_item_ids": [
+        "tv_tcl_a400_pro_55",
+        "tv_tcl_a400_pro_65"
       ]
     },
     {
@@ -5303,8 +5347,16 @@
       "room_id": "living_room",
       "topic": "art_tv",
       "status": "leaning",
-      "decision": "TCL A400 Pro 55 is the current favourite; confirm that the retailer's batch includes the ultra-slim wall mount before ordering.",
+      "decision": "TCL A400 Pro is the current model favourite; choose 55 or 65 inches only after the in-room scale test, and confirm that the retailer's batch includes the ultra-slim wall mount before ordering.",
       "reasoning": "It gives the strongest balance of art-TV styling, MiniLED picture quality, 144 Hz gaming and price. Samsung The Frame remains the safer, more polished fallback."
+    },
+    {
+      "id": "d_tcl_screen_size",
+      "room_id": "living_room",
+      "topic": "tv_screen_size",
+      "status": "leaning",
+      "decision": "Lean 55 inches for the prettier gallery-wall composition; choose 65 inches only if the measured wall and viewing distance make 55 inches feel undersized.",
+      "reasoning": "The screens are approximately 122cm and 145cm wide. The extra 23cm materially reduces gallery-wall breathing room, so the £350 premium must produce a visible room-scale improvement rather than size for its own sake."
     },
     {
       "id": "d_tv_audio",

@@ -502,6 +502,11 @@ export const pendingMeasurements: Array<{
   { id: "pm_bedroom_divider", label: "Divider shelf test — 35–40cm depth and 120–150cm height", roomId: "bedroom", priority: "secondary" },
   { id: "pm_bedroom_clearances", label: "Desk/chair to divider + divider to bed clearances; target at least 90cm behind chair", roomId: "bedroom", priority: "secondary" },
   { id: "pm_bedroom_ceiling", label: "Ceiling height for tall shelving and office lighting", roomId: "bedroom", priority: "secondary" },
+  { id: "pm_living_tv_wall_width", label: "TV wall — clear width from window edge to heater", roomId: "living_room", priority: "critical" },
+  { id: "pm_living_heater", label: "Heater — width × height + distance from floor; reconfirm the existing ~26-inch height", roomId: "living_room", priority: "critical" },
+  { id: "pm_living_ceiling", label: "TV wall — floor-to-ceiling height", roomId: "living_room", priority: "critical" },
+  { id: "pm_living_viewing_distance", label: "Approximate sofa-to-TV viewing distance", roomId: "living_room", priority: "critical" },
+  { id: "pm_living_tv_position", label: "Preferred bottom edge for the TV and soundbar", roomId: "living_room", priority: "critical" },
   { id: "pm_dining_table_test", label: "Test 130 × 100cm oval with four tucked chairs and a clear island route", roomId: "dining_area", priority: "critical" },
 ];
 
